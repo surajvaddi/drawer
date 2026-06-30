@@ -1425,7 +1425,7 @@ Async AI job infrastructure with privacy gates.
 
 ### Step 22.1: AI Job Queue Repository
 
-- [ ] **Function:** `AIJobQueue` — enqueue, dequeue, status transitions, retry.
+- [x] **Function:** `AIJobQueue` — enqueue, dequeue, status transitions, retry.
 - **Unit tests:**
   - `testEnqueueSetsPendingStatus`
   - `testRetryFailedJob`
@@ -1435,7 +1435,7 @@ Async AI job infrastructure with privacy gates.
 
 ### Step 22.2: AI Provider Protocol
 
-- [ ] **Function:** `AIProvider` protocol — summarize, title, tags, facts methods.
+- [x] **Function:** `AIProvider` protocol — summarize, title, tags, facts methods.
 - **Unit tests:**
   - `testMockProviderReturnsDeterministicOutput`
 - **Integration tests:**
@@ -1444,7 +1444,7 @@ Async AI job infrastructure with privacy gates.
 
 ### Step 22.3: AI Privacy Policy Gate
 
-- [ ] **Function:** `AIPrivacyGate` — local-only, ask-before-cloud, exclude private drawers.
+- [x] **Function:** `AIPrivacyGate` — local-only, ask-before-cloud, exclude private drawers.
 - **Unit tests:**
   - `testPrivateDrawerSkipsCloud`
   - `testAskModeRequiresApproval`
@@ -1454,7 +1454,7 @@ Async AI job infrastructure with privacy gates.
 
 ### Step 22.4: AI Worker Processor
 
-- [ ] **Function:** `AIWorker` — background process jobs, write `AIAnnotation` records.
+- [x] **Function:** `AIWorker` — background process jobs, write `AIAnnotation` records.
 - **Unit tests:**
   - `testWorkerWritesTitleAnnotation`
   - `testWorkerMarksFailedOnError`
@@ -1464,7 +1464,7 @@ Async AI job infrastructure with privacy gates.
 
 ### Step 22.5: AI Settings Panel
 
-- [ ] **Function:** `AISettingsView` — enable AI, provider, per-feature toggles.
+- [x] **Function:** `AISettingsView` — enable AI, provider, per-feature toggles.
 - **Unit tests:**
   - `testDisableAIStopsEnqueue`
 - **Integration tests:**
@@ -1473,7 +1473,7 @@ Async AI job infrastructure with privacy gates.
 
 ### Step 22.6: AI Suggestion UI on Items
 
-- [ ] **Function:** `AIAnnotationViews` — show suggested title/tags/summary with accept/edit.
+- [x] **Function:** `AIAnnotationViews` — show suggested title/tags/summary with accept/edit.
 - **Unit tests:**
   - `testAcceptTitleUpdatesItem`
   - `testDismissLeavesOriginal`
@@ -1489,7 +1489,7 @@ Title, summary, tags, facts, duplicates.
 
 ### Step 23.1: Auto-Title Generator
 
-- [ ] **Function:** `TitleGenerator` — generate concise title from content via `AIProvider`.
+- [x] **Function:** `TitleGenerator` — generate concise title from content via `AIProvider`.
 - **Unit tests:**
   - `testTitleFallsBackToFirstLine`
   - `testTitleMaxLengthEnforced`
@@ -1499,7 +1499,7 @@ Title, summary, tags, facts, duplicates.
 
 ### Step 23.2: Auto-Summary Generator
 
-- [ ] **Function:** `SummaryGenerator` — one-line and bullet summaries.
+- [x] **Function:** `SummaryGenerator` — one-line and bullet summaries.
 - **Unit tests:**
   - `testSummarySkippedForShortText`
   - `testSummaryStoredAsAIAnnotation`
@@ -1509,7 +1509,7 @@ Title, summary, tags, facts, duplicates.
 
 ### Step 23.3: Auto-Tag Generator
 
-- [ ] **Function:** `TagGenerator` — suggest lightweight tags, user confirm before apply.
+- [x] **Function:** `TagGenerator` — suggest lightweight tags, user confirm before apply.
 - **Unit tests:**
   - `testTagsDedupedAndNormalized`
   - `testMaxTagsLimit`
@@ -1519,7 +1519,7 @@ Title, summary, tags, facts, duplicates.
 
 ### Step 23.4: Fact Extraction Pipeline
 
-- [ ] **Function:** `FactExtractor` — extract atomic facts into `FactCard` items.
+- [x] **Function:** `FactExtractor` — extract atomic facts into `FactCard` items.
 - **Unit tests:**
   - `testExtractFactsFromJobDescription`
   - `testFactsLinkToParentItem`
@@ -1529,7 +1529,7 @@ Title, summary, tags, facts, duplicates.
 
 ### Step 23.5: Duplicate Detection Service
 
-- [ ] **Function:** `DuplicateDetector` — URL, text hash, file checksum, image hash.
+- [x] **Function:** `DuplicateDetector` — URL, text hash, file checksum, image hash.
 - **Unit tests:**
   - `testDetectDuplicateURL`
   - `testDetectDuplicateTextHash`
@@ -1540,7 +1540,7 @@ Title, summary, tags, facts, duplicates.
 
 ### Step 23.6: Related Items Engine
 
-- [ ] **Function:** `RelatedItemsEngine` — same URL, drawer, tags, semantic neighbors.
+- [x] **Function:** `RelatedItemsEngine` — same URL, drawer, tags, semantic neighbors.
 - **Unit tests:**
   - `testRelatedBySharedTags`
   - `testRelatedBySameSourceURL`
@@ -1556,7 +1556,7 @@ Embeddings and vector recall.
 
 ### Step 24.1: Embedding Provider Protocol
 
-- [ ] **Function:** `EmbeddingProvider` — local or remote text embeddings.
+- [x] **Function:** `EmbeddingProvider` — local or remote text embeddings.
 - **Unit tests:**
   - `testMockEmbeddingDeterministicDimension`
 - **Integration tests:**
@@ -1565,7 +1565,7 @@ Embeddings and vector recall.
 
 ### Step 24.2: Embedding Indexer
 
-- [ ] **Function:** `EmbeddingIndexer` — generate and store embeddings on save/update.
+- [x] **Function:** `EmbeddingIndexer` — generate and store embeddings on save/update.
 - **Unit tests:**
   - `testIndexerStoresVectorHash`
   - `testReindexOnContentChange`
@@ -1575,7 +1575,7 @@ Embeddings and vector recall.
 
 ### Step 24.3: Vector Similarity Search
 
-- [ ] **Function:** `VectorSearchRepository` — cosine similarity search over embeddings.
+- [x] **Function:** `VectorSearchRepository` — cosine similarity search over embeddings.
 - **Unit tests:**
   - `testCosineSimilarityRanking`
   - `testMinScoreThreshold`
@@ -1585,7 +1585,7 @@ Embeddings and vector recall.
 
 ### Step 24.4: Hybrid Search Merger
 
-- [ ] **Function:** `HybridSearchMerger` — merge FTS and vector results with unified ranking.
+- [x] **Function:** `HybridSearchMerger` — merge FTS and vector results with unified ranking.
 - **Unit tests:**
   - `testMergerDeduplicatesItems`
   - `testSemanticWeightApplied`
@@ -1595,7 +1595,7 @@ Embeddings and vector recall.
 
 ### Step 24.5: Document Chunk Embeddings
 
-- [ ] **Function:** `DocumentChunker` — chunk long PDFs/text, embed chunks, link to parent.
+- [x] **Function:** `DocumentChunker` — chunk long PDFs/text, embed chunks, link to parent.
 - **Unit tests:**
   - `testChunkSizeAndOverlap`
   - `testChunkLinksToParentItem`
@@ -1605,7 +1605,7 @@ Embeddings and vector recall.
 
 ### Step 24.6: Semantic Quick Paste Boost
 
-- [ ] **Function:** Integrate semantic scores into quick paste ranking.
+- [x] **Function:** Integrate semantic scores into quick paste ranking.
 - **Unit tests:**
   - `testSemanticScoreBlendedWithRecency`
 - **Integration tests:**
@@ -1620,7 +1620,7 @@ Backup, portability, and restore.
 
 ### Step 25.1: JSON Export Service
 
-- [ ] **Function:** `JSONExportService` — export items, drawers, tags to JSON archive.
+- [x] **Function:** `JSONExportService` — export items, drawers, tags to JSON archive.
 - **Unit tests:**
   - `testExportIncludesAllEntities`
   - `testExportValidJSON`
@@ -1630,7 +1630,7 @@ Backup, portability, and restore.
 
 ### Step 25.2: Markdown Export Service
 
-- [ ] **Function:** `MarkdownExportService` — export drawer hierarchy as Markdown files.
+- [x] **Function:** `MarkdownExportService` — export drawer hierarchy as Markdown files.
 - **Unit tests:**
   - `testMarkdownIncludesMetadata`
   - `testFactsRenderedAsList`
@@ -1640,7 +1640,7 @@ Backup, portability, and restore.
 
 ### Step 25.3: ZIP Archive Export
 
-- [ ] **Function:** `ZIPExportService` — bundle JSON/Markdown plus blobs into ZIP.
+- [x] **Function:** `ZIPExportService` — bundle JSON/Markdown plus blobs into ZIP.
 - **Unit tests:**
   - `testZIPContainsBlobsAndManifest`
 - **Integration tests:**
@@ -1649,7 +1649,7 @@ Backup, portability, and restore.
 
 ### Step 25.4: JSON Import Service
 
-- [ ] **Function:** `JSONImportService` — import archive with duplicate resolution options.
+- [x] **Function:** `JSONImportService` — import archive with duplicate resolution options.
 - **Unit tests:**
   - `testImportSkipsDuplicatesWhenConfigured`
   - `testImportPreservesDrawerHierarchy`
@@ -1659,7 +1659,7 @@ Backup, portability, and restore.
 
 ### Step 25.5: Markdown and Bookmarks Import
 
-- [ ] **Function:** `MarkdownImportService` — import `.md` files and browser bookmark HTML.
+- [x] **Function:** `MarkdownImportService` — import `.md` files and browser bookmark HTML.
 - **Unit tests:**
   - `testImportMarkdownCreatesTextItems`
   - `testImportBookmarksCreatesLinkItems`
@@ -1669,7 +1669,7 @@ Backup, portability, and restore.
 
 ### Step 25.6: Export UI and Manual Backup
 
-- [ ] **Function:** `ExportImportView` — user-triggered export/import with progress.
+- [x] **Function:** `ExportImportView` — user-triggered export/import with progress.
 - **Unit tests:**
   - `testExportShowsProgressAndCompletion`
 - **Integration tests:**
@@ -1684,7 +1684,7 @@ Detached management surface and menu bar presence.
 
 ### Step 26.1: Full Library Window Shell
 
-- [ ] **Function:** `LibraryWindow` — standard window with sidebar and main content.
+- [x] **Function:** `LibraryWindow` — standard window with sidebar and main content.
 - **Unit tests:**
   - `testLibraryWindowOpensFromMenu`
 - **Integration tests:**
@@ -1693,7 +1693,7 @@ Detached management surface and menu bar presence.
 
 ### Step 26.2: Bulk Organization View
 
-- [ ] **Function:** `BulkOrganizationView` — multi-select, move, tag, archive in library.
+- [x] **Function:** `BulkOrganizationView` — multi-select, move, tag, archive in library.
 - **Unit tests:**
   - `testBulkMoveInLibrary`
 - **Integration tests:**
@@ -1702,7 +1702,7 @@ Detached management surface and menu bar presence.
 
 ### Step 26.3: Advanced Search in Library
 
-- [ ] **Function:** `LibrarySearchView` — full search with filters and larger previews.
+- [x] **Function:** `LibrarySearchView` — full search with filters and larger previews.
 - **Unit tests:**
   - `testLibrarySearchUsesHybridMerger`
 - **Integration tests:**
@@ -1711,7 +1711,7 @@ Detached management surface and menu bar presence.
 
 ### Step 26.4: Menu Bar Status Item
 
-- [ ] **Function:** `MenuBarController` — show/hide orb, open drawer, pause capture.
+- [x] **Function:** `MenuBarController` — show/hide orb, open drawer, pause capture.
 - **Unit tests:**
   - `testMenuBarToggleOrbVisibility`
 - **Integration tests:**
@@ -1720,7 +1720,7 @@ Detached management surface and menu bar presence.
 
 ### Step 26.5: Launch at Login
 
-- [ ] **Function:** `LaunchAtLoginService` — SMAppService login item toggle.
+- [x] **Function:** `LaunchAtLoginService` — SMAppService login item toggle.
 - **Unit tests:**
   - `testLaunchAtLoginTogglePersists`
 - **Integration tests:**
@@ -1729,7 +1729,7 @@ Detached management surface and menu bar presence.
 
 ### Step 26.6: Hide Orb in Full Screen and Presentation
 
-- [ ] **Function:** `PresentationModeObserver` — auto-hide orb in fullscreen/presentation.
+- [x] **Function:** `PresentationModeObserver` — auto-hide orb in fullscreen/presentation.
 - **Unit tests:**
   - `testHideWhenFullscreenAppActive`
   - `testRestoreWhenExitingFullscreen`
@@ -1745,7 +1745,7 @@ Data safety, repair, and duplicate handling.
 
 ### Step 27.1: Crash Recovery on Launch
 
-- [ ] **Function:** `CrashRecoveryService` — verify pending captures, resume queues on launch.
+- [x] **Function:** `CrashRecoveryService` — verify pending captures, resume queues on launch.
 - **Unit tests:**
   - `testRecoverPendingCaptureEvent`
   - `testDeleteOrphanBlobsWithoutDBRows`
@@ -1755,7 +1755,7 @@ Data safety, repair, and duplicate handling.
 
 ### Step 27.2: Thumbnail Repair Job
 
-- [ ] **Function:** `ThumbnailRepairService` — regenerate missing thumbnails.
+- [x] **Function:** `ThumbnailRepairService` — regenerate missing thumbnails.
 - **Unit tests:**
   - `testRepairCreatesMissingThumbnail`
 - **Integration tests:**
@@ -1764,7 +1764,7 @@ Data safety, repair, and duplicate handling.
 
 ### Step 27.3: Index Rebuild Service
 
-- [ ] **Function:** `IndexRebuildService` — rebuild FTS and embeddings if corrupted.
+- [x] **Function:** `IndexRebuildService` — rebuild FTS and embeddings if corrupted.
 - **Unit tests:**
   - `testRebuildFTSFromItems`
   - `testRebuildEmbeddingsQueue`
@@ -1774,7 +1774,7 @@ Data safety, repair, and duplicate handling.
 
 ### Step 27.4: Transactional Delete with Blob Cleanup
 
-- [ ] **Function:** `ItemDeletionService` — coordinated delete of item, blobs, tags, embeddings.
+- [x] **Function:** `ItemDeletionService` — coordinated delete of item, blobs, tags, embeddings.
 - **Unit tests:**
   - `testDeleteRemovesAllAssociatedRecords`
   - `testDeleteRemovesFilesystemBlobs`
@@ -1784,7 +1784,7 @@ Data safety, repair, and duplicate handling.
 
 ### Step 27.5: Duplicate Merge Flow
 
-- [ ] **Function:** `DuplicateMergeFlow` — keep both, merge, replace, link duplicate UI.
+- [x] **Function:** `DuplicateMergeFlow` — keep both, merge, replace, link duplicate UI.
 - **Unit tests:**
   - `testMergeCombinesTagsAndNotes`
   - `testReplaceDeletesOlderItem`
@@ -1794,7 +1794,7 @@ Data safety, repair, and duplicate handling.
 
 ### Step 27.6: Error Toast and Non-Intrusive Reporting
 
-- [ ] **Function:** `ErrorReporter` — surface save/index/AI errors via subtle toasts.
+- [x] **Function:** `ErrorReporter` — surface save/index/AI errors via subtle toasts.
 - **Unit tests:**
   - `testErrorToastAutoDismisses`
 - **Integration tests:**
@@ -1809,7 +1809,7 @@ Latency targets, memory, and final UX refinements.
 
 ### Step 28.1: Lazy Blob Loading in UI
 
-- [ ] **Function:** `LazyBlobImageLoader` — async thumbnail loading with memory cache cap.
+- [x] **Function:** `LazyBlobImageLoader` — async thumbnail loading with memory cache cap.
 - **Unit tests:**
   - `testLoaderEvictsWhenOverBudget`
 - **Integration tests:**
@@ -1818,7 +1818,7 @@ Latency targets, memory, and final UX refinements.
 
 ### Step 28.2: Search Performance Budget Guard
 
-- [ ] **Function:** `SearchPerformanceTracer` — assert search latency < 150ms in integration tests.
+- [x] **Function:** `SearchPerformanceTracer` — assert search latency < 150ms in integration tests.
 - **Unit tests:**
   - `testTracerFlagsSlowQueries`
 - **Integration tests:**
@@ -1827,7 +1827,7 @@ Latency targets, memory, and final UX refinements.
 
 ### Step 28.3: Clipboard Polling Efficiency
 
-- [ ] **Function:** Optimize `PasteboardMonitor` interval and wake on app activation.
+- [x] **Function:** Optimize `PasteboardMonitor` interval and wake on app activation.
 - **Unit tests:**
   - `testPollingBackoffWhenPaused`
 - **Integration tests:**
@@ -1836,7 +1836,7 @@ Latency targets, memory, and final UX refinements.
 
 ### Step 28.4: Save Success and Toast Feedback
 
-- [ ] **Function:** `SaveToastView` — "Saved to Inbox" ripple/toast on successful capture.
+- [x] **Function:** `SaveToastView` — "Saved to Inbox" ripple/toast on successful capture.
 - **Unit tests:**
   - `testToastShowsDrawerName`
 - **Integration tests:**
@@ -1845,7 +1845,7 @@ Latency targets, memory, and final UX refinements.
 
 ### Step 28.5: Orb Appearance Polish
 
-- [ ] **Function:** Finalize hover, drop glow, error shake animations.
+- [x] **Function:** Finalize hover, drop glow, error shake animations.
 - **Unit tests:**
   - `testAnimationStatesExist`
 - **Integration tests:**
@@ -1854,7 +1854,7 @@ Latency targets, memory, and final UX refinements.
 
 ### Step 28.6: End-to-End Activation Flow Test
 
-- [ ] **Function:** `ActivationFlowTests` — first save, first drawer, first retrieve scenarios.
+- [x] **Function:** `ActivationFlowTests` — first save, first drawer, first retrieve scenarios.
 - **Unit tests:**
   - n/a (integration-focused step)
 - **Integration tests:**
