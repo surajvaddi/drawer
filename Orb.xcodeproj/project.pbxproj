@@ -333,6 +333,9 @@
 		F61FE2EAD7434B54B2025394 /* OrbDropHoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACF9C55CB04018A0388C73 /* OrbDropHoverController.swift */; };
 		16AEB1E6B7154D9CA9E6FEDA /* OrbDropHoverControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832DD1C9B1C445B8E680682 /* OrbDropHoverControllerTests.swift */; };
 		F87E7199759145CF805FB5C9 /* OrbDropHoverControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982802E682AB4680ADC4777A /* OrbDropHoverControllerIntegrationTests.swift */; };
+		55B38E62E9C14B179EF44E44 /* FileDropPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE996F76AEC4174863A0E7F /* FileDropPipeline.swift */; };
+		14ABDF6B3D9D48E99D15A57C /* FileDropPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56619880D3BF4A0D888A720A /* FileDropPipelineTests.swift */; };
+		54E017FC4DB645D8A7360AE5 /* FileDropPipelineIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA48C7E60DC843678B381AD3 /* FileDropPipelineIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -673,6 +676,9 @@
 		F9ACF9C55CB04018A0388C73 /* OrbDropHoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDropHoverController.swift; sourceTree = "<group>"; };
 		B832DD1C9B1C445B8E680682 /* OrbDropHoverControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDropHoverControllerTests.swift; sourceTree = "<group>"; };
 		982802E682AB4680ADC4777A /* OrbDropHoverControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDropHoverControllerIntegrationTests.swift; sourceTree = "<group>"; };
+		EEE996F76AEC4174863A0E7F /* FileDropPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDropPipeline.swift; sourceTree = "<group>"; };
+		56619880D3BF4A0D888A720A /* FileDropPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDropPipelineTests.swift; sourceTree = "<group>"; };
+		CA48C7E60DC843678B381AD3 /* FileDropPipelineIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDropPipelineIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -749,6 +755,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				EEE996F76AEC4174863A0E7F /* FileDropPipeline.swift */,
 				FB47AD7725094073866F6EBE /* OrbDropTarget.swift */,
 				D89CCD3177B64CB3AD9B1440 /* DrawerRuleEvaluator.swift */,
 				161535AB43EE46888CF9C4D4 /* DocumentTextExtractor.swift */,
@@ -866,6 +873,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				56619880D3BF4A0D888A720A /* FileDropPipelineTests.swift */,
 				B832DD1C9B1C445B8E680682 /* OrbDropHoverControllerTests.swift */,
 				9E930274E0A9481D8CD11E48 /* OrbDropTargetTests.swift */,
 				F0A1CF62D64443FE95374C0C /* ScreenshotShortcutTests.swift */,
@@ -982,6 +990,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA48C7E60DC843678B381AD3 /* FileDropPipelineIntegrationTests.swift */,
 				982802E682AB4680ADC4777A /* OrbDropHoverControllerIntegrationTests.swift */,
 				6FEA51FC7D1F4BEBB11DD254 /* OrbDropTargetIntegrationTests.swift */,
 				13300FD7657A4CA5BA51B7AF /* ScreenshotShortcutIntegrationTests.swift */,
