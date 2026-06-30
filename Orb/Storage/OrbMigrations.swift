@@ -6,6 +6,7 @@ enum OrbMigrations {
         MigrationV2(),
         MigrationV3(),
         MigrationV4(),
-        MigrationV5()
+        MigrationV5(),
+        MigrationV6()
     ]
 }

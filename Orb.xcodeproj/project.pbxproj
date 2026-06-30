@@ -267,6 +267,12 @@
 		15AC1090154E419EBE7F56BD /* ItemSortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */; };
 		0D1490148A324A38A10C3997 /* ItemSortControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */; };
 		8C027311A4C54AA08712197C /* ItemSortControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */; };
+		B32E38E200F04510A702CE56 /* FactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9A9BB8F4F84B64A03F8A31 /* FactCard.swift */; };
+		FE8942CA979146FB9F94ACA2 /* MigrationV6.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3BE3CD23184A5093804353 /* MigrationV6.swift */; };
+		039C5DCF596C4E149589E330 /* FactCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35852D992BFF4CB8A449BD29 /* FactCardRepository.swift */; };
+		325722250B15479FA7280130 /* MigrationV6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DE4FDC27544F8ABEAC2EF /* MigrationV6Tests.swift */; };
+		FF9D823E28B44C6EAA66A317 /* FactCardRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */; };
+		FDA9AF0781E342BAADB85F2E /* FactCardRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -541,6 +547,12 @@
 		D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSortController.swift; sourceTree = "<group>"; };
 		CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSortControllerTests.swift; sourceTree = "<group>"; };
 		DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSortControllerIntegrationTests.swift; sourceTree = "<group>"; };
+		8B9A9BB8F4F84B64A03F8A31 /* FactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCard.swift; sourceTree = "<group>"; };
+		AC3BE3CD23184A5093804353 /* MigrationV6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV6.swift; sourceTree = "<group>"; };
+		35852D992BFF4CB8A449BD29 /* FactCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCardRepository.swift; sourceTree = "<group>"; };
+		DD6DE4FDC27544F8ABEAC2EF /* MigrationV6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV6Tests.swift; sourceTree = "<group>"; };
+		49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCardRepositoryTests.swift; sourceTree = "<group>"; };
+		CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCardRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +582,7 @@
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8B9A9BB8F4F84B64A03F8A31 /* FactCard.swift */,
 				F17AE41E798A6 /* Blob.swift */,
 				FD4F6F8901BFE /* Drawer.swift */,
 				F6897641C8B9A /* DrawerRule.swift */,
@@ -585,6 +598,8 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				35852D992BFF4CB8A449BD29 /* FactCardRepository.swift */,
+				AC3BE3CD23184A5093804353 /* MigrationV6.swift */,
 				EA3BA26735E548A5A683BE6D /* BulkItemActions.swift */,
 				79DF1B18CEE842CBB5FDC083 /* DrawerRuleRepository.swift */,
 				8E8C6BF3610F43DB9C0621B2 /* MoveItemToDrawerService.swift */,
@@ -711,6 +726,8 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */,
+				DD6DE4FDC27544F8ABEAC2EF /* MigrationV6Tests.swift */,
 				CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */,
 				3C958A12FD8F4169BF47E93F /* BulkItemActionsTests.swift */,
 				17FBF27C332C4B16950B2F6E /* ItemFilterControllerTests.swift */,
@@ -805,6 +822,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */,
 				DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */,
 				BC0F78FA5052429A9B6DB6E0 /* BulkItemActionsIntegrationTests.swift */,
 				8E1361F83D2740BB8F9C2B14 /* ItemFilterControllerIntegrationTests.swift */,
