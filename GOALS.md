@@ -52,7 +52,7 @@ Establish the macOS app shell, module layout, and CI test runner.
 
 ### Step 0.4: Add Shared Utilities and Logging
 
-- [ ] **Function:** Implement `OrbLogger` (os_log wrapper) and `OrbError` base error enum.
+- [x] **Function:** Implement `OrbLogger` (os_log wrapper) and `OrbError` base error enum.
 - **Unit tests:**
   - `testLoggerFormatsMessages`
   - `testOrbErrorDescriptionsAreNonEmpty`

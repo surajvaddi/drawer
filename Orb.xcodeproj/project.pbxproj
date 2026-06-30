@@ -9,12 +9,16 @@
 		B999E3CF8486B /* OrbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC71E7D5F9B /* OrbApp.swift */; };
 		BA0F01189B8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433B62DE3357 /* AppDelegate.swift */; };
 		B0E071672E1EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05267C75C7B /* ContentView.swift */; };
+		B72ED217F1434 /* OrbLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B360FA29964 /* OrbLogger.swift */; };
+		B50613AA229CE /* OrbError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5032AE28DE /* OrbError.swift */; };
 		BA3EDDAFB1168 /* AppBootstrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6708BA67C498 /* AppBootstrapTests.swift */; };
 		BD0E4F0BF4151 /* TestTargetLinkageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A89BD2CFE1 /* TestTargetLinkageTests.swift */; };
 		BE0EE1B7590F0 /* ModuleStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3D6E08B7F00 /* ModuleStructureTests.swift */; };
+		BBD608FBC4A70 /* OrbLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4EAE762F00 /* OrbLoggerTests.swift */; };
 		BAEA452F10CBB /* AppLaunchIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE87E5576ECB /* AppLaunchIntegrationTests.swift */; };
 		BA7F3F161F582 /* CIScriptIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AC2DEF54E32 /* CIScriptIntegrationTests.swift */; };
 		BBB5610C0475E /* ModuleStructureIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE84960916EE /* ModuleStructureIntegrationTests.swift */; };
+		B2FF0F4C1618E /* OrbLoggerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD48727C39E /* OrbLoggerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +31,16 @@
 		F433B62DE3357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB05267C75C7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE3EFB4BDE16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B360FA29964 /* OrbLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLogger.swift; sourceTree = "<group>"; };
+		FBB5032AE28DE /* OrbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbError.swift; sourceTree = "<group>"; };
 		F6708BA67C498 /* AppBootstrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapTests.swift; sourceTree = "<group>"; };
 		FB6A89BD2CFE1 /* TestTargetLinkageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTargetLinkageTests.swift; sourceTree = "<group>"; };
 		FC3D6E08B7F00 /* ModuleStructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStructureTests.swift; sourceTree = "<group>"; };
+		FAB4EAE762F00 /* OrbLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLoggerTests.swift; sourceTree = "<group>"; };
 		FEE87E5576ECB /* AppLaunchIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchIntegrationTests.swift; sourceTree = "<group>"; };
 		F9AC2DEF54E32 /* CIScriptIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIScriptIntegrationTests.swift; sourceTree = "<group>"; };
 		FEE84960916EE /* ModuleStructureIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStructureIntegrationTests.swift; sourceTree = "<group>"; };
+		F6FD48727C39E /* OrbLoggerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLoggerIntegrationTests.swift; sourceTree = "<group>"; };
 		FE3EFB4BDE16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50000010000000000000001 /* Orb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000020000000000000001 /* OrbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +72,8 @@
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-
+				FBB5032AE28DE /* OrbError.swift */,
+				F2B360FA29964 /* OrbLogger.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -122,6 +131,7 @@
 			children = (
 				F6708BA67C498 /* AppBootstrapTests.swift */,
 				FC3D6E08B7F00 /* ModuleStructureTests.swift */,
+				FAB4EAE762F00 /* OrbLoggerTests.swift */,
 				FB6A89BD2CFE1 /* TestTargetLinkageTests.swift */,
 			);
 			path = OrbTests;
@@ -133,6 +143,7 @@
 				FEE87E5576ECB /* AppLaunchIntegrationTests.swift */,
 				F9AC2DEF54E32 /* CIScriptIntegrationTests.swift */,
 				FEE84960916EE /* ModuleStructureIntegrationTests.swift */,
+				F6FD48727C39E /* OrbLoggerIntegrationTests.swift */,
 			);
 			path = OrbIntegrationTests;
 			sourceTree = "<group>";
@@ -205,16 +216,20 @@
 				B999E3CF8486B /* OrbApp.swift in Sources */,
 				BA0F01189B8C7 /* AppDelegate.swift in Sources */,
 				B0E071672E1EB /* ContentView.swift in Sources */,
+				B72ED217F1434 /* OrbLogger.swift in Sources */,
+				B50613AA229CE /* OrbError.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
 				BA3EDDAFB1168 /* AppBootstrapTests.swift in Sources */,
 				BD0E4F0BF4151 /* TestTargetLinkageTests.swift in Sources */,
 				BE0EE1B7590F0 /* ModuleStructureTests.swift in Sources */,
+				BBD608FBC4A70 /* OrbLoggerTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
 				BAEA452F10CBB /* AppLaunchIntegrationTests.swift in Sources */,
 				BA7F3F161F582 /* CIScriptIntegrationTests.swift in Sources */,
 				BBB5610C0475E /* ModuleStructureIntegrationTests.swift in Sources */,
+				B2FF0F4C1618E /* OrbLoggerIntegrationTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
