@@ -498,6 +498,9 @@
 		8C1E2D8380F34249850437B4 /* CrashRecoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB109E7E189423CAA1D9E6A /* CrashRecoveryService.swift */; };
 		0BC35A9147B24C649732B2B4 /* CrashRecoveryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C107C09EE4BA191692D7C /* CrashRecoveryServiceTests.swift */; };
 		1FEB0CABB41F40DFB235A02D /* CrashRecoveryServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45C836D91084DB39BBCEC4E /* CrashRecoveryServiceIntegrationTests.swift */; };
+		EE8E7F27468043B5B8536F5D /* ThumbnailRepairService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF105F436D6401CB9028AA2 /* ThumbnailRepairService.swift */; };
+		6CF1B303F5834FBAA3C91E8F /* ThumbnailRepairServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DB44EDB2DA42628BE3034A /* ThumbnailRepairServiceTests.swift */; };
+		77FCFC494919478893739590 /* ThumbnailRepairServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31506BF919174665B9FDCC37 /* ThumbnailRepairServiceIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1003,6 +1006,9 @@
 		1BB109E7E189423CAA1D9E6A /* CrashRecoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryService.swift; sourceTree = "<group>"; };
 		A02C107C09EE4BA191692D7C /* CrashRecoveryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryServiceTests.swift; sourceTree = "<group>"; };
 		D45C836D91084DB39BBCEC4E /* CrashRecoveryServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		BEF105F436D6401CB9028AA2 /* ThumbnailRepairService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRepairService.swift; sourceTree = "<group>"; };
+		47DB44EDB2DA42628BE3034A /* ThumbnailRepairServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRepairServiceTests.swift; sourceTree = "<group>"; };
+		31506BF919174665B9FDCC37 /* ThumbnailRepairServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRepairServiceIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1225,6 +1231,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEF105F436D6401CB9028AA2 /* ThumbnailRepairService.swift */,
 				1BB109E7E189423CAA1D9E6A /* CrashRecoveryService.swift */,
 				5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */,
 				17789ED777614EABA558ECFB /* LaunchAtLoginService.swift */,
@@ -1248,6 +1255,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				47DB44EDB2DA42628BE3034A /* ThumbnailRepairServiceTests.swift */,
 				A02C107C09EE4BA191692D7C /* CrashRecoveryServiceTests.swift */,
 				473178482C5441CC92866117 /* PresentationModeObserverTests.swift */,
 				4326A078EFDB4464A9FDDD24 /* LaunchAtLoginServiceTests.swift */,
@@ -1418,6 +1426,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				31506BF919174665B9FDCC37 /* ThumbnailRepairServiceIntegrationTests.swift */,
 				D45C836D91084DB39BBCEC4E /* CrashRecoveryServiceIntegrationTests.swift */,
 				807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */,
 				75D918E5400045F3AA60032C /* LaunchAtLoginServiceIntegrationTests.swift */,
@@ -1645,6 +1654,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				EE8E7F27468043B5B8536F5D /* ThumbnailRepairService.swift in Sources */,
 				8C1E2D8380F34249850437B4 /* CrashRecoveryService.swift in Sources */,
 				E8BAFB269EEB46E7B1180DAF /* PresentationModeObserver.swift in Sources */,
 				78C746EA074B4E269580402D /* LaunchAtLoginService.swift in Sources */,
@@ -1691,6 +1701,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				6CF1B303F5834FBAA3C91E8F /* ThumbnailRepairServiceTests.swift in Sources */,
 				0BC35A9147B24C649732B2B4 /* CrashRecoveryServiceTests.swift in Sources */,
 				B63E0ED22C8D4AEEA75BFE05 /* PresentationModeObserverTests.swift in Sources */,
 				2D414C84B5AA4FE5B596FD9B /* LaunchAtLoginServiceTests.swift in Sources */,
@@ -1734,6 +1745,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				77FCFC494919478893739590 /* ThumbnailRepairServiceIntegrationTests.swift in Sources */,
 				1FEB0CABB41F40DFB235A02D /* CrashRecoveryServiceIntegrationTests.swift in Sources */,
 				16CB81C551954FD192D44253 /* PresentationModeObserverIntegrationTests.swift in Sources */,
 				28D23FC016B2461AA766C6B4 /* LaunchAtLoginServiceIntegrationTests.swift in Sources */,
