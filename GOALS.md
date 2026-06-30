@@ -43,7 +43,7 @@ Establish the macOS app shell, module layout, and CI test runner.
 
 ### Step 0.3: Define Module Folder Structure
 
-- [ ] **Function:** Create empty module directories: `Core/`, `Storage/`, `Capture/`, `UI/`, `Search/`, `AI/`, `Services/`.
+- [x] **Function:** Create empty module directories: `Core/`, `Storage/`, `Capture/`, `UI/`, `Search/`, `AI/`, `Services/`.
 - **Unit tests:**
   - `testModuleFoldersExist`
 - **Integration tests:**
