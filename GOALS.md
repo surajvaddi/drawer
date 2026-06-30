@@ -34,7 +34,7 @@ Establish the macOS app shell, module layout, and CI test runner.
 
 ### Step 0.2: Add Test Targets and CI Script
 
-- [ ] **Function:** Add `OrbTests` and `OrbIntegrationTests` targets plus `scripts/test.sh` that runs `xcodebuild test`.
+- [x] **Function:** Add `OrbTests` and `OrbIntegrationTests` targets plus `scripts/test.sh` that runs `xcodebuild test`.
 - **Unit tests:**
   - `testTestTargetsAreLinkedToOrb`
 - **Integration tests:**

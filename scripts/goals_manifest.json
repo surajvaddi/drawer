@@ -1,0 +1,82 @@
+{
+  "order": ["0.1", "0.2", "0.3", "0.4", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6"],
+  "steps": {
+    "0.1": {
+      "message": "chore: scaffold Orb macOS app target with SwiftUI lifecycle",
+      "targets": ["Orb"],
+      "orb": ["Orb/OrbApp.swift", "Orb/AppDelegate.swift", "Orb/ContentView.swift", "Orb/Info.plist"],
+      "other": ["Orb.xcodeproj/xcshareddata/xcschemes/Orb.xcscheme"]
+    },
+    "0.2": {
+      "message": "chore: add unit and integration test targets with CI script",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orbtests": ["OrbTests/AppBootstrapTests.swift", "OrbTests/TestTargetLinkageTests.swift"],
+      "integration": ["OrbIntegrationTests/AppLaunchIntegrationTests.swift", "OrbIntegrationTests/CIScriptIntegrationTests.swift"],
+      "other": ["scripts/test.sh", "scripts/add_sources.py", "scripts/generate_pbxproj.py", "scripts/goals_manifest.json", "scripts/commit_goals_steps.py"]
+    },
+    "0.3": {
+      "message": "chore: establish Orb module directory structure",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "other": [
+        "Orb/Storage/.gitkeep",
+        "Orb/Capture/.gitkeep",
+        "Orb/UI/.gitkeep",
+        "Orb/Search/.gitkeep",
+        "Orb/AI/.gitkeep",
+        "Orb/Services/.gitkeep"
+      ],
+      "orbtests": ["OrbTests/ModuleStructureTests.swift"],
+      "integration": ["OrbIntegrationTests/ModuleStructureIntegrationTests.swift"]
+    },
+    "0.4": {
+      "message": "feat(core): add shared logging and error types",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/OrbLogger.swift", "Orb/Core/OrbError.swift"],
+      "orbtests": ["OrbTests/OrbLoggerTests.swift"],
+      "integration": ["OrbIntegrationTests/OrbLoggerIntegrationTests.swift"],
+      "patches": ["Orb/AppDelegate.swift"]
+    },
+    "1.1": {
+      "message": "feat(core): add ItemType, SensitivityLevel, and CaptureMethod enums",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/ItemType.swift"],
+      "orbtests": ["OrbTests/ItemTypeTests.swift"],
+      "integration": ["OrbIntegrationTests/ItemTypeIntegrationTests.swift"]
+    },
+    "1.2": {
+      "message": "feat(core): add Item domain model",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/Item.swift"],
+      "orbtests": ["OrbTests/ItemModelTests.swift"],
+      "integration": ["OrbIntegrationTests/ItemModelIntegrationTests.swift"]
+    },
+    "1.3": {
+      "message": "feat(core): add Drawer domain model",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/Drawer.swift"],
+      "orbtests": ["OrbTests/DrawerModelTests.swift"],
+      "integration": ["OrbIntegrationTests/DrawerModelIntegrationTests.swift"]
+    },
+    "1.4": {
+      "message": "feat(core): add Tag and ItemTag models",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/Tag.swift"],
+      "orbtests": ["OrbTests/TagModelTests.swift"],
+      "integration": ["OrbIntegrationTests/TagModelIntegrationTests.swift"]
+    },
+    "1.5": {
+      "message": "feat(core): add Blob, Embedding, and CaptureEvent models",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/Blob.swift"],
+      "orbtests": ["OrbTests/BlobModelTests.swift"],
+      "integration": ["OrbIntegrationTests/BlobModelIntegrationTests.swift"]
+    },
+    "1.6": {
+      "message": "feat(core): add DrawerRule and AIAnnotation models",
+      "targets": ["Orb", "OrbTests", "OrbIntegrationTests"],
+      "orb": ["Orb/Core/DrawerRule.swift"],
+      "orbtests": ["OrbTests/DrawerRuleModelTests.swift"],
+      "integration": ["OrbIntegrationTests/DrawerRuleModelIntegrationTests.swift"]
+    }
+  }
+}
