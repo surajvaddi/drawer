@@ -11,6 +11,13 @@ struct Tag: Identifiable, Codable, Equatable, Sendable {
         self.color = color
     }
 
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        name = Tag.normalize(try container.decode(String.self, forKey: .name))
+        color = try container.decodeIfPresent(String.self, forKey: .color)
+    }
+
     static func normalize(_ name: String) -> String {
         name.trimmingCharacters(in: .whitespacesAndNewlines)
             .lowercased()

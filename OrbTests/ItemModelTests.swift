@@ -19,8 +19,9 @@ final class ItemModelTests: XCTestCase {
 
     func testItemEquality() {
         let id = UUID().uuidString
-        let a = Item(id: id, type: .url, title: "A")
-        let b = Item(id: id, type: .url, title: "A")
+        let now = Date(timeIntervalSince1970: 1_000)
+        let a = Item(id: id, type: .url, title: "A", createdAt: now, updatedAt: now)
+        let b = Item(id: id, type: .url, title: "A", createdAt: now, updatedAt: now)
         XCTAssertEqual(a, b)
     }
 

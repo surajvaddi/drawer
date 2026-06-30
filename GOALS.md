@@ -371,7 +371,7 @@ Pasteboard observation and save pipeline.
 
 ### Step 6.1: Pasteboard Change Detector
 
-- [ ] **Function:** `PasteboardMonitor` — poll `changeCount`, emit `clipboardDidChange`.
+- [x] **Function:** `PasteboardMonitor` — poll `changeCount`, emit `clipboardDidChange`.
 - **Unit tests:**
   - `testDetectsChangeCountIncrement`
   - `testIgnoresDuplicateChangeCount`
@@ -381,7 +381,7 @@ Pasteboard observation and save pipeline.
 
 ### Step 6.2: Pasteboard Type Classifier
 
-- [ ] **Function:** `PasteboardClassifier` — map available types to `ItemType` candidates.
+- [x] **Function:** `PasteboardClassifier` — map available types to `ItemType` candidates.
 - **Unit tests:**
   - `testClassifyPlainText`
   - `testClassifyURL`
@@ -393,7 +393,7 @@ Pasteboard observation and save pipeline.
 
 ### Step 6.3: Pasteboard Content Reader
 
-- [ ] **Function:** `PasteboardReader` — read best representation (text, URL, image, file URLs).
+- [x] **Function:** `PasteboardReader` — read best representation (text, URL, image, file URLs).
 - **Unit tests:**
   - `testReadPlainText`
   - `testReadFileURLList`
@@ -404,7 +404,7 @@ Pasteboard observation and save pipeline.
 
 ### Step 6.4: Clipboard Save Pipeline
 
-- [ ] **Function:** `ClipboardSavePipeline` — read → normalize → `StorageCoordinator.save`.
+- [x] **Function:** `ClipboardSavePipeline` — read → normalize → `StorageCoordinator.save`.
 - **Unit tests:**
   - `testSaveTextClipboardCreatesItem`
   - `testSaveImageClipboardCreatesBlob`
@@ -414,7 +414,7 @@ Pasteboard observation and save pipeline.
 
 ### Step 6.5: Clipboard Write-Back
 
-- [ ] **Function:** `PasteboardWriter` — copy saved item content back to general pasteboard.
+- [x] **Function:** `PasteboardWriter` — copy saved item content back to general pasteboard.
 - **Unit tests:**
   - `testWriteTextToPasteboard`
   - `testWriteImageToPasteboard`
@@ -424,7 +424,7 @@ Pasteboard observation and save pipeline.
 
 ### Step 6.6: Clipboard Pause and Privacy Flags
 
-- [ ] **Function:** `ClipboardWatchSettings` — pause watching, private mode, excluded apps check.
+- [x] **Function:** `ClipboardWatchSettings` — pause watching, private mode, excluded apps check.
 - **Unit tests:**
   - `testPauseStopsChangeNotifications`
   - `testExcludedAppBlocksPulse`
@@ -440,7 +440,7 @@ Normalize raw captures into items.
 
 ### Step 7.1: URL Detector and Normalizer
 
-- [ ] **Function:** `URLNormalizer` — detect URLs in text, normalize scheme/host.
+- [x] **Function:** `URLNormalizer` — detect URLs in text, normalize scheme/host.
 - **Unit tests:**
   - `testDetectURLInText`
   - `testNormalizeRemovesTrackingParams`
@@ -450,7 +450,7 @@ Normalize raw captures into items.
 
 ### Step 7.2: Text Normalizer
 
-- [ ] **Function:** `TextNormalizer` — trim, collapse whitespace, generate preview.
+- [x] **Function:** `TextNormalizer` — trim, collapse whitespace, generate preview.
 - **Unit tests:**
   - `testCollapseWhitespace`
   - `testPreviewTruncatesAtLimit`
@@ -460,7 +460,7 @@ Normalize raw captures into items.
 
 ### Step 7.3: Code Snippet Detector
 
-- [ ] **Function:** `CodeSnippetDetector` — heuristics for code vs prose, language guess.
+- [x] **Function:** `CodeSnippetDetector` — heuristics for code vs prose, language guess.
 - **Unit tests:**
   - `testDetectSwiftCodeBlock`
   - `testDetectPythonFromKeywords`
@@ -470,7 +470,7 @@ Normalize raw captures into items.
 
 ### Step 7.4: Item Shell Factory
 
-- [ ] **Function:** `ItemFactory` — build `Item` shell from classified capture payload.
+- [x] **Function:** `ItemFactory` — build `Item` shell from classified capture payload.
 - **Unit tests:**
   - `testFactorySetsTypeAndTimestamps`
   - `testFactoryAssignsInboxDrawerByDefault`
@@ -480,7 +480,7 @@ Normalize raw captures into items.
 
 ### Step 7.5: Capture Event Logger Integration
 
-- [ ] **Function:** Wire `CaptureEventRepository` into all save pipelines.
+- [x] **Function:** Wire `CaptureEventRepository` into all save pipelines.
 - **Unit tests:**
   - `testClipboardSaveLogsCaptureEvent`
   - `testDragDropLogsCaptureEvent`
@@ -490,7 +490,7 @@ Normalize raw captures into items.
 
 ### Step 7.6: Source App Attribution
 
-- [ ] **Function:** `SourceAppResolver` — capture frontmost app bundle/name/window title.
+- [x] **Function:** `SourceAppResolver` — capture frontmost app bundle/name/window title.
 - **Unit tests:**
   - `testResolveBundleID`
   - `testGracefulFallbackWhenUnknown`
@@ -506,7 +506,7 @@ Compact drawer column anchored to orb.
 
 ### Step 8.1: Drawer Panel Window
 
-- [ ] **Function:** `DrawerPanel` — vertical panel anchored near orb, 360px width, rounded.
+- [x] **Function:** `DrawerPanel` — vertical panel anchored near orb, 360px width, rounded.
 - **Unit tests:**
   - `testDrawerAnchorsToOrbPosition`
   - `testDrawerMaxHeight80PercentScreen`
@@ -516,7 +516,7 @@ Compact drawer column anchored to orb.
 
 ### Step 8.2: Drawer Root Layout
 
-- [ ] **Function:** `DrawerView` — sections: search bar, quick actions, inbox, drawers list.
+- [x] **Function:** `DrawerView` — sections: search bar, quick actions, inbox, drawers list.
 - **Unit tests:**
   - `testDrawerSectionsRender`
   - `testDrawerStartsWithSearchFocused`
@@ -526,7 +526,7 @@ Compact drawer column anchored to orb.
 
 ### Step 8.3: Search Bar Component
 
-- [ ] **Function:** `DrawerSearchBar` — search field with placeholder and clear button.
+- [x] **Function:** `DrawerSearchBar` — search field with placeholder and clear button.
 - **Unit tests:**
   - `testSearchTextBinding`
   - `testClearButtonResetsQuery`
@@ -536,7 +536,7 @@ Compact drawer column anchored to orb.
 
 ### Step 8.4: Quick Actions Row
 
-- [ ] **Function:** `QuickActionsRow` — Save Clipboard, Screenshot, New Drawer buttons.
+- [x] **Function:** `QuickActionsRow` — Save Clipboard, Screenshot, New Drawer buttons.
 - **Unit tests:**
   - `testQuickActionCallbacksFire`
 - **Integration tests:**
@@ -545,7 +545,7 @@ Compact drawer column anchored to orb.
 
 ### Step 8.5: Inbox Item List
 
-- [ ] **Function:** `InboxListView` — recent unsorted items from Inbox drawer.
+- [x] **Function:** `InboxListView` — recent unsorted items from Inbox drawer.
 - **Unit tests:**
   - `testInboxListsMostRecentFirst`
   - `testEmptyInboxShowsPlaceholder`
@@ -555,7 +555,7 @@ Compact drawer column anchored to orb.
 
 ### Step 8.6: Drawer List Sidebar
 
-- [ ] **Function:** `DrawerListView` — color-coded drawers, expand/collapse nesting.
+- [x] **Function:** `DrawerListView` — color-coded drawers, expand/collapse nesting.
 - **Unit tests:**
   - `testNestedDrawerIndentation`
   - `testDrawerSelectionFiltersItems`
