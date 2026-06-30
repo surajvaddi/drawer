@@ -273,6 +273,9 @@
 		325722250B15479FA7280130 /* MigrationV6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DE4FDC27544F8ABEAC2EF /* MigrationV6Tests.swift */; };
 		FF9D823E28B44C6EAA66A317 /* FactCardRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */; };
 		FDA9AF0781E342BAADB85F2E /* FactCardRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */; };
+		D94B6D08E9D744549B1BA29E /* FTSQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8103A2D2AAE8481E828DAB29 /* FTSQueryBuilder.swift */; };
+		D5642E27AE8841BE9959000B /* FTSQueryBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952038C6C92B457EA64E50D6 /* FTSQueryBuilderTests.swift */; };
+		4F703FC4B9D74E91A0FEB1A8 /* FTSQueryBuilderIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FB7A3E22E4F13B987A424 /* FTSQueryBuilderIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -553,6 +556,9 @@
 		DD6DE4FDC27544F8ABEAC2EF /* MigrationV6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV6Tests.swift; sourceTree = "<group>"; };
 		49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCardRepositoryTests.swift; sourceTree = "<group>"; };
 		CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCardRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
+		8103A2D2AAE8481E828DAB29 /* FTSQueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSQueryBuilder.swift; sourceTree = "<group>"; };
+		952038C6C92B457EA64E50D6 /* FTSQueryBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSQueryBuilderTests.swift; sourceTree = "<group>"; };
+		979FB7A3E22E4F13B987A424 /* FTSQueryBuilderIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTSQueryBuilderIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -701,6 +707,7 @@
 		A700000A0000000000000001 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				8103A2D2AAE8481E828DAB29 /* FTSQueryBuilder.swift */,
 
 			);
 			path = Search;
@@ -726,6 +733,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				952038C6C92B457EA64E50D6 /* FTSQueryBuilderTests.swift */,
 				49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */,
 				DD6DE4FDC27544F8ABEAC2EF /* MigrationV6Tests.swift */,
 				CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */,
@@ -822,6 +830,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				979FB7A3E22E4F13B987A424 /* FTSQueryBuilderIntegrationTests.swift */,
 				CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */,
 				DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */,
 				BC0F78FA5052429A9B6DB6E0 /* BulkItemActionsIntegrationTests.swift */,
