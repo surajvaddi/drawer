@@ -50,7 +50,8 @@ struct ItemRepository: Sendable {
               is_archived=\(updated.isArchived ? 1 : 0),
               sensitivity='\(escape(updated.sensitivity.rawValue))',
               user_note=\(sqlOptional(updated.userNote)),
-              sort_order=\(updated.sortOrder)
+              sort_order=\(updated.sortOrder),
+              source_item_id=\(sqlOptional(updated.sourceItemId))
             WHERE id='\(escape(updated.id))';
             """
         )
@@ -113,6 +114,39 @@ struct ItemRepository: Sendable {
         )
     }
 
+    func updateLastAccessed(id: String, at date: Date = Date()) throws {
+        try manager.exec(
+            """
+            UPDATE items SET last_accessed_at='\(DBDateCodec.string(from: date))', updated_at='\(DBDateCodec.string(from: date))'
+            WHERE id='\(escape(id))';
+            """
+        )
+    }
+
+    func bulkArchive(ids: [String]) throws {
+        for id in ids {
+            try archive(id: id)
+        }
+    }
+
+    func bulkDelete(ids: [String]) throws {
+        for id in ids {
+            try delete(id: id)
+        }
+    }
+
+    func listAll(includeArchived: Bool = false) throws -> [Item] {
+        var stmt: OpaquePointer?
+        defer { sqlite3_finalize(stmt) }
+        let sql = includeArchived
+            ? "SELECT * FROM items ORDER BY created_at DESC;"
+            : "SELECT * FROM items WHERE is_archived = 0 ORDER BY created_at DESC;"
+        guard sqlite3_prepare_v2(manager.db, sql, -1, &stmt, nil) == SQLITE_OK else {
+            throw OrbError.storage("prepare list all items failed")
+        }
+        return try collect(stmt)
+    }
+
     func archive(id: String) throws {
         try manager.exec(
             """
@@ -128,7 +162,7 @@ struct ItemRepository: Sendable {
             INSERT INTO items (
               id, type, title, preview, content_text, content_html, source_url, source_app,
               source_window_title, original_created_at, created_at, updated_at, last_accessed_at,
-              drawer_id, is_pinned, is_favorite, is_archived, sensitivity, user_note, sort_order
+              drawer_id, is_pinned, is_favorite, is_archived, sensitivity, user_note, sort_order, source_item_id
             ) VALUES (
               '\(escape(item.id))',
               '\(escape(item.type.rawValue))',
@@ -149,7 +183,8 @@ struct ItemRepository: Sendable {
               \(item.isArchived ? 1 : 0),
               '\(escape(item.sensitivity.rawValue))',
               \(sqlOptional(item.userNote)),
-              \(item.sortOrder)
+              \(item.sortOrder),
+              \(sqlOptional(item.sourceItemId))
             );
             """
         )
@@ -201,7 +236,8 @@ struct ItemRepository: Sendable {
             isArchived: sqlite3_column_int(stmt, 16) == 1,
             sensitivity: sensitivity,
             userNote: sqlite3_column_count(stmt) > 18 ? text(18) : nil,
-            sortOrder: sqlite3_column_count(stmt) > 19 ? Int(sqlite3_column_int(stmt, 19)) : 0
+            sortOrder: sqlite3_column_count(stmt) > 19 ? Int(sqlite3_column_int(stmt, 19)) : 0,
+            sourceItemId: sqlite3_column_count(stmt) > 20 ? text(20) : nil
         )
     }
 
