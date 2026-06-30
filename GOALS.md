@@ -177,7 +177,7 @@ SQLite persistence, migrations, and application support paths.
 
 ### Step 2.5: FTS5 and Embeddings Migration
 
-- [ ] **Function:** Migration v3 for `items_fts` virtual table and `embeddings` table.
+- [x] **Function:** Migration v3 for `items_fts` virtual table and `embeddings` table.
 - **Unit tests:**
   - `testFTSTableTriggersExist`
   - `testEmbeddingDimensionsColumn`
