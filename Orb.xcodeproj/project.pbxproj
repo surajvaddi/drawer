@@ -32,6 +32,9 @@
 		E425581ECC174397B809B185 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */; };
 		B271C25DB9D64181912F9AF0 /* TagModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE7560E3204CCD877A14CB /* TagModelTests.swift */; };
 		6DF6C15A86214782852BA47B /* TagModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */; };
+		5FFE1EBAF784422191FCA877 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71D9C9331D412D90348CB4 /* Blob.swift */; };
+		A4FA8B0869E542B1AE8291D0 /* BlobModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728272678FB49BA9AD16F8F /* BlobModelTests.swift */; };
+		0CF685B222B64E84ADC48C20 /* BlobModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6789F23AF38B4698BE66FF7E /* BlobModelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		62AE7560E3204CCD877A14CB /* TagModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModelTests.swift; sourceTree = "<group>"; };
 		E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModelIntegrationTests.swift; sourceTree = "<group>"; };
+		3F71D9C9331D412D90348CB4 /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
+		C728272678FB49BA9AD16F8F /* BlobModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobModelTests.swift; sourceTree = "<group>"; };
+		6789F23AF38B4698BE66FF7E /* BlobModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobModelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3F71D9C9331D412D90348CB4 /* Blob.swift */,
 				338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */,
 				475E90B58E8D4213BDB090B3 /* Drawer.swift */,
 				2EB8489C2B8E4C5BB87C2E4A /* Item.swift */,
@@ -158,6 +165,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				C728272678FB49BA9AD16F8F /* BlobModelTests.swift */,
 				62AE7560E3204CCD877A14CB /* TagModelTests.swift */,
 				DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */,
 				E403A01BE428446085687007 /* ItemModelTests.swift */,
@@ -173,6 +181,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				6789F23AF38B4698BE66FF7E /* BlobModelIntegrationTests.swift */,
 				E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */,
 				2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */,
 				03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */,
@@ -296,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFE1EBAF784422191FCA877 /* Blob.swift in Sources */,
 				E425581ECC174397B809B185 /* Tag.swift in Sources */,
 				AB6779DD702E4F298FB1E510 /* Drawer.swift in Sources */,
 				01036EEE5CEC40EF80F04E49 /* Item.swift in Sources */,
@@ -312,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FA8B0869E542B1AE8291D0 /* BlobModelTests.swift in Sources */,
 				B271C25DB9D64181912F9AF0 /* TagModelTests.swift in Sources */,
 				B8AD5B2A8F42495DADA8851C /* DrawerModelTests.swift in Sources */,
 				DD61F9F2245F4428AD40588B /* ItemModelTests.swift in Sources */,
@@ -327,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF685B222B64E84ADC48C20 /* BlobModelIntegrationTests.swift in Sources */,
 				6DF6C15A86214782852BA47B /* TagModelIntegrationTests.swift in Sources */,
 				B1611538531F48FAB52EA96E /* DrawerModelIntegrationTests.swift in Sources */,
 				D216CECF432C475391050F11 /* ItemModelIntegrationTests.swift in Sources */,
