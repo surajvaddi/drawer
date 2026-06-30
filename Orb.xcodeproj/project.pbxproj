@@ -480,6 +480,9 @@
 		9AE8F61D832C44C385371ADE /* LibraryWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A30D3226C4145A34D56D8 /* LibraryWindow.swift */; };
 		ABF0BE2A3FA14382B7EE5F08 /* LibraryWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDB21F2E8994C8498553396 /* LibraryWindowTests.swift */; };
 		E7A7C86C16124EE4A0DF9DFB /* LibraryWindowIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF3C68B64824235943382E6 /* LibraryWindowIntegrationTests.swift */; };
+		CD9E6C9441AC4D71AC67454F /* BulkOrganizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8C6FB56D534F47B0F76660 /* BulkOrganizationView.swift */; };
+		267D4E0AE50F458C8A9E1CF7 /* BulkOrganizationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4A6E432EFF464A8FD94739 /* BulkOrganizationViewTests.swift */; };
+		19895A7641204485BDC47DA1 /* BulkOrganizationViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6727275301134F30923456A4 /* BulkOrganizationViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -967,6 +970,9 @@
 		6B2A30D3226C4145A34D56D8 /* LibraryWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryWindow.swift; sourceTree = "<group>"; };
 		6BDB21F2E8994C8498553396 /* LibraryWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryWindowTests.swift; sourceTree = "<group>"; };
 		2EF3C68B64824235943382E6 /* LibraryWindowIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryWindowIntegrationTests.swift; sourceTree = "<group>"; };
+		5C8C6FB56D534F47B0F76660 /* BulkOrganizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkOrganizationView.swift; sourceTree = "<group>"; };
+		BA4A6E432EFF464A8FD94739 /* BulkOrganizationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkOrganizationViewTests.swift; sourceTree = "<group>"; };
+		6727275301134F30923456A4 /* BulkOrganizationViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkOrganizationViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1092,6 +1098,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5C8C6FB56D534F47B0F76660 /* BulkOrganizationView.swift */,
 				6B2A30D3226C4145A34D56D8 /* LibraryWindow.swift */,
 				D321DDBCFAC74EA6BE884A36 /* ExportImportView.swift */,
 				5E1724B7533A45B781AA8608 /* StorageSettingsView.swift */,
@@ -1206,6 +1213,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA4A6E432EFF464A8FD94739 /* BulkOrganizationViewTests.swift */,
 				6BDB21F2E8994C8498553396 /* LibraryWindowTests.swift */,
 				6ED2EAAA16F84E0DA9C34C58 /* ExportImportViewTests.swift */,
 				A485A61E85FA479DB3D7D5D3 /* MarkdownImportServiceTests.swift */,
@@ -1370,6 +1378,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				6727275301134F30923456A4 /* BulkOrganizationViewIntegrationTests.swift */,
 				2EF3C68B64824235943382E6 /* LibraryWindowIntegrationTests.swift */,
 				DA84A41D4AC6456CB7789888 /* ExportImportViewIntegrationTests.swift */,
 				332E340075B14BA4BCCD3AC1 /* MarkdownImportServiceIntegrationTests.swift */,
@@ -1591,6 +1600,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				CD9E6C9441AC4D71AC67454F /* BulkOrganizationView.swift in Sources */,
 				9AE8F61D832C44C385371ADE /* LibraryWindow.swift in Sources */,
 				A03A55D0525641ABA6A8FD1D /* ExportImportView.swift in Sources */,
 				7786E77CBAAC48AC9D2B1061 /* MarkdownImportService.swift in Sources */,
@@ -1631,6 +1641,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				267D4E0AE50F458C8A9E1CF7 /* BulkOrganizationViewTests.swift in Sources */,
 				ABF0BE2A3FA14382B7EE5F08 /* LibraryWindowTests.swift in Sources */,
 				00C0D32009404EC0BF5BC608 /* ExportImportViewTests.swift in Sources */,
 				0603685A80E144AB8B157EF0 /* MarkdownImportServiceTests.swift in Sources */,
@@ -1668,6 +1679,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				19895A7641204485BDC47DA1 /* BulkOrganizationViewIntegrationTests.swift in Sources */,
 				E7A7C86C16124EE4A0DF9DFB /* LibraryWindowIntegrationTests.swift in Sources */,
 				820884BCDA044162B360B422 /* ExportImportViewIntegrationTests.swift in Sources */,
 				AFA05991FF654D06B4954115 /* MarkdownImportServiceIntegrationTests.swift in Sources */,
