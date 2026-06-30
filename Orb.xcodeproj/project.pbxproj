@@ -362,6 +362,9 @@
 		D25624EB4DBA472DAD6E2C6A /* ClipboardPreviewCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC506E6755745A39DD2D283 /* ClipboardPreviewCleaner.swift */; };
 		774DD5D2BE234A8CA543CB2C /* ClipboardPreviewCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */; };
 		05796E8E6BFF4A5C98596C76 /* ClipboardPreviewCleanerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */; };
+		CF1884D443414DB484E9C06C /* PrivateModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8DDF1BA82C4443B52EA926 /* PrivateModeController.swift */; };
+		98D5A81683844ADC85781B6B /* PrivateModeControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69D40EDA7B4189A5F2891B /* PrivateModeControllerTests.swift */; };
+		5F4AC3DC725F4E8EAC461B53 /* PrivateModeControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1A1B001F34D59871D2B8E /* PrivateModeControllerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -731,6 +734,9 @@
 		DAC506E6755745A39DD2D283 /* ClipboardPreviewCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPreviewCleaner.swift; sourceTree = "<group>"; };
 		D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPreviewCleanerTests.swift; sourceTree = "<group>"; };
 		D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPreviewCleanerIntegrationTests.swift; sourceTree = "<group>"; };
+		8E8DDF1BA82C4443B52EA926 /* PrivateModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateModeController.swift; sourceTree = "<group>"; };
+		8C69D40EDA7B4189A5F2891B /* PrivateModeControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateModeControllerTests.swift; sourceTree = "<group>"; };
+		C2A1A1B001F34D59871D2B8E /* PrivateModeControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateModeControllerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -929,6 +935,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				8C69D40EDA7B4189A5F2891B /* PrivateModeControllerTests.swift */,
 				D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */,
 				077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */,
 				2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */,
@@ -1055,6 +1062,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				C2A1A1B001F34D59871D2B8E /* PrivateModeControllerIntegrationTests.swift */,
 				D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */,
 				32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */,
 				B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */,
