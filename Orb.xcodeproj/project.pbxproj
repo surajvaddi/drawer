@@ -291,6 +291,9 @@
 		BBB3D6666CE8497E9DBD4ABA /* FuzzySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AD7FA635E145E0A484DAED /* FuzzySearchService.swift */; };
 		86C33921D3DA460DAB8EAAE5 /* FuzzySearchServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF2BB8BBA64D73B2C1E0DC /* FuzzySearchServiceTests.swift */; };
 		E0BD25B0FA0442F493B50F31 /* FuzzySearchServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4B8AFB1D94AA08E84C090 /* FuzzySearchServiceIntegrationTests.swift */; };
+		9FDC89C105B64B248C79C7B3 /* QuickPastePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */; };
+		D13FC9329D8B47C48D0A1415 /* QuickPastePanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */; };
+		036CB6A49F1C4C68B423EE56 /* QuickPastePanelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -589,6 +592,9 @@
 		15AD7FA635E145E0A484DAED /* FuzzySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzySearchService.swift; sourceTree = "<group>"; };
 		6EBF2BB8BBA64D73B2C1E0DC /* FuzzySearchServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzySearchServiceTests.swift; sourceTree = "<group>"; };
 		6CD4B8AFB1D94AA08E84C090 /* FuzzySearchServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzySearchServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPastePanel.swift; sourceTree = "<group>"; };
+		4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPastePanelTests.swift; sourceTree = "<group>"; };
+		ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPastePanelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -700,6 +706,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */,
 				3072F0DE18584369B98F7A5E /* DrawerSearchController.swift */,
 				D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */,
 				3A998E9DFDF74D66BBE6EA5C /* ItemFilterController.swift */,
@@ -768,6 +775,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */,
 				6EBF2BB8BBA64D73B2C1E0DC /* FuzzySearchServiceTests.swift */,
 				9AEBD54D2FD94A5B842939FE /* DrawerSearchControllerTests.swift */,
 				5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */,
@@ -870,6 +878,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */,
 				6CD4B8AFB1D94AA08E84C090 /* FuzzySearchServiceIntegrationTests.swift */,
 				577C6EF0F1354A86AE2A5FE2 /* DrawerSearchControllerIntegrationTests.swift */,
 				E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */,
