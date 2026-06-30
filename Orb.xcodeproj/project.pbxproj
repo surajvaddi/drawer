@@ -215,6 +215,9 @@
 		7FBCC9E6B1AF4ADA9B02E442 /* ScreenshotItemActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */; };
 		47C5FFBB76744DA0AACB57CE /* ScreenshotItemActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */; };
 		A8B96B7C580F4897B198A17C /* ScreenshotItemActionsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */; };
+		474094E0B46A4D298A25BADF /* FileImportValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE468475E6240CF881F4350 /* FileImportValidator.swift */; };
+		A8A93CFD641048DDBB287113 /* FileImportValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */; };
+		059F70B91CCB4C07B5792E53 /* FileImportValidatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,6 +440,9 @@
 		41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItemActions.swift; sourceTree = "<group>"; };
 		E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItemActionsTests.swift; sourceTree = "<group>"; };
 		BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItemActionsIntegrationTests.swift; sourceTree = "<group>"; };
+		9EE468475E6240CF881F4350 /* FileImportValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportValidator.swift; sourceTree = "<group>"; };
+		6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportValidatorTests.swift; sourceTree = "<group>"; };
+		B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportValidatorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +512,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				9EE468475E6240CF881F4350 /* FileImportValidator.swift */,
 				6FACC79BB47A40588A877600 /* OCRIndexer.swift */,
 				021DBB4AD5FC49799B75757D /* OCRService.swift */,
 				0EE5D58B10D34370AEA58947 /* ScreenshotSavePipeline.swift */,
@@ -589,6 +596,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */,
 				E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */,
 				01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */,
 				BB0EB7A77D264730A8EC62E3 /* OCRServiceTests.swift */,
@@ -666,6 +674,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */,
 				BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */,
 				68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */,
 				81832EF634634F1DA2038DE1 /* OCRServiceIntegrationTests.swift */,
