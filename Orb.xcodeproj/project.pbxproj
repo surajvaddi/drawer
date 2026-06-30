@@ -218,6 +218,9 @@
 		474094E0B46A4D298A25BADF /* FileImportValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE468475E6240CF881F4350 /* FileImportValidator.swift */; };
 		A8A93CFD641048DDBB287113 /* FileImportValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */; };
 		059F70B91CCB4C07B5792E53 /* FileImportValidatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */; };
+		EA82B1D5DE5A423FA586CD7E /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA08EE1438B84F27B6325490 /* FileImporter.swift */; };
+		1F122568D79A455A98CBC7BD /* FileImporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A64B38A579406EBAF65522 /* FileImporterTests.swift */; };
+		9006550520984505B200EC95 /* FileImporterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24223C565EAD4253BBFEF528 /* FileImporterIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -443,6 +446,9 @@
 		9EE468475E6240CF881F4350 /* FileImportValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportValidator.swift; sourceTree = "<group>"; };
 		6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportValidatorTests.swift; sourceTree = "<group>"; };
 		B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImportValidatorIntegrationTests.swift; sourceTree = "<group>"; };
+		DA08EE1438B84F27B6325490 /* FileImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImporter.swift; sourceTree = "<group>"; };
+		F7A64B38A579406EBAF65522 /* FileImporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImporterTests.swift; sourceTree = "<group>"; };
+		24223C565EAD4253BBFEF528 /* FileImporterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileImporterIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -512,6 +518,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				DA08EE1438B84F27B6325490 /* FileImporter.swift */,
 				9EE468475E6240CF881F4350 /* FileImportValidator.swift */,
 				6FACC79BB47A40588A877600 /* OCRIndexer.swift */,
 				021DBB4AD5FC49799B75757D /* OCRService.swift */,
@@ -596,6 +603,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				F7A64B38A579406EBAF65522 /* FileImporterTests.swift */,
 				6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */,
 				E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */,
 				01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */,
@@ -674,6 +682,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				24223C565EAD4253BBFEF528 /* FileImporterIntegrationTests.swift */,
 				B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */,
 				BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */,
 				68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */,
