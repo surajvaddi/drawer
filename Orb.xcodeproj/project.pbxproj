@@ -56,6 +56,10 @@
 		B9938257C11C4BC7A65D319D /* MigrationV4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3176DEBB77043EEB12FC45B /* MigrationV4.swift */; };
 		CE965C8640B442D0A0481E8C /* MigrationV4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F70C6980914E16BDEC465C /* MigrationV4Tests.swift */; };
 		3C1E0E3C5EA74CCFA11C5FDB /* MigrationV4IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6C83E0261433A9B25C963 /* MigrationV4IntegrationTests.swift */; };
+		E193EDF869A9410F97A8F6B8 /* OrbMigrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BDB251165F420982CF07C6 /* OrbMigrations.swift */; };
+		8735A8D2A6984D16B8DE4784 /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AF9C6A840F45E18295BE7D /* ItemRepository.swift */; };
+		0541BC0E55AE44B7B6A23E29 /* ItemRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4A14631024EDBA7DFA320 /* ItemRepositoryTests.swift */; };
+		081B7A39EF4943B6A97D8E9C /* ItemRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92D5B5D38954C8D80893297 /* ItemRepositoryIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +123,10 @@
 		A3176DEBB77043EEB12FC45B /* MigrationV4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV4.swift; sourceTree = "<group>"; };
 		97F70C6980914E16BDEC465C /* MigrationV4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV4Tests.swift; sourceTree = "<group>"; };
 		36A6C83E0261433A9B25C963 /* MigrationV4IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV4IntegrationTests.swift; sourceTree = "<group>"; };
+		C6BDB251165F420982CF07C6 /* OrbMigrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbMigrations.swift; sourceTree = "<group>"; };
+		65AF9C6A840F45E18295BE7D /* ItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
+		FCE4A14631024EDBA7DFA320 /* ItemRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepositoryTests.swift; sourceTree = "<group>"; };
+		C92D5B5D38954C8D80893297 /* ItemRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +171,8 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				65AF9C6A840F45E18295BE7D /* ItemRepository.swift */,
+				C6BDB251165F420982CF07C6 /* OrbMigrations.swift */,
 				A3176DEBB77043EEB12FC45B /* MigrationV4.swift */,
 				188BDE7FEAF84ED483176D2D /* MigrationV3.swift */,
 				749981777B124248814D7DF7 /* MigrationV2.swift */,
@@ -217,6 +227,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				FCE4A14631024EDBA7DFA320 /* ItemRepositoryTests.swift */,
 				97F70C6980914E16BDEC465C /* MigrationV4Tests.swift */,
 				49A1DD5B8C2D49C4AF016BB0 /* MigrationV3Tests.swift */,
 				88652CFEB8694633802FBBE3 /* MigrationV2Tests.swift */,
@@ -240,6 +251,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				C92D5B5D38954C8D80893297 /* ItemRepositoryIntegrationTests.swift */,
 				36A6C83E0261433A9B25C963 /* MigrationV4IntegrationTests.swift */,
 				B51B6AC3DDF4423F883ABA9E /* MigrationV3IntegrationTests.swift */,
 				D93A6C2A7D834AA6B33A3F56 /* MigrationV2IntegrationTests.swift */,

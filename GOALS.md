@@ -202,7 +202,7 @@ CRUD repositories over the schema.
 
 ### Step 3.1: ItemRepository CRUD
 
-- [ ] **Function:** `ItemRepository` — create, read, update, delete, list recent, archive.
+- [x] **Function:** `ItemRepository` — create, read, update, delete, list recent, archive.
 - **Unit tests:**
   - `testCreateItemAssignsIDAndTimestamps`
   - `testUpdateItemUpdatesUpdatedAt`
