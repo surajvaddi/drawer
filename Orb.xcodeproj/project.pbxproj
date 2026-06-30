@@ -108,6 +108,11 @@
 		49EC5853602D479286A0D51F /* MockPasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25842A5693C47E18DEE9D3A /* MockPasteboard.swift */; };
 		6335848A7E7A4294866448F3 /* PasteboardMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD1277CE704B56AA64E39C /* PasteboardMonitorTests.swift */; };
 		BD0BD7E9CF5A40209868BFC6 /* PasteboardMonitorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952E2EA52A24C0380F44749 /* PasteboardMonitorIntegrationTests.swift */; };
+		68C3F30543FE483FB9E79C9B /* URLNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D041CEA6B754842B4175346 /* URLNormalizer.swift */; };
+		385B52F520234238B8DAC450 /* CodeSnippetDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB9CBBC818C4689B3B00215 /* CodeSnippetDetector.swift */; };
+		64478D1DA08342069835D956 /* PasteboardClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319F278D007C4C44808DFFF1 /* PasteboardClassifier.swift */; };
+		F983FA3123E149798191A651 /* PasteboardClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DD34C36BF42C48852DFE5 /* PasteboardClassifierTests.swift */; };
+		4D4C1434A9F8431FB7A572F8 /* PasteboardClassifierIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A7DBDD8D1441E199BE6EBD /* PasteboardClassifierIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +228,11 @@
 		E25842A5693C47E18DEE9D3A /* MockPasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasteboard.swift; sourceTree = "<group>"; };
 		88DD1277CE704B56AA64E39C /* PasteboardMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitorTests.swift; sourceTree = "<group>"; };
 		3952E2EA52A24C0380F44749 /* PasteboardMonitorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitorIntegrationTests.swift; sourceTree = "<group>"; };
+		5D041CEA6B754842B4175346 /* URLNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNormalizer.swift; sourceTree = "<group>"; };
+		FCB9CBBC818C4689B3B00215 /* CodeSnippetDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetDetector.swift; sourceTree = "<group>"; };
+		319F278D007C4C44808DFFF1 /* PasteboardClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardClassifier.swift; sourceTree = "<group>"; };
+		9B8DD34C36BF42C48852DFE5 /* PasteboardClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardClassifierTests.swift; sourceTree = "<group>"; };
+		F4A7DBDD8D1441E199BE6EBD /* PasteboardClassifierIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardClassifierIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +301,9 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				319F278D007C4C44808DFFF1 /* PasteboardClassifier.swift */,
+				FCB9CBBC818C4689B3B00215 /* CodeSnippetDetector.swift */,
+				5D041CEA6B754842B4175346 /* URLNormalizer.swift */,
 				218325A009DA4A52A3C67041 /* ClipboardWatchSettings.swift */,
 				3AC6CA71C11C4CD78547A178 /* PasteboardMonitor.swift */,
 				FD1F7C35D25040C098D417E4 /* PasteboardProviding.swift */,
@@ -340,6 +353,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				9B8DD34C36BF42C48852DFE5 /* PasteboardClassifierTests.swift */,
 				88DD1277CE704B56AA64E39C /* PasteboardMonitorTests.swift */,
 				E25842A5693C47E18DEE9D3A /* MockPasteboard.swift */,
 				E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */,
@@ -380,6 +394,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4A7DBDD8D1441E199BE6EBD /* PasteboardClassifierIntegrationTests.swift */,
 				3952E2EA52A24C0380F44749 /* PasteboardMonitorIntegrationTests.swift */,
 				63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */,
 				7679B1FA45C94620BF807FF7 /* OrbStateMachineIntegrationTests.swift */,
