@@ -142,6 +142,9 @@
 		1A3C9B60B0B945F7A5D593CC /* DrawerPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C692A2C6924847BFAAB0D0 /* DrawerPanel.swift */; };
 		1F04EE431D1747BAA30282AA /* DrawerPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816CD1F00CF49A08432E760 /* DrawerPanelTests.swift */; };
 		B0ECAA2289EC4E109DF4F2B4 /* DrawerPanelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3BCF73F6E4004BAF830A4 /* DrawerPanelIntegrationTests.swift */; };
+		B83218920477417FB1123CB8 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F567E4BC015460D8957DFDE /* DrawerView.swift */; };
+		37B3CD96AD65421C807EE899 /* DrawerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C392E2CB075F4D3D86FAE065 /* DrawerViewTests.swift */; };
+		E134F440035A416C9AA554DE /* DrawerViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0F58F255D4B6D903B47E5 /* DrawerViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +294,9 @@
 		31C692A2C6924847BFAAB0D0 /* DrawerPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPanel.swift; sourceTree = "<group>"; };
 		8816CD1F00CF49A08432E760 /* DrawerPanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPanelTests.swift; sourceTree = "<group>"; };
 		32B3BCF73F6E4004BAF830A4 /* DrawerPanelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPanelIntegrationTests.swift; sourceTree = "<group>"; };
+		4F567E4BC015460D8957DFDE /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		C392E2CB075F4D3D86FAE065 /* DrawerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewTests.swift; sourceTree = "<group>"; };
+		D9D0F58F255D4B6D903B47E5 /* DrawerViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +385,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4F567E4BC015460D8957DFDE /* DrawerView.swift */,
 				31C692A2C6924847BFAAB0D0 /* DrawerPanel.swift */,
 				DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */,
 				EEA238D96B6845C2B5120A01 /* OrbStateMachine.swift */,
@@ -418,6 +425,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				C392E2CB075F4D3D86FAE065 /* DrawerViewTests.swift */,
 				8816CD1F00CF49A08432E760 /* DrawerPanelTests.swift */,
 				68B2697D63A84B918F9629AC /* SourceAppResolverTests.swift */,
 				813042EDA94E4A3390A72F3E /* CaptureEventLoggerTests.swift */,
@@ -470,6 +478,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				D9D0F58F255D4B6D903B47E5 /* DrawerViewIntegrationTests.swift */,
 				32B3BCF73F6E4004BAF830A4 /* DrawerPanelIntegrationTests.swift */,
 				B5FDC4D1DF8D4B358AEFD507 /* SourceAppResolverIntegrationTests.swift */,
 				EFEBE8ADB99F4B87B7335AFF /* CaptureEventLoggerIntegrationTests.swift */,
