@@ -209,6 +209,9 @@
 		19CAF39BDB974841B56B818F /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021DBB4AD5FC49799B75757D /* OCRService.swift */; };
 		5E73528F39AE4D8DA09CADD3 /* OCRServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0EB7A77D264730A8EC62E3 /* OCRServiceTests.swift */; };
 		B79AF1E9316E44C2AC6908F4 /* OCRServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81832EF634634F1DA2038DE1 /* OCRServiceIntegrationTests.swift */; };
+		37ECD4ED141E4C6C80AEC628 /* OCRIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FACC79BB47A40588A877600 /* OCRIndexer.swift */; };
+		1BAAAE2DFB374978934FD4D6 /* OCRIndexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */; };
+		62150BED482844B58EEB90BE /* OCRIndexerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -425,6 +428,9 @@
 		021DBB4AD5FC49799B75757D /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
 		BB0EB7A77D264730A8EC62E3 /* OCRServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRServiceTests.swift; sourceTree = "<group>"; };
 		81832EF634634F1DA2038DE1 /* OCRServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		6FACC79BB47A40588A877600 /* OCRIndexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRIndexer.swift; sourceTree = "<group>"; };
+		01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRIndexerTests.swift; sourceTree = "<group>"; };
+		68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRIndexerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +500,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				6FACC79BB47A40588A877600 /* OCRIndexer.swift */,
 				021DBB4AD5FC49799B75757D /* OCRService.swift */,
 				0EE5D58B10D34370AEA58947 /* ScreenshotSavePipeline.swift */,
 				0651BDCC96474D728392FA25 /* ScreenshotCaptureService.swift */,
@@ -575,6 +582,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */,
 				BB0EB7A77D264730A8EC62E3 /* OCRServiceTests.swift */,
 				43F2F85085424ADC937E921F /* ScreenshotSavePipelineTests.swift */,
 				7C9ECD3989B94B2D9C640EE8 /* ScreenshotCaptureServiceTests.swift */,
@@ -650,6 +658,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */,
 				81832EF634634F1DA2038DE1 /* OCRServiceIntegrationTests.swift */,
 				20C0776BBCFA4B24B27B8F2C /* ScreenshotSavePipelineIntegrationTests.swift */,
 				6A2742213411438A9B7E5ACA /* ScreenshotCaptureServiceIntegrationTests.swift */,
