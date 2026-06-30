@@ -90,6 +90,9 @@
 		9F5738425EFB43FFB492C794 /* OrbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30929ED2286945E6A10D5199 /* OrbView.swift */; };
 		08DEE9EE87134D67B5ADA0D9 /* OrbViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34261C4856D4622982FA38E /* OrbViewTests.swift */; };
 		A7C909C23593436BBA885FD6 /* OrbViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81D83F94CF41FA9E03C2C3 /* OrbViewIntegrationTests.swift */; };
+		E1B0039DBEC148F3B16392A3 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691831AA41F4795B6B401A0 /* SettingsStore.swift */; };
+		1B044657648D4BAF81CF022E /* OrbDragControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */; };
+		433CC6AD7A0D41FB81C1EDCD /* OrbDragControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +190,9 @@
 		30929ED2286945E6A10D5199 /* OrbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbView.swift; sourceTree = "<group>"; };
 		A34261C4856D4622982FA38E /* OrbViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbViewTests.swift; sourceTree = "<group>"; };
 		DF81D83F94CF41FA9E03C2C3 /* OrbViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbViewIntegrationTests.swift; sourceTree = "<group>"; };
+		C691831AA41F4795B6B401A0 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDragControllerTests.swift; sourceTree = "<group>"; };
+		311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDragControllerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +295,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C691831AA41F4795B6B401A0 /* SettingsStore.swift */,
 
 			);
 			path = Services;
@@ -297,6 +304,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */,
 				A34261C4856D4622982FA38E /* OrbViewTests.swift */,
 				8FF28A43E0AE4CF391BA7631 /* FloatingOrbPanelTests.swift */,
 				8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */,
@@ -331,6 +339,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */,
 				DF81D83F94CF41FA9E03C2C3 /* OrbViewIntegrationTests.swift */,
 				492ACBB066BF4AA6A4288651 /* FloatingOrbPanelIntegrationTests.swift */,
 				F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */,
