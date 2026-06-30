@@ -127,6 +127,8 @@
 		234088ADB6E44CB2A37B43C4 /* PasteboardWriterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C0B56BDE4473BB8E1596B /* PasteboardWriterIntegrationTests.swift */; };
 		FC89AA3ADC8B4F068B30D824 /* ClipboardWatchSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A2834A76443169AA2AB34 /* ClipboardWatchSettingsTests.swift */; };
 		FFF7F28D11694A25B3B2B88A /* ClipboardWatchSettingsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */; };
+		80FCDA11254E417EA2DBB47D /* URLNormalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */; };
+		B312826E738C4BF8BB311747 /* URLNormalizerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +263,8 @@
 		0A3C0B56BDE4473BB8E1596B /* PasteboardWriterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardWriterIntegrationTests.swift; sourceTree = "<group>"; };
 		085A2834A76443169AA2AB34 /* ClipboardWatchSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardWatchSettingsTests.swift; sourceTree = "<group>"; };
 		A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardWatchSettingsIntegrationTests.swift; sourceTree = "<group>"; };
+		B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNormalizerTests.swift; sourceTree = "<group>"; };
+		CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNormalizerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +391,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */,
 				085A2834A76443169AA2AB34 /* ClipboardWatchSettingsTests.swift */,
 				23F35B14200A421891D38BAE /* PasteboardWriterTests.swift */,
 				8BC9D8E46D95404EA4B86BD6 /* ClipboardSavePipelineTests.swift */,
@@ -432,6 +437,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */,
 				A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */,
 				0A3C0B56BDE4473BB8E1596B /* PasteboardWriterIntegrationTests.swift */,
 				2C6B185D3005487EA4FE8ECA /* ClipboardSavePipelineIntegrationTests.swift */,
