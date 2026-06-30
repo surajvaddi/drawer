@@ -413,6 +413,10 @@
 		9837B333FC924498A75962FD /* AIPrivacyGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F082AE6517394D6DB04E3444 /* AIPrivacyGate.swift */; };
 		B036F9165A0B47649662DC4B /* AIPrivacyGateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FBCA5021FF40ECA541BCD7 /* AIPrivacyGateTests.swift */; };
 		235F066A1C974FCC801ABE9F /* AIPrivacyGateIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500374FDAFCC480989905D18 /* AIPrivacyGateIntegrationTests.swift */; };
+		00175DF97CC441AB874019A9 /* AIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47885C94195D486BA6AC3916 /* AIWorker.swift */; };
+		78422A0895AD4F9696B6FE18 /* AIAnnotationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106C9769E214EAB9FC5BE12 /* AIAnnotationRepository.swift */; };
+		20D245BFB9B244CC9215BBCB /* AIWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D10B80A0304BA5A2BF1CD5 /* AIWorkerTests.swift */; };
+		13F3405A310A45CB8201EA43 /* AIWorkerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BCAEC9D90048A2B275B4A9 /* AIWorkerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -833,6 +837,10 @@
 		F082AE6517394D6DB04E3444 /* AIPrivacyGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPrivacyGate.swift; sourceTree = "<group>"; };
 		A7FBCA5021FF40ECA541BCD7 /* AIPrivacyGateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPrivacyGateTests.swift; sourceTree = "<group>"; };
 		500374FDAFCC480989905D18 /* AIPrivacyGateIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPrivacyGateIntegrationTests.swift; sourceTree = "<group>"; };
+		47885C94195D486BA6AC3916 /* AIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWorker.swift; sourceTree = "<group>"; };
+		D106C9769E214EAB9FC5BE12 /* AIAnnotationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnnotationRepository.swift; sourceTree = "<group>"; };
+		A1D10B80A0304BA5A2BF1CD5 /* AIWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWorkerTests.swift; sourceTree = "<group>"; };
+		03BCAEC9D90048A2B275B4A9 /* AIWorkerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIWorkerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -878,6 +886,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				D106C9769E214EAB9FC5BE12 /* AIAnnotationRepository.swift */,
 				B2AE774393054812969FE95E /* MigrationV8.swift */,
 				D0C0BDCF8C004B7FB4B36EEF /* ThumbnailCacheEvictor.swift */,
 				C912DBE548DB4278B2E6587A /* DataWiper.swift */,
@@ -1019,6 +1028,7 @@
 		A700000B0000000000000001 /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				47885C94195D486BA6AC3916 /* AIWorker.swift */,
 				F082AE6517394D6DB04E3444 /* AIPrivacyGate.swift */,
 				CD724638FA7243788DF26CFF /* AIProvider.swift */,
 				72FB61499F594070B59EC112 /* AIJobQueue.swift */,
@@ -1049,6 +1059,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				A1D10B80A0304BA5A2BF1CD5 /* AIWorkerTests.swift */,
 				A7FBCA5021FF40ECA541BCD7 /* AIPrivacyGateTests.swift */,
 				124F328C7EA9404A99708B75 /* AIProviderTests.swift */,
 				D4A1CBD0EDBF4FC6BB1B1209 /* AIJobQueueTests.swift */,
@@ -1191,6 +1202,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				03BCAEC9D90048A2B275B4A9 /* AIWorkerIntegrationTests.swift */,
 				500374FDAFCC480989905D18 /* AIPrivacyGateIntegrationTests.swift */,
 				BF84FD54462E425692F29FA8 /* AIProviderIntegrationTests.swift */,
 				B828342B47004B5290FC8A1D /* AIJobQueueIntegrationTests.swift */,
@@ -1390,6 +1402,8 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				78422A0895AD4F9696B6FE18 /* AIAnnotationRepository.swift in Sources */,
+				00175DF97CC441AB874019A9 /* AIWorker.swift in Sources */,
 				9837B333FC924498A75962FD /* AIPrivacyGate.swift in Sources */,
 				665A11DE1DF74F4BBC5A9CA8 /* AIProvider.swift in Sources */,
 				F6E726D001934FD2B9CB3142 /* AIJobQueue.swift in Sources */,
@@ -1407,6 +1421,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				20D245BFB9B244CC9215BBCB /* AIWorkerTests.swift in Sources */,
 				B036F9165A0B47649662DC4B /* AIPrivacyGateTests.swift in Sources */,
 				03B848B4735040BA96AE2389 /* AIProviderTests.swift in Sources */,
 				24280B8FB9304BB2B7FA4508 /* AIJobQueueTests.swift in Sources */,
@@ -1422,6 +1437,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				13F3405A310A45CB8201EA43 /* AIWorkerIntegrationTests.swift in Sources */,
 				235F066A1C974FCC801ABE9F /* AIPrivacyGateIntegrationTests.swift in Sources */,
 				F2E8A8B8B45A4564B54FD61A /* AIProviderIntegrationTests.swift in Sources */,
 				151E32564ECA402794296408 /* AIJobQueueIntegrationTests.swift in Sources */,
