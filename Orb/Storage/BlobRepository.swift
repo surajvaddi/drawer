@@ -48,6 +48,12 @@ struct BlobRepository: Sendable {
         return blobs
     }
 
+    func deleteForItem(itemId: String) throws -> [Blob] {
+        let existing = try list(itemId: itemId)
+        try manager.exec("DELETE FROM blobs WHERE item_id='\(escape(itemId))';")
+        return existing
+    }
+
     static func checksum(for data: Data) -> String {
         SHA256.hash(data: data).compactMap { String(format: "%02x", $0) }.joined()
     }
