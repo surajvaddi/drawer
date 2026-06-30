@@ -513,6 +513,9 @@
 		C9931DF8822948229283837E /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F5A30139D423DAEF47BDC /* ErrorReporter.swift */; };
 		AB35F5BB36374D7C9C95E29D /* ErrorReporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E6917BDF24842A5E2B0A6 /* ErrorReporterTests.swift */; };
 		208EAEB5E64146FA9D4F54D9 /* ErrorReporterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230DCC24DD41ED9E8C8914 /* ErrorReporterIntegrationTests.swift */; };
+		00BAD362280D4B278EEC88E8 /* LazyBlobImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92593AD4224944CE8DD3AFA9 /* LazyBlobImageLoader.swift */; };
+		26F56CD789C041E2B95BA845 /* LazyBlobImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A0092B459472098ED7D1F /* LazyBlobImageLoaderTests.swift */; };
+		157CABB7198F4B82A6C445BB /* LazyBlobImageLoaderIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA2A7A1C564B768E3ABCFE /* LazyBlobImageLoaderIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1033,6 +1036,9 @@
 		C73F5A30139D423DAEF47BDC /* ErrorReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporter.swift; sourceTree = "<group>"; };
 		E92E6917BDF24842A5E2B0A6 /* ErrorReporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporterTests.swift; sourceTree = "<group>"; };
 		C0230DCC24DD41ED9E8C8914 /* ErrorReporterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporterIntegrationTests.swift; sourceTree = "<group>"; };
+		92593AD4224944CE8DD3AFA9 /* LazyBlobImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyBlobImageLoader.swift; sourceTree = "<group>"; };
+		DF5A0092B459472098ED7D1F /* LazyBlobImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyBlobImageLoaderTests.swift; sourceTree = "<group>"; };
+		DEDA2A7A1C564B768E3ABCFE /* LazyBlobImageLoaderIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyBlobImageLoaderIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1158,6 +1164,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				92593AD4224944CE8DD3AFA9 /* LazyBlobImageLoader.swift */,
 				5895AE501E694D3D80F2CCEF /* LibrarySearchView.swift */,
 				5C8C6FB56D534F47B0F76660 /* BulkOrganizationView.swift */,
 				6B2A30D3226C4145A34D56D8 /* LibraryWindow.swift */,
@@ -1283,6 +1290,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				DF5A0092B459472098ED7D1F /* LazyBlobImageLoaderTests.swift */,
 				E92E6917BDF24842A5E2B0A6 /* ErrorReporterTests.swift */,
 				7E948628F5CF43298E37CE7C /* DuplicateMergeFlowTests.swift */,
 				9C03B6ECD73C4F4A87963749 /* ItemDeletionServiceTests.swift */,
@@ -1458,6 +1466,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				DEDA2A7A1C564B768E3ABCFE /* LazyBlobImageLoaderIntegrationTests.swift */,
 				C0230DCC24DD41ED9E8C8914 /* ErrorReporterIntegrationTests.swift */,
 				41C62B41C3684C968389C154 /* DuplicateMergeFlowIntegrationTests.swift */,
 				2529DF49436E47CBBF29C20E /* ItemDeletionServiceIntegrationTests.swift */,
@@ -1690,6 +1699,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				00BAD362280D4B278EEC88E8 /* LazyBlobImageLoader.swift in Sources */,
 				C9931DF8822948229283837E /* ErrorReporter.swift in Sources */,
 				1D705B9B9B744957834D7DEC /* DuplicateMergeFlow.swift in Sources */,
 				0F9A65959E99466B873BAEE6 /* ItemDeletionService.swift in Sources */,
@@ -1741,6 +1751,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				26F56CD789C041E2B95BA845 /* LazyBlobImageLoaderTests.swift in Sources */,
 				AB35F5BB36374D7C9C95E29D /* ErrorReporterTests.swift in Sources */,
 				A44D365E38AD4E8A9C51E064 /* DuplicateMergeFlowTests.swift in Sources */,
 				38C577DB44EB4FCF80B5A0DA /* ItemDeletionServiceTests.swift in Sources */,
@@ -1789,6 +1800,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				157CABB7198F4B82A6C445BB /* LazyBlobImageLoaderIntegrationTests.swift in Sources */,
 				208EAEB5E64146FA9D4F54D9 /* ErrorReporterIntegrationTests.swift in Sources */,
 				03F244721382491E8333E814 /* DuplicateMergeFlowIntegrationTests.swift in Sources */,
 				6CEF49C920CB441086E27D20 /* ItemDeletionServiceIntegrationTests.swift in Sources */,
