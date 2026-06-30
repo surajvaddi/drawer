@@ -9,6 +9,7 @@ struct Drawer: Identifiable, Codable, Equatable, Sendable {
     var description: String?
     var sortOrder: Int
     var isPinned: Bool
+    var isPrivate: Bool
     var createdAt: Date
     var updatedAt: Date
 
@@ -21,6 +22,7 @@ struct Drawer: Identifiable, Codable, Equatable, Sendable {
         description: String? = nil,
         sortOrder: Int = 0,
         isPinned: Bool = false,
+        isPrivate: Bool = false,
         createdAt: Date = Date(),
         updatedAt: Date = Date()
     ) {
@@ -32,6 +34,7 @@ struct Drawer: Identifiable, Codable, Equatable, Sendable {
         self.description = description
         self.sortOrder = sortOrder
         self.isPinned = isPinned
+        self.isPrivate = isPrivate
         self.createdAt = createdAt
         self.updatedAt = updatedAt
     }
@@ -52,5 +55,20 @@ struct Drawer: Identifiable, Codable, Equatable, Sendable {
             return lhs.name.localizedCaseInsensitiveCompare(rhs.name) == .orderedAscending
         }
         return lhs.sortOrder < rhs.sortOrder
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        icon = try container.decodeIfPresent(String.self, forKey: .icon)
+        color = try container.decodeIfPresent(String.self, forKey: .color)
+        parentDrawerId = try container.decodeIfPresent(String.self, forKey: .parentDrawerId)
+        description = try container.decodeIfPresent(String.self, forKey: .description)
+        sortOrder = try container.decodeIfPresent(Int.self, forKey: .sortOrder) ?? 0
+        isPinned = try container.decodeIfPresent(Bool.self, forKey: .isPinned) ?? false
+        isPrivate = try container.decodeIfPresent(Bool.self, forKey: .isPrivate) ?? false
+        createdAt = try container.decode(Date.self, forKey: .createdAt)
+        updatedAt = try container.decode(Date.self, forKey: .updatedAt)
     }
 }

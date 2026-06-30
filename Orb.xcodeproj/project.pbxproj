@@ -351,6 +351,11 @@
 		120ACCBB720F4C1DAA549F39 /* SensitiveSaveAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1A8CAB04A43E9890C3FCB /* SensitiveSaveAlert.swift */; };
 		01789DEF96174BB8AB9390D4 /* SensitiveSaveAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */; };
 		5EC6D00BECF34F36AE523E71 /* SensitiveSaveAlertIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */; };
+		D60D604416554E6DAC95D7F6 /* MigrationV7.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79520EFB62A484B968B5AC8 /* MigrationV7.swift */; };
+		3A5F958ED83745B9B6D5333A /* PrivateDrawerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470AB93C96E424CA6F47338 /* PrivateDrawerService.swift */; };
+		7A7A139DC4EC4DF39EFB2ABB /* MigrationV7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58841F8F7775411693DAC60D /* MigrationV7Tests.swift */; };
+		9A50521F5A3E4CEFA08A9D63 /* PrivateDrawerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */; };
+		CEBAC845064C4872A25F0FD5 /* PrivateDrawerServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -709,6 +714,11 @@
 		05E1A8CAB04A43E9890C3FCB /* SensitiveSaveAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveSaveAlert.swift; sourceTree = "<group>"; };
 		5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveSaveAlertTests.swift; sourceTree = "<group>"; };
 		E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveSaveAlertIntegrationTests.swift; sourceTree = "<group>"; };
+		E79520EFB62A484B968B5AC8 /* MigrationV7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV7.swift; sourceTree = "<group>"; };
+		7470AB93C96E424CA6F47338 /* PrivateDrawerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDrawerService.swift; sourceTree = "<group>"; };
+		58841F8F7775411693DAC60D /* MigrationV7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV7Tests.swift; sourceTree = "<group>"; };
+		2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDrawerServiceTests.swift; sourceTree = "<group>"; };
+		B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDrawerServiceIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,6 +764,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				E79520EFB62A484B968B5AC8 /* MigrationV7.swift */,
 				35852D992BFF4CB8A449BD29 /* FactCardRepository.swift */,
 				AC3BE3CD23184A5093804353 /* MigrationV6.swift */,
 				EA3BA26735E548A5A683BE6D /* BulkItemActions.swift */,
@@ -906,6 +917,8 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */,
+				58841F8F7775411693DAC60D /* MigrationV7Tests.swift */,
 				5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */,
 				77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */,
 				3740BEE820D147A4BA04B2F5 /* DrawerRowDropHandlerTests.swift */,
@@ -1028,6 +1041,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */,
 				E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */,
 				7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */,
 				DDA580DFA2AC4C3FBC68656D /* DrawerRowDropHandlerIntegrationTests.swift */,

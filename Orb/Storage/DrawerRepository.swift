@@ -72,6 +72,7 @@ struct DrawerRepository: Sendable {
               description=\(sqlOptional(updated.description)),
               sort_order=\(updated.sortOrder),
               is_pinned=\(updated.isPinned ? 1 : 0),
+              is_private=\(updated.isPrivate ? 1 : 0),
               updated_at='\(DBDateCodec.string(from: updated.updatedAt))'
             WHERE id='\(escape(updated.id))';
             """
@@ -102,7 +103,7 @@ struct DrawerRepository: Sendable {
         try manager.exec(
             """
             INSERT INTO drawers (
-              id, name, icon, color, parent_drawer_id, description, sort_order, is_pinned, created_at, updated_at
+              id, name, icon, color, parent_drawer_id, description, sort_order, is_pinned, is_private, created_at, updated_at
             ) VALUES (
               '\(escape(drawer.id))',
               '\(escape(drawer.name))',
@@ -112,6 +113,7 @@ struct DrawerRepository: Sendable {
               \(sqlOptional(drawer.description)),
               \(drawer.sortOrder),
               \(drawer.isPinned ? 1 : 0),
+              \(drawer.isPrivate ? 1 : 0),
               '\(DBDateCodec.string(from: drawer.createdAt))',
               '\(DBDateCodec.string(from: drawer.updatedAt))'
             );
@@ -132,7 +134,13 @@ struct DrawerRepository: Sendable {
             guard let c = sqlite3_column_text(stmt, index) else { return nil }
             return String(cString: c)
         }
-        guard let id = text(0), let name = text(1), let createdRaw = text(8), let updatedRaw = text(9) else {
+        guard let id = text(0), let name = text(1) else {
+            throw OrbError.storage("invalid drawer row")
+        }
+        let hasPrivate = sqlite3_column_count(stmt) > 10
+        let createdIndex: Int32 = hasPrivate ? 9 : 8
+        let updatedIndex: Int32 = hasPrivate ? 10 : 9
+        guard let createdRaw = text(createdIndex), let updatedRaw = text(updatedIndex) else {
             throw OrbError.storage("invalid drawer row")
         }
         return Drawer(
@@ -144,6 +152,7 @@ struct DrawerRepository: Sendable {
             description: text(5),
             sortOrder: Int(sqlite3_column_int(stmt, 6)),
             isPinned: sqlite3_column_int(stmt, 7) == 1,
+            isPrivate: hasPrivate ? sqlite3_column_int(stmt, 8) == 1 : false,
             createdAt: DBDateCodec.date(from: createdRaw) ?? Date(),
             updatedAt: DBDateCodec.date(from: updatedRaw) ?? Date()
         )
