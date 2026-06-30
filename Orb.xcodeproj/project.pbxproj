@@ -389,6 +389,9 @@
 		8CAFD8D8EBC7477CA6FE3240 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE394BE0951847958E3E16CF /* GeneralSettingsView.swift */; };
 		AC7260AA14394218AD1FA32A /* GeneralSettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46BC7BD7C44AF8961CD683 /* GeneralSettingsViewTests.swift */; };
 		70D2F63C7CE4415DA71229EA /* GeneralSettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDE73744A4E4583B7C724BA /* GeneralSettingsViewIntegrationTests.swift */; };
+		3C4BE39061164016989CFD45 /* CaptureSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA9034005884F3E94FB79B8 /* CaptureSettingsView.swift */; };
+		1D7B4E17B19C48D69100C30D /* CaptureSettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C18BFC28CF4B09BFB09642 /* CaptureSettingsViewTests.swift */; };
+		AA82505799E841D2926890BB /* CaptureSettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7BDFAE5ED1462CA70BF753 /* CaptureSettingsViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -785,6 +788,9 @@
 		AE394BE0951847958E3E16CF /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
 		EE46BC7BD7C44AF8961CD683 /* GeneralSettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewTests.swift; sourceTree = "<group>"; };
 		3EDE73744A4E4583B7C724BA /* GeneralSettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
+		8BA9034005884F3E94FB79B8 /* CaptureSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSettingsView.swift; sourceTree = "<group>"; };
+		56C18BFC28CF4B09BFB09642 /* CaptureSettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSettingsViewTests.swift; sourceTree = "<group>"; };
+		1B7BDFAE5ED1462CA70BF753 /* CaptureSettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -901,6 +907,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8BA9034005884F3E94FB79B8 /* CaptureSettingsView.swift */,
 				AE394BE0951847958E3E16CF /* GeneralSettingsView.swift */,
 				AE2BAD4D4AC6411999418C76 /* PermissionOnboardingView.swift */,
 				3D16E87645D8401AB191DB42 /* DrawerRowDropHandler.swift */,
@@ -991,6 +998,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				56C18BFC28CF4B09BFB09642 /* CaptureSettingsViewTests.swift */,
 				EE46BC7BD7C44AF8961CD683 /* GeneralSettingsViewTests.swift */,
 				28F07C183CD4403BB646DF30 /* SettingsStoreFoundationTests.swift */,
 				E21B8E8CFC754003AE443D8D /* FileAccessPermissionHelperTests.swift */,
@@ -1126,6 +1134,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				1B7BDFAE5ED1462CA70BF753 /* CaptureSettingsViewIntegrationTests.swift */,
 				3EDE73744A4E4583B7C724BA /* GeneralSettingsViewIntegrationTests.swift */,
 				C3F6F2698332402599B537DB /* SettingsStoreFoundationIntegrationTests.swift */,
 				F0B50BA053B1453C9BFB7DF0 /* FileAccessPermissionHelperIntegrationTests.swift */,
