@@ -224,6 +224,9 @@
 		229AC6D53B0F4FAFB33A9434 /* FileReferenceImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633916E683434851A443AC8B /* FileReferenceImporter.swift */; };
 		33D541D65F4A4F75845E16D6 /* FileReferenceImporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CEB14E84147A8B49546FF /* FileReferenceImporterTests.swift */; };
 		53C18CFB3A85436E9D6AACE1 /* FileReferenceImporterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1457D14655D4A7CA13ED809 /* FileReferenceImporterIntegrationTests.swift */; };
+		6809285F80FB4A16BB6882A8 /* PDFTextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F537312FF946D78DD6227D /* PDFTextExtractor.swift */; };
+		92F048BD9EA1462099F821A5 /* PDFTextExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970A6D9FD2F0435FAFCEE942 /* PDFTextExtractorTests.swift */; };
+		4C4A977B692E4CC3BB1B065E /* PDFTextExtractorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA859C7A9D1416FB29364B7 /* PDFTextExtractorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -455,6 +458,9 @@
 		633916E683434851A443AC8B /* FileReferenceImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReferenceImporter.swift; sourceTree = "<group>"; };
 		665CEB14E84147A8B49546FF /* FileReferenceImporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReferenceImporterTests.swift; sourceTree = "<group>"; };
 		F1457D14655D4A7CA13ED809 /* FileReferenceImporterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReferenceImporterIntegrationTests.swift; sourceTree = "<group>"; };
+		13F537312FF946D78DD6227D /* PDFTextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractor.swift; sourceTree = "<group>"; };
+		970A6D9FD2F0435FAFCEE942 /* PDFTextExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractorTests.swift; sourceTree = "<group>"; };
+		CAA859C7A9D1416FB29364B7 /* PDFTextExtractorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTextExtractorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -524,6 +530,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				13F537312FF946D78DD6227D /* PDFTextExtractor.swift */,
 				633916E683434851A443AC8B /* FileReferenceImporter.swift */,
 				DA08EE1438B84F27B6325490 /* FileImporter.swift */,
 				9EE468475E6240CF881F4350 /* FileImportValidator.swift */,
@@ -610,6 +617,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				970A6D9FD2F0435FAFCEE942 /* PDFTextExtractorTests.swift */,
 				665CEB14E84147A8B49546FF /* FileReferenceImporterTests.swift */,
 				F7A64B38A579406EBAF65522 /* FileImporterTests.swift */,
 				6501E95B2C4F4CE0950904D4 /* FileImportValidatorTests.swift */,
@@ -690,6 +698,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CAA859C7A9D1416FB29364B7 /* PDFTextExtractorIntegrationTests.swift */,
 				F1457D14655D4A7CA13ED809 /* FileReferenceImporterIntegrationTests.swift */,
 				24223C565EAD4253BBFEF528 /* FileImporterIntegrationTests.swift */,
 				B93A83F2B94E45C08BAE868C /* FileImportValidatorIntegrationTests.swift */,
