@@ -212,6 +212,9 @@
 		37ECD4ED141E4C6C80AEC628 /* OCRIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FACC79BB47A40588A877600 /* OCRIndexer.swift */; };
 		1BAAAE2DFB374978934FD4D6 /* OCRIndexerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */; };
 		62150BED482844B58EEB90BE /* OCRIndexerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */; };
+		7FBCC9E6B1AF4ADA9B02E442 /* ScreenshotItemActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */; };
+		47C5FFBB76744DA0AACB57CE /* ScreenshotItemActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */; };
+		A8B96B7C580F4897B198A17C /* ScreenshotItemActionsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -431,6 +434,9 @@
 		6FACC79BB47A40588A877600 /* OCRIndexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRIndexer.swift; sourceTree = "<group>"; };
 		01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRIndexerTests.swift; sourceTree = "<group>"; };
 		68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRIndexerIntegrationTests.swift; sourceTree = "<group>"; };
+		41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItemActions.swift; sourceTree = "<group>"; };
+		E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItemActionsTests.swift; sourceTree = "<group>"; };
+		BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotItemActionsIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +535,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */,
 				E2FA6D935F3648E3A96C1533 /* TextItemActions.swift */,
 				442C1B6CB9D94ED8AC654D2F /* LinkItemActions.swift */,
 				BAC2B7FCA35C44CCACF8B34B /* ItemReorderController.swift */,
@@ -582,6 +589,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6975AFBB1044A09BD0ED99E /* ScreenshotItemActionsTests.swift */,
 				01B16537CE18469A8E5804DF /* OCRIndexerTests.swift */,
 				BB0EB7A77D264730A8EC62E3 /* OCRServiceTests.swift */,
 				43F2F85085424ADC937E921F /* ScreenshotSavePipelineTests.swift */,
@@ -658,6 +666,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA057E578A524A69869645AF /* ScreenshotItemActionsIntegrationTests.swift */,
 				68749108985F43DEB4B5F696 /* OCRIndexerIntegrationTests.swift */,
 				81832EF634634F1DA2038DE1 /* OCRServiceIntegrationTests.swift */,
 				20C0776BBCFA4B24B27B8F2C /* ScreenshotSavePipelineIntegrationTests.swift */,
