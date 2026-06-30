@@ -456,6 +456,9 @@
 		AC8D0A1838A94CF9833C373A /* DocumentChunker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABD2F6716E8468C8D038A1F /* DocumentChunker.swift */; };
 		7AA83E44DF7E410B8005F75D /* DocumentChunkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75960CCC451A484C930D4830 /* DocumentChunkerTests.swift */; };
 		7C3E75A518A34B8D8400F85F /* DocumentChunkerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ACD95B1B68424FB2436DC1 /* DocumentChunkerIntegrationTests.swift */; };
+		34163821576B46C996F54E1A /* SemanticQuickPasteRanker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430D47BA54E466DB5F6B5CF /* SemanticQuickPasteRanker.swift */; };
+		5F328852A92142CA97241EC6 /* SemanticQuickPasteRankerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2FFC3D049B4F279A0F574E /* SemanticQuickPasteRankerTests.swift */; };
+		C6906779874B473B92AD4E5B /* SemanticQuickPasteRankerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BB9BECF2543178F0D231A /* SemanticQuickPasteRankerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -919,6 +922,9 @@
 		AABD2F6716E8468C8D038A1F /* DocumentChunker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentChunker.swift; sourceTree = "<group>"; };
 		75960CCC451A484C930D4830 /* DocumentChunkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentChunkerTests.swift; sourceTree = "<group>"; };
 		A3ACD95B1B68424FB2436DC1 /* DocumentChunkerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentChunkerIntegrationTests.swift; sourceTree = "<group>"; };
+		2430D47BA54E466DB5F6B5CF /* SemanticQuickPasteRanker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticQuickPasteRanker.swift; sourceTree = "<group>"; };
+		5A2FFC3D049B4F279A0F574E /* SemanticQuickPasteRankerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticQuickPasteRankerTests.swift; sourceTree = "<group>"; };
+		4C3BB9BECF2543178F0D231A /* SemanticQuickPasteRankerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticQuickPasteRankerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1092,6 +1098,7 @@
 		A700000A0000000000000001 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				2430D47BA54E466DB5F6B5CF /* SemanticQuickPasteRanker.swift */,
 				AABD2F6716E8468C8D038A1F /* DocumentChunker.swift */,
 				208E6F2852FF43A294738931 /* HybridSearchMerger.swift */,
 				2C1B22A20E1E4937B2A57D7C /* VectorSearchRepository.swift */,
@@ -1150,6 +1157,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				5A2FFC3D049B4F279A0F574E /* SemanticQuickPasteRankerTests.swift */,
 				75960CCC451A484C930D4830 /* DocumentChunkerTests.swift */,
 				4B0D3D18CC7342DBBC300AA5 /* HybridSearchMergerTests.swift */,
 				B7E7B992683B434EB49EB2E2 /* VectorSearchRepositoryTests.swift */,
@@ -1306,6 +1314,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				4C3BB9BECF2543178F0D231A /* SemanticQuickPasteRankerIntegrationTests.swift */,
 				A3ACD95B1B68424FB2436DC1 /* DocumentChunkerIntegrationTests.swift */,
 				5B35C675275748C19DB7CF4D /* HybridSearchMergerIntegrationTests.swift */,
 				4BCB5F2AB2AF486ABC6C84CD /* VectorSearchRepositoryIntegrationTests.swift */,
@@ -1519,6 +1528,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				34163821576B46C996F54E1A /* SemanticQuickPasteRanker.swift in Sources */,
 				AC8D0A1838A94CF9833C373A /* DocumentChunker.swift in Sources */,
 				948A3A4A1C8E4E9FAA378644 /* HybridSearchMerger.swift in Sources */,
 				D07140BCA8C64C2F979EB98D /* VectorSearchRepository.swift in Sources */,
@@ -1551,6 +1561,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				5F328852A92142CA97241EC6 /* SemanticQuickPasteRankerTests.swift in Sources */,
 				7AA83E44DF7E410B8005F75D /* DocumentChunkerTests.swift in Sources */,
 				75512505A4E44BDE852BC96D /* HybridSearchMergerTests.swift in Sources */,
 				1F421C387DEE419691190337 /* VectorSearchRepositoryTests.swift in Sources */,
@@ -1580,6 +1591,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				C6906779874B473B92AD4E5B /* SemanticQuickPasteRankerIntegrationTests.swift in Sources */,
 				7C3E75A518A34B8D8400F85F /* DocumentChunkerIntegrationTests.swift in Sources */,
 				78AE4228219C4306A2850872 /* HybridSearchMergerIntegrationTests.swift in Sources */,
 				FFC4CCAA62F248B6895219CE /* VectorSearchRepositoryIntegrationTests.swift in Sources */,
