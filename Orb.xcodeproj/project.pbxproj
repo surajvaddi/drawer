@@ -161,6 +161,9 @@
 		0DF7F804C1784681BC934D96 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554EF922A49D4662A6D25392 /* ItemCardView.swift */; };
 		23D1804E6A054534A1384FDE /* ItemCardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B909DB8F78A4B59840AA62D /* ItemCardViewTests.swift */; };
 		B1CA450489154A6DBDCAFD88 /* ItemCardViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460F45263024DA8B9DC3B5B /* ItemCardViewIntegrationTests.swift */; };
+		EC3B5EE0A3D24C72A7751197 /* ItemCardContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */; };
+		FCB65BFEE72B4D1082BEE1F4 /* ItemCardContextMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */; };
+		B3E0C49B6F364CBF849C3570 /* ItemCardContextMenuIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -329,6 +332,9 @@
 		554EF922A49D4662A6D25392 /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
 		6B909DB8F78A4B59840AA62D /* ItemCardViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardViewTests.swift; sourceTree = "<group>"; };
 		0460F45263024DA8B9DC3B5B /* ItemCardViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardViewIntegrationTests.swift; sourceTree = "<group>"; };
+		FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardContextMenu.swift; sourceTree = "<group>"; };
+		75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardContextMenuTests.swift; sourceTree = "<group>"; };
+		8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardContextMenuIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +423,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */,
 				554EF922A49D4662A6D25392 /* ItemCardView.swift */,
 				DBDD9D551A8E453FBB56AE90 /* RelativeDateFormatter.swift */,
 				2358D4E80F3047C2A8776217 /* DrawerListView.swift */,
@@ -463,6 +470,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */,
 				6B909DB8F78A4B59840AA62D /* ItemCardViewTests.swift */,
 				31DF2A687E17400BB81E6967 /* DrawerListViewTests.swift */,
 				B91F5AE0359444409C909201 /* InboxListViewTests.swift */,
@@ -521,6 +529,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */,
 				0460F45263024DA8B9DC3B5B /* ItemCardViewIntegrationTests.swift */,
 				C48E7456636C4AC2BA737F40 /* DrawerListViewIntegrationTests.swift */,
 				ACB595C214BE4DC6ABFD56BE /* InboxListViewIntegrationTests.swift */,
