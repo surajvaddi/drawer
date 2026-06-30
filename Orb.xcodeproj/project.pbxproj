@@ -395,6 +395,10 @@
 		32DD640895F2442D82B0659A /* SearchSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD27837BFC4C7EBCA642F1 /* SearchSettingsView.swift */; };
 		511695ED0D5549DD9DC0D475 /* SearchSettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF311680DFD462E827EA291 /* SearchSettingsViewTests.swift */; };
 		0B5DF1D843BF40AE88F9760D /* SearchSettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FC2C26E7E4FE28CE60C50 /* SearchSettingsViewIntegrationTests.swift */; };
+		6DDB285F35A348F0B02EE23C /* DataWiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C912DBE548DB4278B2E6587A /* DataWiper.swift */; };
+		FEC4EBFF7A034A48BDBE27C8 /* PrivacySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B311F5B951480A9D526CEC /* PrivacySettingsView.swift */; };
+		51C37B8B4FBA4611BE8AD945 /* PrivacySettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F27A78D0F6745388D9A5EEC /* PrivacySettingsViewTests.swift */; };
+		167959A5909F4B42999855BD /* PrivacySettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9808B52C68694C52B60B7280 /* PrivacySettingsViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -797,6 +801,10 @@
 		9DAD27837BFC4C7EBCA642F1 /* SearchSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSettingsView.swift; sourceTree = "<group>"; };
 		AFF311680DFD462E827EA291 /* SearchSettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSettingsViewTests.swift; sourceTree = "<group>"; };
 		711FC2C26E7E4FE28CE60C50 /* SearchSettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
+		C912DBE548DB4278B2E6587A /* DataWiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWiper.swift; sourceTree = "<group>"; };
+		80B311F5B951480A9D526CEC /* PrivacySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsView.swift; sourceTree = "<group>"; };
+		4F27A78D0F6745388D9A5EEC /* PrivacySettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewTests.swift; sourceTree = "<group>"; };
+		9808B52C68694C52B60B7280 /* PrivacySettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -842,6 +850,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				C912DBE548DB4278B2E6587A /* DataWiper.swift */,
 				B4F04D78011C4570A933EE3E /* AppSettingsRepository.swift */,
 				E79520EFB62A484B968B5AC8 /* MigrationV7.swift */,
 				35852D992BFF4CB8A449BD29 /* FactCardRepository.swift */,
@@ -913,6 +922,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				80B311F5B951480A9D526CEC /* PrivacySettingsView.swift */,
 				9DAD27837BFC4C7EBCA642F1 /* SearchSettingsView.swift */,
 				8BA9034005884F3E94FB79B8 /* CaptureSettingsView.swift */,
 				AE394BE0951847958E3E16CF /* GeneralSettingsView.swift */,
@@ -1005,6 +1015,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F27A78D0F6745388D9A5EEC /* PrivacySettingsViewTests.swift */,
 				AFF311680DFD462E827EA291 /* SearchSettingsViewTests.swift */,
 				56C18BFC28CF4B09BFB09642 /* CaptureSettingsViewTests.swift */,
 				EE46BC7BD7C44AF8961CD683 /* GeneralSettingsViewTests.swift */,
@@ -1142,6 +1153,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				9808B52C68694C52B60B7280 /* PrivacySettingsViewIntegrationTests.swift */,
 				711FC2C26E7E4FE28CE60C50 /* SearchSettingsViewIntegrationTests.swift */,
 				1B7BDFAE5ED1462CA70BF753 /* CaptureSettingsViewIntegrationTests.swift */,
 				3EDE73744A4E4583B7C724BA /* GeneralSettingsViewIntegrationTests.swift */,
