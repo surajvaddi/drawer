@@ -68,7 +68,7 @@ Define pure Swift types mirroring the product data model.
 
 ### Step 1.1: Implement ItemType and SensitivityLevel Enums
 
-- [ ] **Function:** `ItemType`, `SensitivityLevel`, `CaptureMethod` enums with `Codable` and display metadata.
+- [x] **Function:** `ItemType`, `SensitivityLevel`, `CaptureMethod` enums with `Codable` and display metadata.
 - **Unit tests:**
   - `testItemTypeCodableRoundTrip`
   - `testAllItemTypesHaveDisplayNames`

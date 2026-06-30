@@ -1,4 +1,5 @@
 import XCTest
+@testable import Orb
 
 final class ItemTypeIntegrationTests: XCTestCase {
     func testEnumsDecodeFromFixtureJSON() throws {
