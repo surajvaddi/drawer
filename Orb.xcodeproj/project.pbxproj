@@ -245,6 +245,10 @@
 		7CDBF03EFC39426FA295946A /* MoveItemToDrawerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C6BF3610F43DB9C0621B2 /* MoveItemToDrawerService.swift */; };
 		BF491E2BF76D4D3EA5E60C50 /* MoveItemToDrawerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211AAC96C45463F895AB866 /* MoveItemToDrawerServiceTests.swift */; };
 		C7A64C7C10EC4F0EB39DBEB9 /* MoveItemToDrawerServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470254A6C809496F89ACE243 /* MoveItemToDrawerServiceIntegrationTests.swift */; };
+		C05B04F13355423C8C2619D4 /* DrawerRuleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DF1B18CEE842CBB5FDC083 /* DrawerRuleRepository.swift */; };
+		1E3F8455C96F4E2D85B45741 /* DrawerRuleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CCD3177B64CB3AD9B1440 /* DrawerRuleEvaluator.swift */; };
+		B65DDF545F2F4D229D6B8D93 /* DrawerRuleEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9E28475854CE1A7A0C199 /* DrawerRuleEvaluatorTests.swift */; };
+		CD96F514297D4138AD2A0280 /* DrawerRuleEvaluatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158FAC55E1C142449C9082F7 /* DrawerRuleEvaluatorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -497,6 +501,10 @@
 		8E8C6BF3610F43DB9C0621B2 /* MoveItemToDrawerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveItemToDrawerService.swift; sourceTree = "<group>"; };
 		6211AAC96C45463F895AB866 /* MoveItemToDrawerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveItemToDrawerServiceTests.swift; sourceTree = "<group>"; };
 		470254A6C809496F89ACE243 /* MoveItemToDrawerServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveItemToDrawerServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		79DF1B18CEE842CBB5FDC083 /* DrawerRuleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleRepository.swift; sourceTree = "<group>"; };
+		D89CCD3177B64CB3AD9B1440 /* DrawerRuleEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleEvaluator.swift; sourceTree = "<group>"; };
+		61A9E28475854CE1A7A0C199 /* DrawerRuleEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleEvaluatorTests.swift; sourceTree = "<group>"; };
+		158FAC55E1C142449C9082F7 /* DrawerRuleEvaluatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleEvaluatorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,6 +549,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				79DF1B18CEE842CBB5FDC083 /* DrawerRuleRepository.swift */,
 				8E8C6BF3610F43DB9C0621B2 /* MoveItemToDrawerService.swift */,
 				FC5580BF397C47E5B4169333 /* NestedDrawerService.swift */,
 				BC085AD0B71A45EFAC44CD19 /* MigrationV5.swift */,
@@ -568,6 +577,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				D89CCD3177B64CB3AD9B1440 /* DrawerRuleEvaluator.swift */,
 				161535AB43EE46888CF9C4D4 /* DocumentTextExtractor.swift */,
 				13F537312FF946D78DD6227D /* PDFTextExtractor.swift */,
 				633916E683434851A443AC8B /* FileReferenceImporter.swift */,
@@ -659,6 +669,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				61A9E28475854CE1A7A0C199 /* DrawerRuleEvaluatorTests.swift */,
 				6211AAC96C45463F895AB866 /* MoveItemToDrawerServiceTests.swift */,
 				75E509D39EE44713B82E7001 /* DrawerStyleEditorTests.swift */,
 				E62E680A135D4EC79D9D3D6C /* NestedDrawerServiceTests.swift */,
@@ -746,6 +757,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				158FAC55E1C142449C9082F7 /* DrawerRuleEvaluatorIntegrationTests.swift */,
 				470254A6C809496F89ACE243 /* MoveItemToDrawerServiceIntegrationTests.swift */,
 				E4FCF0CDAD9E4B768D5AC78D /* DrawerStyleEditorIntegrationTests.swift */,
 				7AA2E48FEBC946379B4E86FA /* NestedDrawerServiceIntegrationTests.swift */,
