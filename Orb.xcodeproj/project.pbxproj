@@ -495,6 +495,9 @@
 		E8BAFB269EEB46E7B1180DAF /* PresentationModeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */; };
 		B63E0ED22C8D4AEEA75BFE05 /* PresentationModeObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473178482C5441CC92866117 /* PresentationModeObserverTests.swift */; };
 		16CB81C551954FD192D44253 /* PresentationModeObserverIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */; };
+		8C1E2D8380F34249850437B4 /* CrashRecoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB109E7E189423CAA1D9E6A /* CrashRecoveryService.swift */; };
+		0BC35A9147B24C649732B2B4 /* CrashRecoveryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02C107C09EE4BA191692D7C /* CrashRecoveryServiceTests.swift */; };
+		1FEB0CABB41F40DFB235A02D /* CrashRecoveryServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45C836D91084DB39BBCEC4E /* CrashRecoveryServiceIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -997,6 +1000,9 @@
 		5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModeObserver.swift; sourceTree = "<group>"; };
 		473178482C5441CC92866117 /* PresentationModeObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModeObserverTests.swift; sourceTree = "<group>"; };
 		807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModeObserverIntegrationTests.swift; sourceTree = "<group>"; };
+		1BB109E7E189423CAA1D9E6A /* CrashRecoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryService.swift; sourceTree = "<group>"; };
+		A02C107C09EE4BA191692D7C /* CrashRecoveryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryServiceTests.swift; sourceTree = "<group>"; };
+		D45C836D91084DB39BBCEC4E /* CrashRecoveryServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashRecoveryServiceIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1219,6 +1225,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1BB109E7E189423CAA1D9E6A /* CrashRecoveryService.swift */,
 				5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */,
 				17789ED777614EABA558ECFB /* LaunchAtLoginService.swift */,
 				A78662C88E0545E6ACDA5E50 /* MenuBarController.swift */,
@@ -1241,6 +1248,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				A02C107C09EE4BA191692D7C /* CrashRecoveryServiceTests.swift */,
 				473178482C5441CC92866117 /* PresentationModeObserverTests.swift */,
 				4326A078EFDB4464A9FDDD24 /* LaunchAtLoginServiceTests.swift */,
 				663DDAF9F2454643B64205C0 /* MenuBarControllerTests.swift */,
@@ -1410,6 +1418,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				D45C836D91084DB39BBCEC4E /* CrashRecoveryServiceIntegrationTests.swift */,
 				807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */,
 				75D918E5400045F3AA60032C /* LaunchAtLoginServiceIntegrationTests.swift */,
 				0ECED45C172E4A63A0562077 /* MenuBarControllerIntegrationTests.swift */,
@@ -1636,6 +1645,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				8C1E2D8380F34249850437B4 /* CrashRecoveryService.swift in Sources */,
 				E8BAFB269EEB46E7B1180DAF /* PresentationModeObserver.swift in Sources */,
 				78C746EA074B4E269580402D /* LaunchAtLoginService.swift in Sources */,
 				25505439E9C54D1695907395 /* MenuBarController.swift in Sources */,
@@ -1681,6 +1691,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				0BC35A9147B24C649732B2B4 /* CrashRecoveryServiceTests.swift in Sources */,
 				B63E0ED22C8D4AEEA75BFE05 /* PresentationModeObserverTests.swift in Sources */,
 				2D414C84B5AA4FE5B596FD9B /* LaunchAtLoginServiceTests.swift in Sources */,
 				48323706AFF64DDC9FA75EEA /* MenuBarControllerTests.swift in Sources */,
@@ -1723,6 +1734,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				1FEB0CABB41F40DFB235A02D /* CrashRecoveryServiceIntegrationTests.swift in Sources */,
 				16CB81C551954FD192D44253 /* PresentationModeObserverIntegrationTests.swift in Sources */,
 				28D23FC016B2461AA766C6B4 /* LaunchAtLoginServiceIntegrationTests.swift in Sources */,
 				B2956A930E6942DA937241A9 /* MenuBarControllerIntegrationTests.swift in Sources */,
