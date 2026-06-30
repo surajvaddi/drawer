@@ -69,6 +69,9 @@
 		2CB1ED1DAC1441A9BA4786AA /* BlobRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89408BD3BE4CB0B1629492 /* BlobRepository.swift */; };
 		3EF7C62B7CFC4B5184E4082A /* BlobRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA751F6FA4A45D5A7A40124 /* BlobRepositoryTests.swift */; };
 		4702A635A1E0462E850F1988 /* BlobRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11C3A4DB83A4C618C874D5C /* BlobRepositoryIntegrationTests.swift */; };
+		B9217324823849D186902043 /* CaptureEventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD35B5CAC2845C1946B8898 /* CaptureEventRepository.swift */; };
+		04D462B37E764298926AEC10 /* CaptureEventRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1352B5849F486096B888A0 /* CaptureEventRepositoryTests.swift */; };
+		87B5968DBE6D481C9A829F92 /* CaptureEventRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD271DDFCC94E45ACA73C90 /* CaptureEventRepositoryIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +148,9 @@
 		5A89408BD3BE4CB0B1629492 /* BlobRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobRepository.swift; sourceTree = "<group>"; };
 		EBA751F6FA4A45D5A7A40124 /* BlobRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobRepositoryTests.swift; sourceTree = "<group>"; };
 		B11C3A4DB83A4C618C874D5C /* BlobRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
+		3FD35B5CAC2845C1946B8898 /* CaptureEventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEventRepository.swift; sourceTree = "<group>"; };
+		5C1352B5849F486096B888A0 /* CaptureEventRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEventRepositoryTests.swift; sourceTree = "<group>"; };
+		DCD271DDFCC94E45ACA73C90 /* CaptureEventRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEventRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				3FD35B5CAC2845C1946B8898 /* CaptureEventRepository.swift */,
 				5A89408BD3BE4CB0B1629492 /* BlobRepository.swift */,
 				3A7DE1B1C9A14306B04E92FB /* TagRepository.swift */,
 				9C3A4270EA314043B5C883E6 /* DrawerRepository.swift */,
@@ -248,6 +255,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				5C1352B5849F486096B888A0 /* CaptureEventRepositoryTests.swift */,
 				EBA751F6FA4A45D5A7A40124 /* BlobRepositoryTests.swift */,
 				AA56C0AFB4A249B58C28AF3E /* TagRepositoryTests.swift */,
 				84F45858663A4CA98D3FDBB8 /* DrawerRepositoryTests.swift */,
@@ -275,6 +283,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				DCD271DDFCC94E45ACA73C90 /* CaptureEventRepositoryIntegrationTests.swift */,
 				B11C3A4DB83A4C618C874D5C /* BlobRepositoryIntegrationTests.swift */,
 				BEA8B38B784844A2806B352A /* TagRepositoryIntegrationTests.swift */,
 				2CB1FA828FDF48C0BA90D34D /* DrawerRepositoryIntegrationTests.swift */,
