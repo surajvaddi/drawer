@@ -833,7 +833,7 @@ Create, nest, customize, and rule-based suggestions.
 
 ### Step 13.1: Create Drawer Flow
 
-- [ ] **Function:** `CreateDrawerFlow` — name, icon, color picker, save drawer.
+- [x] **Function:** `CreateDrawerFlow` — name, icon, color picker, save drawer.
 - **Unit tests:**
   - `testCreateDrawerValidatesName`
   - `testCreateDrawerAssignsSortOrder`
@@ -843,7 +843,7 @@ Create, nest, customize, and rule-based suggestions.
 
 ### Step 13.2: Nested Drawer CRUD
 
-- [ ] **Function:** `NestedDrawerService` — reparent drawer, prevent cycles.
+- [x] **Function:** `NestedDrawerService` — reparent drawer, prevent cycles.
 - **Unit tests:**
   - `testReparentDrawer`
   - `testCycleReparentRejected`
@@ -853,7 +853,7 @@ Create, nest, customize, and rule-based suggestions.
 
 ### Step 13.3: Drawer Visual Customization
 
-- [ ] **Function:** `DrawerStyleEditor` — emoji/SF Symbol, color, tint.
+- [x] **Function:** `DrawerStyleEditor` — emoji/SF Symbol, color, tint.
 - **Unit tests:**
   - `testDrawerColorHexRoundTrip`
   - `testIconTypePersists`
@@ -863,7 +863,7 @@ Create, nest, customize, and rule-based suggestions.
 
 ### Step 13.4: Move Item to Drawer
 
-- [ ] **Function:** `MoveItemToDrawerService` — update `drawerId`, refresh lists.
+- [x] **Function:** `MoveItemToDrawerService` — update `drawerId`, refresh lists.
 - **Unit tests:**
   - `testMoveUpdatesDrawerId`
   - `testMoveToNilGoesToInbox`
@@ -873,7 +873,7 @@ Create, nest, customize, and rule-based suggestions.
 
 ### Step 13.5: Drawer Rule Evaluator
 
-- [ ] **Function:** `DrawerRuleEvaluator` — evaluate URL/content/app conditions, return suggestion.
+- [x] **Function:** `DrawerRuleEvaluator` — evaluate URL/content/app conditions, return suggestion.
 - **Unit tests:**
   - `testURLContainsRuleMatches`
   - `testSourceAppRuleMatches`
@@ -884,7 +884,7 @@ Create, nest, customize, and rule-based suggestions.
 
 ### Step 13.6: Drawer Suggestion UI
 
-- [ ] **Function:** `DrawerSuggestionBanner` — post-capture suggestion with accept/dismiss.
+- [x] **Function:** `DrawerSuggestionBanner` — post-capture suggestion with accept/dismiss.
 - **Unit tests:**
   - `testAcceptAppliesDrawerToItem`
   - `testDismissLeavesInbox`
@@ -900,7 +900,7 @@ Tagging, filtering, and bulk actions.
 
 ### Step 14.1: Tag Editor Component
 
-- [ ] **Function:** `TagEditorView` — add/remove tags on item with autocomplete.
+- [x] **Function:** `TagEditorView` — add/remove tags on item with autocomplete.
 - **Unit tests:**
   - `testAddTagCreatesTagRecord`
   - `testAutocompleteFiltersExisting`
@@ -910,7 +910,7 @@ Tagging, filtering, and bulk actions.
 
 ### Step 14.2: Tag Filter in Drawer
 
-- [ ] **Function:** `TagFilterController` — filter drawer list by selected tag.
+- [x] **Function:** `TagFilterController` — filter drawer list by selected tag.
 - **Unit tests:**
   - `testFilterReturnsOnlyTaggedItems`
   - `testClearFilterRestoresList`
@@ -920,7 +920,7 @@ Tagging, filtering, and bulk actions.
 
 ### Step 14.3: Type and Source Filters
 
-- [ ] **Function:** `ItemFilterController` — filter by `ItemType` and source app.
+- [x] **Function:** `ItemFilterController` — filter by `ItemType` and source app.
 - **Unit tests:**
   - `testFilterByScreenshotType`
   - `testFilterBySourceApp`
@@ -930,7 +930,7 @@ Tagging, filtering, and bulk actions.
 
 ### Step 14.4: Archive and Bulk Delete
 
-- [ ] **Function:** `BulkItemActions` — multi-select archive/delete.
+- [x] **Function:** `BulkItemActions` — multi-select archive/delete.
 - **Unit tests:**
   - `testBulkArchiveSetsFlag`
   - `testBulkDeleteRemovesAll`
@@ -940,7 +940,7 @@ Tagging, filtering, and bulk actions.
 
 ### Step 14.5: Item Sort Options
 
-- [ ] **Function:** `ItemSortController` — recent, alphabetical, type, access frequency.
+- [x] **Function:** `ItemSortController` — recent, alphabetical, type, access frequency.
 - **Unit tests:**
   - `testSortByLastAccessed`
   - `testSortByTitleCaseInsensitive`
@@ -950,7 +950,7 @@ Tagging, filtering, and bulk actions.
 
 ### Step 14.6: Fact Card Model and CRUD
 
-- [ ] **Function:** `FactCardRepository` — create/read/update/delete fact items linked to source.
+- [x] **Function:** `FactCardRepository` — create/read/update/delete fact items linked to source.
 - **Unit tests:**
   - `testCreateFactLinksSourceItem`
   - `testFactCopyWithSourceFormat`
@@ -966,7 +966,7 @@ FTS keyword search, filters, and ranking.
 
 ### Step 15.1: FTS Query Builder
 
-- [ ] **Function:** `FTSQueryBuilder` — build safe FTS5 queries from user input.
+- [x] **Function:** `FTSQueryBuilder` — build safe FTS5 queries from user input.
 - **Unit tests:**
   - `testEscapeSpecialCharacters`
   - `testPrefixSearchQuery`
@@ -976,7 +976,7 @@ FTS keyword search, filters, and ranking.
 
 ### Step 15.2: Search Repository
 
-- [ ] **Function:** `SearchRepository` — keyword search across title, content, OCR, notes.
+- [x] **Function:** `SearchRepository` — keyword search across title, content, OCR, notes.
 - **Unit tests:**
   - `testSearchFindsTitleMatch`
   - `testSearchFindsOCRText`
@@ -986,7 +986,7 @@ FTS keyword search, filters, and ranking.
 
 ### Step 15.3: Query Filter Parser
 
-- [ ] **Function:** `SearchFilterParser` — parse `type:`, `drawer:`, `tag:`, `source:`, date filters.
+- [x] **Function:** `SearchFilterParser` — parse `type:`, `drawer:`, `tag:`, `source:`, date filters.
 - **Unit tests:**
   - `testParseTypeFilter`
   - `testParseDateRangeFilters`
@@ -997,7 +997,7 @@ FTS keyword search, filters, and ranking.
 
 ### Step 15.4: Search Ranker
 
-- [ ] **Function:** `SearchRanker` — weighted scoring per spec §31.
+- [x] **Function:** `SearchRanker` — weighted scoring per spec §31.
 - **Unit tests:**
   - `testTitleMatchRanksHigherThanContent`
   - `testPinnedBoostApplied`
@@ -1008,7 +1008,7 @@ FTS keyword search, filters, and ranking.
 
 ### Step 15.5: Drawer Search Integration
 
-- [ ] **Function:** Wire `DrawerSearchBar` to `SearchRepository` with live results.
+- [x] **Function:** Wire `DrawerSearchBar` to `SearchRepository` with live results.
 - **Unit tests:**
   - `testDebounceSearchInput`
   - `testEmptyQueryShowsRecents`
@@ -1018,7 +1018,7 @@ FTS keyword search, filters, and ranking.
 
 ### Step 15.6: Fuzzy Fallback Search
 
-- [ ] **Function:** `FuzzySearchService` — fallback matching when FTS returns few results.
+- [x] **Function:** `FuzzySearchService` — fallback matching when FTS returns few results.
 - **Unit tests:**
   - `testFuzzyMatchesTypos`
   - `testFuzzyRespectsThreshold`
@@ -1034,7 +1034,7 @@ Keyboard-first retrieval window.
 
 ### Step 16.1: QuickPaste Panel Window
 
-- [ ] **Function:** `QuickPastePanel` — compact floating search picker, keyboard focus.
+- [x] **Function:** `QuickPastePanel` — compact floating search picker, keyboard focus.
 - **Unit tests:**
   - `testPanelOpensOnShortcut`
   - `testPanelClosesOnEsc`
@@ -1044,7 +1044,7 @@ Keyboard-first retrieval window.
 
 ### Step 16.2: QuickPaste Result List
 
-- [ ] **Function:** `QuickPasteResultsView` — compact result list with keyboard selection.
+- [x] **Function:** `QuickPasteResultsView` — compact result list with keyboard selection.
 - **Unit tests:**
   - `testArrowKeysChangeSelection`
   - `testEnterInvokesCopy`
@@ -1054,7 +1054,7 @@ Keyboard-first retrieval window.
 
 ### Step 16.3: QuickPaste Copy Action
 
-- [ ] **Function:** `QuickPasteController` — copy selected item to pasteboard on Enter.
+- [x] **Function:** `QuickPasteController` — copy selected item to pasteboard on Enter.
 - **Unit tests:**
   - `testEnterCopiesSelectedItem`
   - `testUpdatesLastAccessedAt`
@@ -1064,7 +1064,7 @@ Keyboard-first retrieval window.
 
 ### Step 16.4: Optional Auto-Paste Mode
 
-- [ ] **Function:** `AutoPasteService` — optional paste into frontmost app via Accessibility.
+- [x] **Function:** `AutoPasteService` — optional paste into frontmost app via Accessibility.
 - **Unit tests:**
   - `testAutoPasteRequiresPermission`
   - `testAutoPasteDisabledByDefault`
@@ -1074,7 +1074,7 @@ Keyboard-first retrieval window.
 
 ### Step 16.5: Recent Items Boost in Quick Paste
 
-- [ ] **Function:** `RecencyBoostPolicy` — rank recently used items higher in picker.
+- [x] **Function:** `RecencyBoostPolicy` — rank recently used items higher in picker.
 - **Unit tests:**
   - `testRecentAccessIncreasesScore`
   - `testBoostDecaysOverTime`
@@ -1084,7 +1084,7 @@ Keyboard-first retrieval window.
 
 ### Step 16.6: QuickPaste Empty and No-Result States
 
-- [ ] **Function:** `QuickPasteEmptyStateView` — helpful empty/no-result UI.
+- [x] **Function:** `QuickPasteEmptyStateView` — helpful empty/no-result UI.
 - **Unit tests:**
   - `testEmptyQueryShowsRecents`
   - `testNoResultsShowsSuggestions`
