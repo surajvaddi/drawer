@@ -110,7 +110,7 @@ Define pure Swift types mirroring the product data model.
 
 ### Step 1.5: Implement Blob, Embedding, and CaptureEvent Models
 
-- [ ] **Function:** `Blob`, `Embedding`, `CaptureEvent` structs with kind/method enums.
+- [x] **Function:** `Blob`, `Embedding`, `CaptureEvent` structs with kind/method enums.
 - **Unit tests:**
   - `testBlobKindPaths`
   - `testEmbeddingVectorValidation`
