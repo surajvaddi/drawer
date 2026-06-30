@@ -318,6 +318,9 @@
 		44D2C13ACC04436F9022B88B /* DrawerKeyboardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDA6E453A604CA982911A7C /* DrawerKeyboardNavigator.swift */; };
 		C759DEBBCE634D89BEE25D83 /* DrawerKeyboardNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */; };
 		32D17B0E7EE2470DB5E4AF30 /* DrawerKeyboardNavigatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */; };
+		73EC526CF236450FBEC21ACF /* CommandPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E55003EF348EFA85CCE7F /* CommandPalette.swift */; };
+		95470651261B4061A3E50D4B /* CommandPaletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B67F8F24B9644809AF67026 /* CommandPaletteTests.swift */; };
+		115A556E01C8425F8FC3B9D0 /* CommandPaletteIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083A3303BD745EA9DC6299E /* CommandPaletteIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -643,6 +646,9 @@
 		BCDA6E453A604CA982911A7C /* DrawerKeyboardNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerKeyboardNavigator.swift; sourceTree = "<group>"; };
 		6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerKeyboardNavigatorTests.swift; sourceTree = "<group>"; };
 		34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerKeyboardNavigatorIntegrationTests.swift; sourceTree = "<group>"; };
+		1B4E55003EF348EFA85CCE7F /* CommandPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPalette.swift; sourceTree = "<group>"; };
+		7B67F8F24B9644809AF67026 /* CommandPaletteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPaletteTests.swift; sourceTree = "<group>"; };
+		E083A3303BD745EA9DC6299E /* CommandPaletteIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPaletteIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,6 +760,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1B4E55003EF348EFA85CCE7F /* CommandPalette.swift */,
 				BCDA6E453A604CA982911A7C /* DrawerKeyboardNavigator.swift */,
 				01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */,
 				56EE60A44C914ECEB098B294 /* QuickPasteController.swift */,
@@ -831,6 +838,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				7B67F8F24B9644809AF67026 /* CommandPaletteTests.swift */,
 				6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */,
 				659848387424424F8A81823D /* ShortcutSettingsTests.swift */,
 				26DF16F529024F6892A9EC66 /* HotkeyServiceTests.swift */,
@@ -942,6 +950,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E083A3303BD745EA9DC6299E /* CommandPaletteIntegrationTests.swift */,
 				34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */,
 				5E560BE000DD440E95848B05 /* ShortcutSettingsIntegrationTests.swift */,
 				550B01687D4F48D38DBCCD93 /* HotkeyServiceIntegrationTests.swift */,
