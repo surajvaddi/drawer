@@ -139,6 +139,9 @@
 		A68A294307F44B459070CDA9 /* CaptureEventLoggerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEBE8ADB99F4B87B7335AFF /* CaptureEventLoggerIntegrationTests.swift */; };
 		425FBC998F874E33A8860C8E /* SourceAppResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B2697D63A84B918F9629AC /* SourceAppResolverTests.swift */; };
 		23885ACD61954D0EA69B3A34 /* SourceAppResolverIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FDC4D1DF8D4B358AEFD507 /* SourceAppResolverIntegrationTests.swift */; };
+		1A3C9B60B0B945F7A5D593CC /* DrawerPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C692A2C6924847BFAAB0D0 /* DrawerPanel.swift */; };
+		1F04EE431D1747BAA30282AA /* DrawerPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816CD1F00CF49A08432E760 /* DrawerPanelTests.swift */; };
+		B0ECAA2289EC4E109DF4F2B4 /* DrawerPanelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3BCF73F6E4004BAF830A4 /* DrawerPanelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +288,9 @@
 		EFEBE8ADB99F4B87B7335AFF /* CaptureEventLoggerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEventLoggerIntegrationTests.swift; sourceTree = "<group>"; };
 		68B2697D63A84B918F9629AC /* SourceAppResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceAppResolverTests.swift; sourceTree = "<group>"; };
 		B5FDC4D1DF8D4B358AEFD507 /* SourceAppResolverIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceAppResolverIntegrationTests.swift; sourceTree = "<group>"; };
+		31C692A2C6924847BFAAB0D0 /* DrawerPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPanel.swift; sourceTree = "<group>"; };
+		8816CD1F00CF49A08432E760 /* DrawerPanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPanelTests.swift; sourceTree = "<group>"; };
+		32B3BCF73F6E4004BAF830A4 /* DrawerPanelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerPanelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +379,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31C692A2C6924847BFAAB0D0 /* DrawerPanel.swift */,
 				DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */,
 				EEA238D96B6845C2B5120A01 /* OrbStateMachine.swift */,
 				65DF19DE175546B096C0CE2A /* EdgeSnapController.swift */,
@@ -411,6 +418,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				8816CD1F00CF49A08432E760 /* DrawerPanelTests.swift */,
 				68B2697D63A84B918F9629AC /* SourceAppResolverTests.swift */,
 				813042EDA94E4A3390A72F3E /* CaptureEventLoggerTests.swift */,
 				BD54BD67A895418BA85B441B /* ItemFactoryTests.swift */,
@@ -462,6 +470,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				32B3BCF73F6E4004BAF830A4 /* DrawerPanelIntegrationTests.swift */,
 				B5FDC4D1DF8D4B358AEFD507 /* SourceAppResolverIntegrationTests.swift */,
 				EFEBE8ADB99F4B87B7335AFF /* CaptureEventLoggerIntegrationTests.swift */,
 				1023CF7D007B4E7A96CE69F9 /* ItemFactoryIntegrationTests.swift */,
