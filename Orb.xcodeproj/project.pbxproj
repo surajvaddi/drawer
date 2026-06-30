@@ -84,6 +84,9 @@
 		839B27BB8B9E4C22A46F6E51 /* DefaultDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C65F3605404AA3B3D5A2 /* DefaultDataSeeder.swift */; };
 		6E7938B6943D4A53A033489B /* DefaultDataSeederTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */; };
 		79244927F0E147CDA828460D /* DefaultDataSeederIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */; };
+		BAF8D08D14A6420DB4F326BC /* FloatingOrbPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C86B8D132423C85A4D355 /* FloatingOrbPanel.swift */; };
+		D9FAD1AB6D6E4A998ACE042E /* FloatingOrbPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF28A43E0AE4CF391BA7631 /* FloatingOrbPanelTests.swift */; };
+		2F386DF7925A454192DA0DAB /* FloatingOrbPanelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492ACBB066BF4AA6A4288651 /* FloatingOrbPanelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +178,9 @@
 		EAE6C65F3605404AA3B3D5A2 /* DefaultDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataSeeder.swift; sourceTree = "<group>"; };
 		8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataSeederTests.swift; sourceTree = "<group>"; };
 		F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataSeederIntegrationTests.swift; sourceTree = "<group>"; };
+		5E6C86B8D132423C85A4D355 /* FloatingOrbPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingOrbPanel.swift; sourceTree = "<group>"; };
+		8FF28A43E0AE4CF391BA7631 /* FloatingOrbPanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingOrbPanelTests.swift; sourceTree = "<group>"; };
+		492ACBB066BF4AA6A4288651 /* FloatingOrbPanelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingOrbPanelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +257,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5E6C86B8D132423C85A4D355 /* FloatingOrbPanel.swift */,
 
 			);
 			path = UI;
@@ -283,6 +290,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FF28A43E0AE4CF391BA7631 /* FloatingOrbPanelTests.swift */,
 				8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */,
 				7F32894742E14F8B907F2DEF /* StorageCoordinatorTests.swift */,
 				778B30C4BE044537B16B0E62 /* ThumbnailGeneratorTests.swift */,
@@ -315,6 +323,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				492ACBB066BF4AA6A4288651 /* FloatingOrbPanelIntegrationTests.swift */,
 				F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */,
 				3E352579860F46F78CD8AF4D /* StorageCoordinatorIntegrationTests.swift */,
 				6A69D43EBB1E4CF5A395726D /* ThumbnailGeneratorIntegrationTests.swift */,
