@@ -315,6 +315,9 @@
 		04D8941E5DB842D78CEBB92E /* ShortcutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209C496DBCE42ABB3429310 /* ShortcutSettings.swift */; };
 		6B89A0E58DCB4CF49F42ECC1 /* ShortcutSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659848387424424F8A81823D /* ShortcutSettingsTests.swift */; };
 		2854D9DA28D24A4AB9AE70D0 /* ShortcutSettingsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E560BE000DD440E95848B05 /* ShortcutSettingsIntegrationTests.swift */; };
+		44D2C13ACC04436F9022B88B /* DrawerKeyboardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDA6E453A604CA982911A7C /* DrawerKeyboardNavigator.swift */; };
+		C759DEBBCE634D89BEE25D83 /* DrawerKeyboardNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */; };
+		32D17B0E7EE2470DB5E4AF30 /* DrawerKeyboardNavigatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -637,6 +640,9 @@
 		2209C496DBCE42ABB3429310 /* ShortcutSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSettings.swift; sourceTree = "<group>"; };
 		659848387424424F8A81823D /* ShortcutSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSettingsTests.swift; sourceTree = "<group>"; };
 		5E560BE000DD440E95848B05 /* ShortcutSettingsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSettingsIntegrationTests.swift; sourceTree = "<group>"; };
+		BCDA6E453A604CA982911A7C /* DrawerKeyboardNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerKeyboardNavigator.swift; sourceTree = "<group>"; };
+		6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerKeyboardNavigatorTests.swift; sourceTree = "<group>"; };
+		34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerKeyboardNavigatorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -748,6 +754,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BCDA6E453A604CA982911A7C /* DrawerKeyboardNavigator.swift */,
 				01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */,
 				56EE60A44C914ECEB098B294 /* QuickPasteController.swift */,
 				EE54CDE1FFC44707AD6FCE85 /* QuickPasteResultsView.swift */,
@@ -824,6 +831,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */,
 				659848387424424F8A81823D /* ShortcutSettingsTests.swift */,
 				26DF16F529024F6892A9EC66 /* HotkeyServiceTests.swift */,
 				8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */,
@@ -934,6 +942,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */,
 				5E560BE000DD440E95848B05 /* ShortcutSettingsIntegrationTests.swift */,
 				550B01687D4F48D38DBCCD93 /* HotkeyServiceIntegrationTests.swift */,
 				7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */,
