@@ -383,6 +383,9 @@
 		3710A36076D647368BEBCBE9 /* FileAccessPermissionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5D6A6B913454486C4ABD2 /* FileAccessPermissionHelper.swift */; };
 		CAED98DCAA004FDB8DA0D5AD /* FileAccessPermissionHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21B8E8CFC754003AE443D8D /* FileAccessPermissionHelperTests.swift */; };
 		991C65FF95474403B2B46778 /* FileAccessPermissionHelperIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B50BA053B1453C9BFB7DF0 /* FileAccessPermissionHelperIntegrationTests.swift */; };
+		398ADBD514A8463F861E9D02 /* AppSettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F04D78011C4570A933EE3E /* AppSettingsRepository.swift */; };
+		DD46BAA1126E470E9615B5C8 /* SettingsStoreFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F07C183CD4403BB646DF30 /* SettingsStoreFoundationTests.swift */; };
+		07A40CBB9A124C7BB51A115B /* SettingsStoreFoundationIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6F2698332402599B537DB /* SettingsStoreFoundationIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -773,6 +776,9 @@
 		D3E5D6A6B913454486C4ABD2 /* FileAccessPermissionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAccessPermissionHelper.swift; sourceTree = "<group>"; };
 		E21B8E8CFC754003AE443D8D /* FileAccessPermissionHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAccessPermissionHelperTests.swift; sourceTree = "<group>"; };
 		F0B50BA053B1453C9BFB7DF0 /* FileAccessPermissionHelperIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAccessPermissionHelperIntegrationTests.swift; sourceTree = "<group>"; };
+		B4F04D78011C4570A933EE3E /* AppSettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsRepository.swift; sourceTree = "<group>"; };
+		28F07C183CD4403BB646DF30 /* SettingsStoreFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreFoundationTests.swift; sourceTree = "<group>"; };
+		C3F6F2698332402599B537DB /* SettingsStoreFoundationIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStoreFoundationIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -818,6 +824,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				B4F04D78011C4570A933EE3E /* AppSettingsRepository.swift */,
 				E79520EFB62A484B968B5AC8 /* MigrationV7.swift */,
 				35852D992BFF4CB8A449BD29 /* FactCardRepository.swift */,
 				AC3BE3CD23184A5093804353 /* MigrationV6.swift */,
@@ -977,6 +984,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				28F07C183CD4403BB646DF30 /* SettingsStoreFoundationTests.swift */,
 				E21B8E8CFC754003AE443D8D /* FileAccessPermissionHelperTests.swift */,
 				D5B3E2C036914C6D99513FB9 /* PermissionDegradationPolicyTests.swift */,
 				0885A0016438474A87F8D275 /* AutoPastePermissionGateTests.swift */,
@@ -1110,6 +1118,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3F6F2698332402599B537DB /* SettingsStoreFoundationIntegrationTests.swift */,
 				F0B50BA053B1453C9BFB7DF0 /* FileAccessPermissionHelperIntegrationTests.swift */,
 				53080E5FD1414E2DBF19D1DD /* PermissionDegradationPolicyIntegrationTests.swift */,
 				55B562BFECDD4312B6A19BF4 /* AutoPastePermissionGateIntegrationTests.swift */,
