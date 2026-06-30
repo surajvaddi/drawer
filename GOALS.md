@@ -259,7 +259,7 @@ Filesystem-backed binary storage coordinated with DB metadata.
 
 ### Step 4.1: BlobStore Write and Read
 
-- [ ] **Function:** `BlobStore` — write bytes to `blobs/originals/`, return path and checksum.
+- [x] **Function:** `BlobStore` — write bytes to `blobs/originals/`, return path and checksum.
 - **Unit tests:**
   - `testWriteBlobCreatesFile`
   - `testChecksumStableForSameContent`
@@ -269,7 +269,7 @@ Filesystem-backed binary storage coordinated with DB metadata.
 
 ### Step 4.2: Thumbnail Generator
 
-- [ ] **Function:** `ThumbnailGenerator` — produce PNG thumbnails for images and PDF first page.
+- [x] **Function:** `ThumbnailGenerator` — produce PNG thumbnails for images and PDF first page.
 - **Unit tests:**
   - `testGenerateThumbnailFromPNG`
   - `testThumbnailMaxDimensionRespected`
@@ -279,7 +279,7 @@ Filesystem-backed binary storage coordinated with DB metadata.
 
 ### Step 4.3: Transactional Item Save Coordinator
 
-- [ ] **Function:** `StorageCoordinator` — atomic save: blob write + item row + FTS index.
+- [x] **Function:** `StorageCoordinator` — atomic save: blob write + item row + FTS index.
 - **Unit tests:**
   - `testRollbackOnDBFailureLeavesNoOrphanBlob`
   - `testCommitOnSuccessUpdatesFTS`
@@ -289,7 +289,7 @@ Filesystem-backed binary storage coordinated with DB metadata.
 
 ### Step 4.4: Default Inbox Drawer Seeder
 
-- [ ] **Function:** `DefaultDataSeeder` — create Inbox drawer on first launch.
+- [x] **Function:** `DefaultDataSeeder` — create Inbox drawer on first launch.
 - **Unit tests:**
   - `testSeederRunsOnlyOnce`
   - `testInboxDrawerIsPinned`

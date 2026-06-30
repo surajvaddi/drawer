@@ -99,6 +99,9 @@
 		415F0B5080D444F1B9C5270F /* OrbStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA238D96B6845C2B5120A01 /* OrbStateMachine.swift */; };
 		EE296C73DFF24738876DE863 /* OrbStateMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F922CB24534443F2A91FCA2F /* OrbStateMachineTests.swift */; };
 		6D548AFF8F0E4C139E0781B0 /* OrbStateMachineIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7679B1FA45C94620BF807FF7 /* OrbStateMachineIntegrationTests.swift */; };
+		05B7758622494BD8A3509936 /* OrbPulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */; };
+		58B28978AF6D450DAB3A2908 /* OrbPulseAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */; };
+		FE6755786584432BB3161A13 /* OrbPulseAnimationIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +208,9 @@
 		EEA238D96B6845C2B5120A01 /* OrbStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbStateMachine.swift; sourceTree = "<group>"; };
 		F922CB24534443F2A91FCA2F /* OrbStateMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbStateMachineTests.swift; sourceTree = "<group>"; };
 		7679B1FA45C94620BF807FF7 /* OrbStateMachineIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbStateMachineIntegrationTests.swift; sourceTree = "<group>"; };
+		DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbPulseAnimation.swift; sourceTree = "<group>"; };
+		E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbPulseAnimationTests.swift; sourceTree = "<group>"; };
+		63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbPulseAnimationIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +287,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */,
 				EEA238D96B6845C2B5120A01 /* OrbStateMachine.swift */,
 				65DF19DE175546B096C0CE2A /* EdgeSnapController.swift */,
 				30929ED2286945E6A10D5199 /* OrbView.swift */,
@@ -318,6 +325,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */,
 				F922CB24534443F2A91FCA2F /* OrbStateMachineTests.swift */,
 				025FE19248754015869DEC52 /* EdgeSnapControllerTests.swift */,
 				781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */,
@@ -355,6 +363,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */,
 				7679B1FA45C94620BF807FF7 /* OrbStateMachineIntegrationTests.swift */,
 				17740F00BDE143BC954846BF /* EdgeSnapControllerIntegrationTests.swift */,
 				311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */,
