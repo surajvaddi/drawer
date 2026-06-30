@@ -131,6 +131,8 @@
 		B312826E738C4BF8BB311747 /* URLNormalizerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */; };
 		C1AEF025BA7A4FB7A484791B /* TextNormalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */; };
 		8503F477060340F697183F26 /* TextNormalizerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */; };
+		AD3B4B5B39564706BCFCDB6F /* CodeSnippetDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EAAF7423B45DB9EF40314 /* CodeSnippetDetectorTests.swift */; };
+		0AFC0CCF49AD4B4D96F6D649 /* CodeSnippetDetectorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D7F9A8E8B4A31879B2746 /* CodeSnippetDetectorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,6 +271,8 @@
 		CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNormalizerIntegrationTests.swift; sourceTree = "<group>"; };
 		8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNormalizerTests.swift; sourceTree = "<group>"; };
 		04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNormalizerIntegrationTests.swift; sourceTree = "<group>"; };
+		311EAAF7423B45DB9EF40314 /* CodeSnippetDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetDetectorTests.swift; sourceTree = "<group>"; };
+		ED0D7F9A8E8B4A31879B2746 /* CodeSnippetDetectorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetDetectorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +399,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				311EAAF7423B45DB9EF40314 /* CodeSnippetDetectorTests.swift */,
 				8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */,
 				B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */,
 				085A2834A76443169AA2AB34 /* ClipboardWatchSettingsTests.swift */,
@@ -442,6 +447,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED0D7F9A8E8B4A31879B2746 /* CodeSnippetDetectorIntegrationTests.swift */,
 				04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */,
 				CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */,
 				A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */,
