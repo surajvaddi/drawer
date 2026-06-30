@@ -233,6 +233,9 @@
 		E13975862D61452FB11515F8 /* DocumentItemActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5E87E5FA54AF58D6C8C8A /* DocumentItemActions.swift */; };
 		CA81976C0CEC44F4AD712194 /* DocumentItemActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510E8BA6FD6D4BD4BD02012F /* DocumentItemActionsTests.swift */; };
 		2446D7189D7B4C0DB67D59F3 /* DocumentItemActionsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C308423E889D442DB983271A /* DocumentItemActionsIntegrationTests.swift */; };
+		BDF5220FDD66437D9A22DE67 /* CreateDrawerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519BE5AED2E047DBBF4427E9 /* CreateDrawerFlow.swift */; };
+		5ACA2AF314CB4A78BA098E15 /* CreateDrawerFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7803A6C5638F461CA86F4C0D /* CreateDrawerFlowTests.swift */; };
+		B5D838428BFB4B1FA1E4792F /* CreateDrawerFlowIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F70753296348BAB0CD787C /* CreateDrawerFlowIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -473,6 +476,9 @@
 		F6C5E87E5FA54AF58D6C8C8A /* DocumentItemActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentItemActions.swift; sourceTree = "<group>"; };
 		510E8BA6FD6D4BD4BD02012F /* DocumentItemActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentItemActionsTests.swift; sourceTree = "<group>"; };
 		C308423E889D442DB983271A /* DocumentItemActionsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentItemActionsIntegrationTests.swift; sourceTree = "<group>"; };
+		519BE5AED2E047DBBF4427E9 /* CreateDrawerFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDrawerFlow.swift; sourceTree = "<group>"; };
+		7803A6C5638F461CA86F4C0D /* CreateDrawerFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDrawerFlowTests.swift; sourceTree = "<group>"; };
+		97F70753296348BAB0CD787C /* CreateDrawerFlowIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDrawerFlowIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -576,6 +582,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				519BE5AED2E047DBBF4427E9 /* CreateDrawerFlow.swift */,
 				F6C5E87E5FA54AF58D6C8C8A /* DocumentItemActions.swift */,
 				41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */,
 				E2FA6D935F3648E3A96C1533 /* TextItemActions.swift */,
@@ -631,6 +638,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				7803A6C5638F461CA86F4C0D /* CreateDrawerFlowTests.swift */,
 				510E8BA6FD6D4BD4BD02012F /* DocumentItemActionsTests.swift */,
 				3F367753C7A542FBB682D593 /* DocumentTextExtractorTests.swift */,
 				970A6D9FD2F0435FAFCEE942 /* PDFTextExtractorTests.swift */,
@@ -714,6 +722,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				97F70753296348BAB0CD787C /* CreateDrawerFlowIntegrationTests.swift */,
 				C308423E889D442DB983271A /* DocumentItemActionsIntegrationTests.swift */,
 				1374D9CE489F436D95AF1C53 /* DocumentTextExtractorIntegrationTests.swift */,
 				CAA859C7A9D1416FB29364B7 /* PDFTextExtractorIntegrationTests.swift */,

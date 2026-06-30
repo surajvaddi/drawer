@@ -48,6 +48,56 @@ struct DrawerRepository: Sendable {
         )
     }
 
+    func fetch(id: String) throws -> Drawer? {
+        var stmt: OpaquePointer?
+        defer { sqlite3_finalize(stmt) }
+        guard sqlite3_prepare_v2(manager.db, "SELECT * FROM drawers WHERE id = ? LIMIT 1;", -1, &stmt, nil) == SQLITE_OK else {
+            throw OrbError.storage("prepare fetch drawer failed")
+        }
+        sqlite3_bind_text(stmt, 1, id, -1, SQLITE_TRANSIENT)
+        guard sqlite3_step(stmt) == SQLITE_ROW else { return nil }
+        return try mapRow(stmt)
+    }
+
+    func update(_ drawer: Drawer) throws -> Drawer {
+        var updated = drawer
+        updated.updatedAt = Date()
+        try manager.exec(
+            """
+            UPDATE drawers SET
+              name='\(escape(updated.name))',
+              icon=\(sqlOptional(updated.icon)),
+              color=\(sqlOptional(updated.color)),
+              parent_drawer_id=\(sqlOptional(updated.parentDrawerId)),
+              description=\(sqlOptional(updated.description)),
+              sort_order=\(updated.sortOrder),
+              is_pinned=\(updated.isPinned ? 1 : 0),
+              updated_at='\(DBDateCodec.string(from: updated.updatedAt))'
+            WHERE id='\(escape(updated.id))';
+            """
+        )
+        return updated
+    }
+
+    func nextSortOrder() throws -> Int {
+        var stmt: OpaquePointer?
+        defer { sqlite3_finalize(stmt) }
+        guard sqlite3_prepare_v2(manager.db, "SELECT COALESCE(MAX(sort_order), -1) + 1 FROM drawers;", -1, &stmt, nil) == SQLITE_OK else {
+            throw OrbError.storage("prepare next sort order failed")
+        }
+        guard sqlite3_step(stmt) == SQLITE_ROW else { return 0 }
+        return Int(sqlite3_column_int(stmt, 0))
+    }
+
+    func reparent(drawerID: String, parentDrawerID: String?) throws {
+        try manager.exec(
+            """
+            UPDATE drawers SET parent_drawer_id=\(sqlOptional(parentDrawerID)), updated_at='\(DBDateCodec.string(from: Date()))'
+            WHERE id='\(escape(drawerID))';
+            """
+        )
+    }
+
     private func insert(_ drawer: Drawer) throws {
         try manager.exec(
             """
