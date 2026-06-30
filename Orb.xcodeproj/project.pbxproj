@@ -492,6 +492,9 @@
 		78C746EA074B4E269580402D /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17789ED777614EABA558ECFB /* LaunchAtLoginService.swift */; };
 		2D414C84B5AA4FE5B596FD9B /* LaunchAtLoginServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326A078EFDB4464A9FDDD24 /* LaunchAtLoginServiceTests.swift */; };
 		28D23FC016B2461AA766C6B4 /* LaunchAtLoginServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D918E5400045F3AA60032C /* LaunchAtLoginServiceIntegrationTests.swift */; };
+		E8BAFB269EEB46E7B1180DAF /* PresentationModeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */; };
+		B63E0ED22C8D4AEEA75BFE05 /* PresentationModeObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473178482C5441CC92866117 /* PresentationModeObserverTests.swift */; };
+		16CB81C551954FD192D44253 /* PresentationModeObserverIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -991,6 +994,9 @@
 		17789ED777614EABA558ECFB /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
 		4326A078EFDB4464A9FDDD24 /* LaunchAtLoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginServiceTests.swift; sourceTree = "<group>"; };
 		75D918E5400045F3AA60032C /* LaunchAtLoginServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModeObserver.swift; sourceTree = "<group>"; };
+		473178482C5441CC92866117 /* PresentationModeObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModeObserverTests.swift; sourceTree = "<group>"; };
+		807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModeObserverIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1213,6 +1219,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5AF2E211A7C147E2A899DCC0 /* PresentationModeObserver.swift */,
 				17789ED777614EABA558ECFB /* LaunchAtLoginService.swift */,
 				A78662C88E0545E6ACDA5E50 /* MenuBarController.swift */,
 				D3E5D6A6B913454486C4ABD2 /* FileAccessPermissionHelper.swift */,
@@ -1234,6 +1241,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				473178482C5441CC92866117 /* PresentationModeObserverTests.swift */,
 				4326A078EFDB4464A9FDDD24 /* LaunchAtLoginServiceTests.swift */,
 				663DDAF9F2454643B64205C0 /* MenuBarControllerTests.swift */,
 				CDEFB09E32BA402ABDBD116D /* LibrarySearchViewTests.swift */,
@@ -1402,6 +1410,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				807E5B558CAE42A9896FBE14 /* PresentationModeObserverIntegrationTests.swift */,
 				75D918E5400045F3AA60032C /* LaunchAtLoginServiceIntegrationTests.swift */,
 				0ECED45C172E4A63A0562077 /* MenuBarControllerIntegrationTests.swift */,
 				21230550F0E14459821A9D2B /* LibrarySearchViewIntegrationTests.swift */,
@@ -1627,6 +1636,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				E8BAFB269EEB46E7B1180DAF /* PresentationModeObserver.swift in Sources */,
 				78C746EA074B4E269580402D /* LaunchAtLoginService.swift in Sources */,
 				25505439E9C54D1695907395 /* MenuBarController.swift in Sources */,
 				46B1303134C249689E71F321 /* LibrarySearchView.swift in Sources */,
@@ -1671,6 +1681,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				B63E0ED22C8D4AEEA75BFE05 /* PresentationModeObserverTests.swift in Sources */,
 				2D414C84B5AA4FE5B596FD9B /* LaunchAtLoginServiceTests.swift in Sources */,
 				48323706AFF64DDC9FA75EEA /* MenuBarControllerTests.swift in Sources */,
 				95779004F8CA4558991C3300 /* LibrarySearchViewTests.swift in Sources */,
@@ -1712,6 +1723,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				16CB81C551954FD192D44253 /* PresentationModeObserverIntegrationTests.swift in Sources */,
 				28D23FC016B2461AA766C6B4 /* LaunchAtLoginServiceIntegrationTests.swift in Sources */,
 				B2956A930E6942DA937241A9 /* MenuBarControllerIntegrationTests.swift in Sources */,
 				18968622218A40709F905D45 /* LibrarySearchViewIntegrationTests.swift in Sources */,
