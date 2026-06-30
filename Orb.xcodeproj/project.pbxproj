@@ -510,6 +510,9 @@
 		1D705B9B9B744957834D7DEC /* DuplicateMergeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F5AC3EC0C4235BDE9A9F8 /* DuplicateMergeFlow.swift */; };
 		A44D365E38AD4E8A9C51E064 /* DuplicateMergeFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E948628F5CF43298E37CE7C /* DuplicateMergeFlowTests.swift */; };
 		03F244721382491E8333E814 /* DuplicateMergeFlowIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C62B41C3684C968389C154 /* DuplicateMergeFlowIntegrationTests.swift */; };
+		C9931DF8822948229283837E /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F5A30139D423DAEF47BDC /* ErrorReporter.swift */; };
+		AB35F5BB36374D7C9C95E29D /* ErrorReporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E6917BDF24842A5E2B0A6 /* ErrorReporterTests.swift */; };
+		208EAEB5E64146FA9D4F54D9 /* ErrorReporterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0230DCC24DD41ED9E8C8914 /* ErrorReporterIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1027,6 +1030,9 @@
 		F07F5AC3EC0C4235BDE9A9F8 /* DuplicateMergeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateMergeFlow.swift; sourceTree = "<group>"; };
 		7E948628F5CF43298E37CE7C /* DuplicateMergeFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateMergeFlowTests.swift; sourceTree = "<group>"; };
 		41C62B41C3684C968389C154 /* DuplicateMergeFlowIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateMergeFlowIntegrationTests.swift; sourceTree = "<group>"; };
+		C73F5A30139D423DAEF47BDC /* ErrorReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporter.swift; sourceTree = "<group>"; };
+		E92E6917BDF24842A5E2B0A6 /* ErrorReporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporterTests.swift; sourceTree = "<group>"; };
+		C0230DCC24DD41ED9E8C8914 /* ErrorReporterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorReporterIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1249,6 +1255,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C73F5A30139D423DAEF47BDC /* ErrorReporter.swift */,
 				F07F5AC3EC0C4235BDE9A9F8 /* DuplicateMergeFlow.swift */,
 				028B4C0F62B940E3851590ED /* ItemDeletionService.swift */,
 				547D723651F84A2CAFDC9DAB /* IndexRebuildService.swift */,
@@ -1276,6 +1283,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				E92E6917BDF24842A5E2B0A6 /* ErrorReporterTests.swift */,
 				7E948628F5CF43298E37CE7C /* DuplicateMergeFlowTests.swift */,
 				9C03B6ECD73C4F4A87963749 /* ItemDeletionServiceTests.swift */,
 				E86B9804C9724C4F8A076F95 /* IndexRebuildServiceTests.swift */,
@@ -1450,6 +1458,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				C0230DCC24DD41ED9E8C8914 /* ErrorReporterIntegrationTests.swift */,
 				41C62B41C3684C968389C154 /* DuplicateMergeFlowIntegrationTests.swift */,
 				2529DF49436E47CBBF29C20E /* ItemDeletionServiceIntegrationTests.swift */,
 				70C70AC1A2B24FE7894DDE47 /* IndexRebuildServiceIntegrationTests.swift */,
@@ -1681,6 +1690,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				C9931DF8822948229283837E /* ErrorReporter.swift in Sources */,
 				1D705B9B9B744957834D7DEC /* DuplicateMergeFlow.swift in Sources */,
 				0F9A65959E99466B873BAEE6 /* ItemDeletionService.swift in Sources */,
 				85CF410A3942430D8ECC19AF /* IndexRebuildService.swift in Sources */,
@@ -1731,6 +1741,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				AB35F5BB36374D7C9C95E29D /* ErrorReporterTests.swift in Sources */,
 				A44D365E38AD4E8A9C51E064 /* DuplicateMergeFlowTests.swift in Sources */,
 				38C577DB44EB4FCF80B5A0DA /* ItemDeletionServiceTests.swift in Sources */,
 				6D6580DD9DD945629DC471AC /* IndexRebuildServiceTests.swift in Sources */,
@@ -1778,6 +1789,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				208EAEB5E64146FA9D4F54D9 /* ErrorReporterIntegrationTests.swift in Sources */,
 				03F244721382491E8333E814 /* DuplicateMergeFlowIntegrationTests.swift in Sources */,
 				6CEF49C920CB441086E27D20 /* ItemDeletionServiceIntegrationTests.swift in Sources */,
 				EB86EB3BCE204139B850E37D /* IndexRebuildServiceIntegrationTests.swift in Sources */,
