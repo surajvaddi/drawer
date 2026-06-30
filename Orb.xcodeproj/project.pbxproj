@@ -539,7 +539,6 @@
 		FABC71E7D5F9B /* OrbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbApp.swift; sourceTree = "<group>"; };
 		F433B62DE3357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB05267C75C7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FE3EFB4BDE16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B360FA29964 /* OrbLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLogger.swift; sourceTree = "<group>"; };
 		FBB5032AE28DE /* OrbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbError.swift; sourceTree = "<group>"; };
 		FF2214F236D7A /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
@@ -1081,9 +1080,9 @@
 				A700000A0000000000000001 /* Search */,
 				A700000B0000000000000001 /* AI */,
 				A700000C0000000000000001 /* Services */,
+				A700000D0000000000000001 /* Privacy */,
 				F433B62DE3357 /* AppDelegate.swift */,
 				FB05267C75C7B /* ContentView.swift */,
-				FE3EFB4BDE16A /* Info.plist */,
 				FE3EFB4BDE16A /* Info.plist */,
 				FABC71E7D5F9B /* OrbApp.swift */,
 			); path = Orb; sourceTree = "<group>"; };
@@ -1671,6 +1670,19 @@
 				A50000020000000000000001 /* OrbTests.xctest */,
 				A50000030000000000000001 /* OrbIntegrationTests.xctest */,
 			); name = Products; sourceTree = "<group>"; };
+		A700000D0000000000000001 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				7A470F30014F47AE9CB25804 /* SensitiveContentDetector.swift */,
+				05E1A8CAB04A43E9890C3FCB /* SensitiveSaveAlert.swift */,
+				7470AB93C96E424CA6F47338 /* PrivateDrawerService.swift */,
+				F32B83CDFF0844089D01233F /* ExcludedAppsManager.swift */,
+				DAC506E6755745A39DD2D283 /* ClipboardPreviewCleaner.swift */,
+				8E8DDF1BA82C4443B52EA926 /* PrivateModeController.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
