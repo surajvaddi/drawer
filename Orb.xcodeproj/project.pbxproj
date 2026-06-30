@@ -23,6 +23,9 @@
 		8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99901AA43E4C32842B4D31 /* ItemType.swift */; };
 		934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */; };
 		ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */; };
+		01036EEE5CEC40EF80F04E49 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8489C2B8E4C5BB87C2E4A /* Item.swift */; };
+		DD61F9F2245F4428AD40588B /* ItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403A01BE428446085687007 /* ItemModelTests.swift */; };
+		D216CECF432C475391050F11 /* ItemModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		8F99901AA43E4C32842B4D31 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypeTests.swift; sourceTree = "<group>"; };
 		28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypeIntegrationTests.swift; sourceTree = "<group>"; };
+		2EB8489C2B8E4C5BB87C2E4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E403A01BE428446085687007 /* ItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelTests.swift; sourceTree = "<group>"; };
+		03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2EB8489C2B8E4C5BB87C2E4A /* Item.swift */,
 				8F99901AA43E4C32842B4D31 /* ItemType.swift */,
 				A20000010000000000000004 /* OrbLogger.swift */,
 				A20000010000000000000005 /* OrbError.swift */,
@@ -137,6 +144,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				E403A01BE428446085687007 /* ItemModelTests.swift */,
 				6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */,
 				A20000020000000000000001 /* AppBootstrapTests.swift */,
 				A20000020000000000000002 /* OrbLoggerTests.swift */,
@@ -149,6 +157,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */,
 				28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */,
 				A20000030000000000000001 /* AppLaunchIntegrationTests.swift */,
 				A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */,
@@ -269,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01036EEE5CEC40EF80F04E49 /* Item.swift in Sources */,
 				8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */,
 				A10000010000000000000001 /* OrbApp.swift in Sources */,
 				A10000010000000000000002 /* AppDelegate.swift in Sources */,
@@ -282,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD61F9F2245F4428AD40588B /* ItemModelTests.swift in Sources */,
 				934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */,
 				A10000020000000000000001 /* AppBootstrapTests.swift in Sources */,
 				A10000020000000000000002 /* OrbLoggerTests.swift in Sources */,
@@ -294,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D216CECF432C475391050F11 /* ItemModelIntegrationTests.swift in Sources */,
 				ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */,
 				A10000030000000000000001 /* AppLaunchIntegrationTests.swift in Sources */,
 				A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */,
