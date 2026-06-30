@@ -129,6 +129,8 @@
 		FFF7F28D11694A25B3B2B88A /* ClipboardWatchSettingsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */; };
 		80FCDA11254E417EA2DBB47D /* URLNormalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */; };
 		B312826E738C4BF8BB311747 /* URLNormalizerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */; };
+		C1AEF025BA7A4FB7A484791B /* TextNormalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */; };
+		8503F477060340F697183F26 /* TextNormalizerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +267,8 @@
 		A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardWatchSettingsIntegrationTests.swift; sourceTree = "<group>"; };
 		B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNormalizerTests.swift; sourceTree = "<group>"; };
 		CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLNormalizerIntegrationTests.swift; sourceTree = "<group>"; };
+		8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNormalizerTests.swift; sourceTree = "<group>"; };
+		04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNormalizerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +395,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */,
 				B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */,
 				085A2834A76443169AA2AB34 /* ClipboardWatchSettingsTests.swift */,
 				23F35B14200A421891D38BAE /* PasteboardWriterTests.swift */,
@@ -437,6 +442,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */,
 				CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */,
 				A551C079170642C1B1DFE4F1 /* ClipboardWatchSettingsIntegrationTests.swift */,
 				0A3C0B56BDE4473BB8E1596B /* PasteboardWriterIntegrationTests.swift */,
