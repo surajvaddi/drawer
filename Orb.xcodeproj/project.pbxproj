@@ -258,6 +258,9 @@
 		5C56CEB3A99B4CB9A0F23D11 /* TagFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDAC8CB9E1943FCA4FBD0D1 /* TagFilterController.swift */; };
 		ADE30F88C7B0478F92D47E7E /* TagFilterControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7D246152CF429BA8182257 /* TagFilterControllerTests.swift */; };
 		23BD3532FBD846099684C2FC /* TagFilterControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA343D0DA14AE4B8090452 /* TagFilterControllerIntegrationTests.swift */; };
+		6C61D64F8A974073BFCEAF36 /* ItemFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A998E9DFDF74D66BBE6EA5C /* ItemFilterController.swift */; };
+		99AB86BFF8034BD186E7F00B /* ItemFilterControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBF27C332C4B16950B2F6E /* ItemFilterControllerTests.swift */; };
+		A106951AFBE54F11ABE401B2 /* ItemFilterControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1361F83D2740BB8F9C2B14 /* ItemFilterControllerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -523,6 +526,9 @@
 		5DDAC8CB9E1943FCA4FBD0D1 /* TagFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterController.swift; sourceTree = "<group>"; };
 		9D7D246152CF429BA8182257 /* TagFilterControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterControllerTests.swift; sourceTree = "<group>"; };
 		2BAA343D0DA14AE4B8090452 /* TagFilterControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFilterControllerIntegrationTests.swift; sourceTree = "<group>"; };
+		3A998E9DFDF74D66BBE6EA5C /* ItemFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFilterController.swift; sourceTree = "<group>"; };
+		17FBF27C332C4B16950B2F6E /* ItemFilterControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFilterControllerTests.swift; sourceTree = "<group>"; };
+		8E1361F83D2740BB8F9C2B14 /* ItemFilterControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFilterControllerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,6 +636,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3A998E9DFDF74D66BBE6EA5C /* ItemFilterController.swift */,
 				5DDAC8CB9E1943FCA4FBD0D1 /* TagFilterController.swift */,
 				1523AFB5F1B249D58D97D889 /* TagEditorView.swift */,
 				62144297CEAC4E36BF1D185F /* DrawerSuggestionBanner.swift */,
@@ -690,6 +697,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				17FBF27C332C4B16950B2F6E /* ItemFilterControllerTests.swift */,
 				9D7D246152CF429BA8182257 /* TagFilterControllerTests.swift */,
 				05AA0D9F82F548B0B68CE137 /* TagEditorViewTests.swift */,
 				37B995EA678C441DA0C908BA /* DrawerSuggestionBannerTests.swift */,
@@ -781,6 +789,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				8E1361F83D2740BB8F9C2B14 /* ItemFilterControllerIntegrationTests.swift */,
 				2BAA343D0DA14AE4B8090452 /* TagFilterControllerIntegrationTests.swift */,
 				4D69D6BCCC444F57A65E3FD2 /* TagEditorViewIntegrationTests.swift */,
 				D4DFD9DE76FA49B3B450CC44 /* DrawerSuggestionBannerIntegrationTests.swift */,
