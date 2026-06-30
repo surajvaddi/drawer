@@ -19,6 +19,9 @@ struct AppSettings: Codable, Equatable, Sendable {
     var sensitiveDetectionEnabled: Bool = true
     var importCopiesFiles: Bool = true
     var cacheSizeMB: Int = 512
+    var aiEnabled: Bool = false
+    var aiLocalOnly: Bool = true
+    var aiAskBeforeCloud: Bool = true
 }
 
 final class SettingsStore: @unchecked Sendable {
