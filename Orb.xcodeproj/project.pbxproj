@@ -303,6 +303,9 @@
 		F98CDA32B92240EDB78E8ED4 /* AutoPasteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */; };
 		482E7BECE9EF48B78D7DC0A7 /* AutoPasteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */; };
 		251174A4C2384B79B9F2DBD1 /* AutoPasteServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */; };
+		2556E0A3F55C4FFA904AD8F7 /* RecencyBoostPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21CF985C1B40CFBB712665 /* RecencyBoostPolicy.swift */; };
+		B4AC74C2E5CD4F569F1412BB /* RecencyBoostPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */; };
+		5CD452C47C0944C8817555E4 /* RecencyBoostPolicyIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -613,6 +616,9 @@
 		05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPasteService.swift; sourceTree = "<group>"; };
 		B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPasteServiceTests.swift; sourceTree = "<group>"; };
 		263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPasteServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		5B21CF985C1B40CFBB712665 /* RecencyBoostPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecencyBoostPolicy.swift; sourceTree = "<group>"; };
+		20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecencyBoostPolicyTests.swift; sourceTree = "<group>"; };
+		20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecencyBoostPolicyIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -765,6 +771,7 @@
 		A700000A0000000000000001 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				5B21CF985C1B40CFBB712665 /* RecencyBoostPolicy.swift */,
 				15AD7FA635E145E0A484DAED /* FuzzySearchService.swift */,
 				69410CD4944A4568A524A96C /* SearchRanker.swift */,
 				3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */,
@@ -796,6 +803,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */,
 				B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */,
 				C9CA97C687264E34AF69CFA0 /* QuickPasteControllerTests.swift */,
 				D620664F10BE498EA0A27CB9 /* QuickPasteResultsViewTests.swift */,
@@ -902,6 +910,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */,
 				263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */,
 				C70FFAA23E8E49609F7A3940 /* QuickPasteControllerIntegrationTests.swift */,
 				938F82C928DB46F2B405B807 /* QuickPasteResultsViewIntegrationTests.swift */,
