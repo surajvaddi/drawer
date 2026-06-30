@@ -66,6 +66,9 @@
 		909ED7AD625146AF87D20365 /* TagRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7DE1B1C9A14306B04E92FB /* TagRepository.swift */; };
 		489FEA3363F64C9D86EBCBD1 /* TagRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA56C0AFB4A249B58C28AF3E /* TagRepositoryTests.swift */; };
 		B2DADD9215324360A65E48A9 /* TagRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA8B38B784844A2806B352A /* TagRepositoryIntegrationTests.swift */; };
+		2CB1ED1DAC1441A9BA4786AA /* BlobRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89408BD3BE4CB0B1629492 /* BlobRepository.swift */; };
+		3EF7C62B7CFC4B5184E4082A /* BlobRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA751F6FA4A45D5A7A40124 /* BlobRepositoryTests.swift */; };
+		4702A635A1E0462E850F1988 /* BlobRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11C3A4DB83A4C618C874D5C /* BlobRepositoryIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,9 @@
 		3A7DE1B1C9A14306B04E92FB /* TagRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRepository.swift; sourceTree = "<group>"; };
 		AA56C0AFB4A249B58C28AF3E /* TagRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRepositoryTests.swift; sourceTree = "<group>"; };
 		BEA8B38B784844A2806B352A /* TagRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
+		5A89408BD3BE4CB0B1629492 /* BlobRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobRepository.swift; sourceTree = "<group>"; };
+		EBA751F6FA4A45D5A7A40124 /* BlobRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobRepositoryTests.swift; sourceTree = "<group>"; };
+		B11C3A4DB83A4C618C874D5C /* BlobRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				5A89408BD3BE4CB0B1629492 /* BlobRepository.swift */,
 				3A7DE1B1C9A14306B04E92FB /* TagRepository.swift */,
 				9C3A4270EA314043B5C883E6 /* DrawerRepository.swift */,
 				65AF9C6A840F45E18295BE7D /* ItemRepository.swift */,
@@ -241,6 +248,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				EBA751F6FA4A45D5A7A40124 /* BlobRepositoryTests.swift */,
 				AA56C0AFB4A249B58C28AF3E /* TagRepositoryTests.swift */,
 				84F45858663A4CA98D3FDBB8 /* DrawerRepositoryTests.swift */,
 				FCE4A14631024EDBA7DFA320 /* ItemRepositoryTests.swift */,
@@ -267,6 +275,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				B11C3A4DB83A4C618C874D5C /* BlobRepositoryIntegrationTests.swift */,
 				BEA8B38B784844A2806B352A /* TagRepositoryIntegrationTests.swift */,
 				2CB1FA828FDF48C0BA90D34D /* DrawerRepositoryIntegrationTests.swift */,
 				C92D5B5D38954C8D80893297 /* ItemRepositoryIntegrationTests.swift */,
