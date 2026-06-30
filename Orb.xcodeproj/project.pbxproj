@@ -154,6 +154,9 @@
 		747D974123594ED18DA1D7CD /* InboxListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD92A6F5E3F42479DEDA7B9 /* InboxListView.swift */; };
 		2679696701B64099810EB093 /* InboxListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91F5AE0359444409C909201 /* InboxListViewTests.swift */; };
 		B607C7E21F4B48EF972A199A /* InboxListViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB595C214BE4DC6ABFD56BE /* InboxListViewIntegrationTests.swift */; };
+		3B218E36A6864BF6878E3BD8 /* DrawerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2358D4E80F3047C2A8776217 /* DrawerListView.swift */; };
+		CE156F67C9744A7BA68366EA /* DrawerListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DF2A687E17400BB81E6967 /* DrawerListViewTests.swift */; };
+		0523DBFEC8004A7380FBEEAC /* DrawerListViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48E7456636C4AC2BA737F40 /* DrawerListViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +318,9 @@
 		9BD92A6F5E3F42479DEDA7B9 /* InboxListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxListView.swift; sourceTree = "<group>"; };
 		B91F5AE0359444409C909201 /* InboxListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxListViewTests.swift; sourceTree = "<group>"; };
 		ACB595C214BE4DC6ABFD56BE /* InboxListViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxListViewIntegrationTests.swift; sourceTree = "<group>"; };
+		2358D4E80F3047C2A8776217 /* DrawerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerListView.swift; sourceTree = "<group>"; };
+		31DF2A687E17400BB81E6967 /* DrawerListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerListViewTests.swift; sourceTree = "<group>"; };
+		C48E7456636C4AC2BA737F40 /* DrawerListViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerListViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +409,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2358D4E80F3047C2A8776217 /* DrawerListView.swift */,
 				9BD92A6F5E3F42479DEDA7B9 /* InboxListView.swift */,
 				5B48B8D1479D44EFB285F63F /* QuickActionsRow.swift */,
 				3E959B00F29741F4B4A5C76F /* DrawerSearchBar.swift */,
@@ -446,6 +453,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				31DF2A687E17400BB81E6967 /* DrawerListViewTests.swift */,
 				B91F5AE0359444409C909201 /* InboxListViewTests.swift */,
 				CF75AD0AE02D4EF7BB858401 /* QuickActionsRowTests.swift */,
 				30E0A2D193F3419AA206AD52 /* DrawerSearchBarTests.swift */,
@@ -502,6 +510,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				C48E7456636C4AC2BA737F40 /* DrawerListViewIntegrationTests.swift */,
 				ACB595C214BE4DC6ABFD56BE /* InboxListViewIntegrationTests.swift */,
 				D15E62EC1905467B977874F7 /* QuickActionsRowIntegrationTests.swift */,
 				843A132729C84D059F27719A /* DrawerSearchBarIntegrationTests.swift */,
