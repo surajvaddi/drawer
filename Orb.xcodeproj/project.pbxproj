@@ -53,6 +53,9 @@
 		5FFCCD1DEB2C4E8ABB33B834 /* MigrationV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BDE7FEAF84ED483176D2D /* MigrationV3.swift */; };
 		9A478ACF4D1A45059B426CF7 /* MigrationV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1DD5B8C2D49C4AF016BB0 /* MigrationV3Tests.swift */; };
 		192C6BC7C1A343D8A7EE2F5B /* MigrationV3IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B6AC3DDF4423F883ABA9E /* MigrationV3IntegrationTests.swift */; };
+		B9938257C11C4BC7A65D319D /* MigrationV4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3176DEBB77043EEB12FC45B /* MigrationV4.swift */; };
+		CE965C8640B442D0A0481E8C /* MigrationV4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F70C6980914E16BDEC465C /* MigrationV4Tests.swift */; };
+		3C1E0E3C5EA74CCFA11C5FDB /* MigrationV4IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6C83E0261433A9B25C963 /* MigrationV4IntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		188BDE7FEAF84ED483176D2D /* MigrationV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV3.swift; sourceTree = "<group>"; };
 		49A1DD5B8C2D49C4AF016BB0 /* MigrationV3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV3Tests.swift; sourceTree = "<group>"; };
 		B51B6AC3DDF4423F883ABA9E /* MigrationV3IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV3IntegrationTests.swift; sourceTree = "<group>"; };
+		A3176DEBB77043EEB12FC45B /* MigrationV4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV4.swift; sourceTree = "<group>"; };
+		97F70C6980914E16BDEC465C /* MigrationV4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV4Tests.swift; sourceTree = "<group>"; };
+		36A6C83E0261433A9B25C963 /* MigrationV4IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV4IntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A3176DEBB77043EEB12FC45B /* MigrationV4.swift */,
 				188BDE7FEAF84ED483176D2D /* MigrationV3.swift */,
 				749981777B124248814D7DF7 /* MigrationV2.swift */,
 				21B3D76D277A4319BA5DC1A3 /* MigrationV1.swift */,
@@ -210,6 +217,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				97F70C6980914E16BDEC465C /* MigrationV4Tests.swift */,
 				49A1DD5B8C2D49C4AF016BB0 /* MigrationV3Tests.swift */,
 				88652CFEB8694633802FBBE3 /* MigrationV2Tests.swift */,
 				9EB94FA271A64F758BAEC2FE /* MigrationV1Tests.swift */,
@@ -232,6 +240,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				36A6C83E0261433A9B25C963 /* MigrationV4IntegrationTests.swift */,
 				B51B6AC3DDF4423F883ABA9E /* MigrationV3IntegrationTests.swift */,
 				D93A6C2A7D834AA6B33A3F56 /* MigrationV2IntegrationTests.swift */,
 				E824F78F2B7D45578A107215 /* MigrationV1IntegrationTests.swift */,

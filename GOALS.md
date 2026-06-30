@@ -187,7 +187,7 @@ SQLite persistence, migrations, and application support paths.
 
 ### Step 2.6: DrawerRules and AIAnnotations Migration
 
-- [ ] **Function:** Migration v4 for `drawer_rules` and `ai_annotations`.
+- [x] **Function:** Migration v4 for `drawer_rules` and `ai_annotations`.
 - **Unit tests:**
   - `testDrawerRuleJSONColumnRoundTrip`
 - **Integration tests:**
