@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* OrbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* OrbApp.swift */; };
+		A10000010000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* AppDelegate.swift */; };
+		A10000010000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* ContentView.swift */; };
+		A10000020000000000000001 /* AppBootstrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000001 /* AppBootstrapTests.swift */; };
+		A10000030000000000000001 /* AppLaunchIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000001 /* AppLaunchIntegrationTests.swift */; };
+		A10000010000000000000004 /* OrbLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* OrbLogger.swift */; };
+		A10000010000000000000005 /* OrbError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* OrbError.swift */; };
+		A10000020000000000000002 /* OrbLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000002 /* OrbLoggerTests.swift */; };
+		A10000020000000000000003 /* ModuleStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000003 /* ModuleStructureTests.swift */; };
+		A10000020000000000000004 /* TestTargetLinkageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000004 /* TestTargetLinkageTests.swift */; };
+		A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */; };
+		A10000030000000000000003 /* CIScriptIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000003 /* CIScriptIntegrationTests.swift */; };
+		A10000030000000000000004 /* ModuleStructureIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40000010000000000000001;
+			remoteInfo = Orb;
+		};
+		A30000020000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A40000010000000000000001;
+			remoteInfo = Orb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* OrbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbApp.swift; sourceTree = "<group>"; };
+		A20000010000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20000010000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20000010000000000000004 /* OrbLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLogger.swift; sourceTree = "<group>"; };
+		A20000010000000000000005 /* OrbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbError.swift; sourceTree = "<group>"; };
+		A20000010000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000020000000000000001 /* AppBootstrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapTests.swift; sourceTree = "<group>"; };
+		A20000020000000000000002 /* OrbLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLoggerTests.swift; sourceTree = "<group>"; };
+		A20000020000000000000003 /* ModuleStructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStructureTests.swift; sourceTree = "<group>"; };
+		A20000020000000000000004 /* TestTargetLinkageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTargetLinkageTests.swift; sourceTree = "<group>"; };
+		A20000030000000000000001 /* AppLaunchIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchIntegrationTests.swift; sourceTree = "<group>"; };
+		A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLoggerIntegrationTests.swift; sourceTree = "<group>"; };
+		A20000030000000000000003 /* CIScriptIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIScriptIntegrationTests.swift; sourceTree = "<group>"; };
+		A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStructureIntegrationTests.swift; sourceTree = "<group>"; };
+		A50000010000000000000001 /* Orb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50000020000000000000001 /* OrbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50000030000000000000001 /* OrbIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A60000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60000020000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60000030000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A70000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A70000020000000000000001 /* Orb */,
+				A70000030000000000000001 /* OrbTests */,
+				A70000040000000000000001 /* OrbIntegrationTests */,
+				A70000050000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A70000020000000000000001 /* Orb */ = {
+			isa = PBXGroup;
+			children = (
+				A70000060000000000000001 /* Core */,
+				A70000070000000000000001 /* Storage */,
+				A70000080000000000000001 /* Capture */,
+				A70000090000000000000001 /* UI */,
+				A700000A0000000000000001 /* Search */,
+				A700000B0000000000000001 /* AI */,
+				A700000C0000000000000001 /* Services */,
+				A20000010000000000000001 /* OrbApp.swift */,
+				A20000010000000000000002 /* AppDelegate.swift */,
+				A20000010000000000000003 /* ContentView.swift */,
+				A20000010000000000000006 /* Info.plist */,
+			);
+			path = Orb;
+			sourceTree = "<group>";
+		};
+		A70000060000000000000001 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000004 /* OrbLogger.swift */,
+				A20000010000000000000005 /* OrbError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A70000070000000000000001 /* Storage */ = {isa = PBXGroup; children = (); path = Storage; sourceTree = "<group>"; };
+		A70000080000000000000001 /* Capture */ = {isa = PBXGroup; children = (); path = Capture; sourceTree = "<group>"; };
+		A70000090000000000000001 /* UI */ = {isa = PBXGroup; children = (); path = UI; sourceTree = "<group>"; };
+		A700000A0000000000000001 /* Search */ = {isa = PBXGroup; children = (); path = Search; sourceTree = "<group>"; };
+		A700000B0000000000000001 /* AI */ = {isa = PBXGroup; children = (); path = AI; sourceTree = "<group>"; };
+		A700000C0000000000000001 /* Services */ = {isa = PBXGroup; children = (); path = Services; sourceTree = "<group>"; };
+		A70000030000000000000001 /* OrbTests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000020000000000000001 /* AppBootstrapTests.swift */,
+				A20000020000000000000002 /* OrbLoggerTests.swift */,
+				A20000020000000000000003 /* ModuleStructureTests.swift */,
+				A20000020000000000000004 /* TestTargetLinkageTests.swift */,
+			);
+			path = OrbTests;
+			sourceTree = "<group>";
+		};
+		A70000040000000000000001 /* OrbIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000030000000000000001 /* AppLaunchIntegrationTests.swift */,
+				A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */,
+				A20000030000000000000003 /* CIScriptIntegrationTests.swift */,
+				A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */,
+			);
+			path = OrbIntegrationTests;
+			sourceTree = "<group>";
+		};
+		A70000050000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A50000010000000000000001 /* Orb.app */,
+				A50000020000000000000001 /* OrbTests.xctest */,
+				A50000030000000000000001 /* OrbIntegrationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A40000010000000000000001 /* Orb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000010000000000000001 /* Build configuration list for PBXNativeTarget "Orb" */;
+			buildPhases = (
+				A90000010000000000000001 /* Sources */,
+				A60000010000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Orb;
+			productName = Orb;
+			productReference = A50000010000000000000001 /* Orb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A40000020000000000000001 /* OrbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000020000000000000001 /* Build configuration list for PBXNativeTarget "OrbTests" */;
+			buildPhases = (
+				A90000020000000000000001 /* Sources */,
+				A60000020000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30000030000000000000001 /* PBXTargetDependency */,
+			);
+			name = OrbTests;
+			productName = OrbTests;
+			productReference = A50000020000000000000001 /* OrbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A40000030000000000000001 /* OrbIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000030000000000000001 /* Build configuration list for PBXNativeTarget "OrbIntegrationTests" */;
+			buildPhases = (
+				A90000030000000000000001 /* Sources */,
+				A60000030000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A30000040000000000000001 /* PBXTargetDependency */,
+			);
+			name = OrbIntegrationTests;
+			productName = OrbIntegrationTests;
+			productReference = A50000030000000000000001 /* OrbIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A40000010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A40000020000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A40000010000000000000001;
+					};
+					A40000030000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A40000010000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A80000040000000000000001 /* Build configuration list for PBXProject "Orb" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A70000010000000000000001;
+			productRefGroup = A70000050000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A40000010000000000000001 /* Orb */,
+				A40000020000000000000001 /* OrbTests */,
+				A40000030000000000000001 /* OrbIntegrationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* OrbApp.swift in Sources */,
+				A10000010000000000000002 /* AppDelegate.swift in Sources */,
+				A10000010000000000000003 /* ContentView.swift in Sources */,
+				A10000010000000000000004 /* OrbLogger.swift in Sources */,
+				A10000010000000000000005 /* OrbError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90000020000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000020000000000000001 /* AppBootstrapTests.swift in Sources */,
+				A10000020000000000000002 /* OrbLoggerTests.swift in Sources */,
+				A10000020000000000000003 /* ModuleStructureTests.swift in Sources */,
+				A10000020000000000000004 /* TestTargetLinkageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90000030000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000030000000000000001 /* AppLaunchIntegrationTests.swift in Sources */,
+				A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */,
+				A10000030000000000000003 /* CIScriptIntegrationTests.swift in Sources */,
+				A10000030000000000000004 /* ModuleStructureIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A30000030000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40000010000000000000001 /* Orb */;
+			targetProxy = A30000010000000000000001 /* PBXContainerItemProxy */;
+		};
+		A30000040000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A40000010000000000000001 /* Orb */;
+			targetProxy = A30000020000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB0000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AB0000020000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Orb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.Orb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB0000020000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Orb/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.Orb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AB0000030000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
+			};
+			name = Debug;
+		};
+		AB0000030000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
+			};
+			name = Release;
+		};
+		AB0000040000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
+			};
+			name = Debug;
+		};
+		AB0000040000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000010000000000000001 /* Build configuration list for PBXNativeTarget "Orb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000020000000000000001 /* Debug */,
+				AB0000020000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000020000000000000001 /* Build configuration list for PBXNativeTarget "OrbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000030000000000000001 /* Debug */,
+				AB0000030000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000030000000000000001 /* Build configuration list for PBXNativeTarget "OrbIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000040000000000000001 /* Debug */,
+				AB0000040000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80000040000000000000001 /* Build configuration list for PBXProject "Orb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000010000000000000001 /* Debug */,
+				AB0000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000010000000000000001 /* Project object */;
+}
