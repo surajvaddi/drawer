@@ -203,6 +203,9 @@
 		6238D718A72F4C90B18B9A7D /* ScreenshotCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0651BDCC96474D728392FA25 /* ScreenshotCaptureService.swift */; };
 		7DD9407A682A4197A0226568 /* ScreenshotCaptureServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9ECD3989B94B2D9C640EE8 /* ScreenshotCaptureServiceTests.swift */; };
 		3A3ED822CFD940FF87F8D5AA /* ScreenshotCaptureServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2742213411438A9B7E5ACA /* ScreenshotCaptureServiceIntegrationTests.swift */; };
+		535E333E6DA34A3CA263B7CB /* ScreenshotSavePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5D58B10D34370AEA58947 /* ScreenshotSavePipeline.swift */; };
+		040DBA042E73488F961561C1 /* ScreenshotSavePipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F2F85085424ADC937E921F /* ScreenshotSavePipelineTests.swift */; };
+		1BE0DC69FBC54F7596F3566D /* ScreenshotSavePipelineIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0776BBCFA4B24B27B8F2C /* ScreenshotSavePipelineIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -413,6 +416,9 @@
 		0651BDCC96474D728392FA25 /* ScreenshotCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCaptureService.swift; sourceTree = "<group>"; };
 		7C9ECD3989B94B2D9C640EE8 /* ScreenshotCaptureServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCaptureServiceTests.swift; sourceTree = "<group>"; };
 		6A2742213411438A9B7E5ACA /* ScreenshotCaptureServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCaptureServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		0EE5D58B10D34370AEA58947 /* ScreenshotSavePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotSavePipeline.swift; sourceTree = "<group>"; };
+		43F2F85085424ADC937E921F /* ScreenshotSavePipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotSavePipelineTests.swift; sourceTree = "<group>"; };
+		20C0776BBCFA4B24B27B8F2C /* ScreenshotSavePipelineIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotSavePipelineIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -482,6 +488,7 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				0EE5D58B10D34370AEA58947 /* ScreenshotSavePipeline.swift */,
 				0651BDCC96474D728392FA25 /* ScreenshotCaptureService.swift */,
 				C4967B28BC044FF09F5ECFD4 /* ScreenshotRegionOverlay.swift */,
 				738A00463D0747709AA86BE3 /* RichClipProcessor.swift */,
@@ -561,6 +568,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				43F2F85085424ADC937E921F /* ScreenshotSavePipelineTests.swift */,
 				7C9ECD3989B94B2D9C640EE8 /* ScreenshotCaptureServiceTests.swift */,
 				B817B85D8C2C4206B1D40908 /* ScreenshotRegionOverlayTests.swift */,
 				64562D48F22049E8B9F56ECB /* TextItemActionsTests.swift */,
@@ -634,6 +642,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				20C0776BBCFA4B24B27B8F2C /* ScreenshotSavePipelineIntegrationTests.swift */,
 				6A2742213411438A9B7E5ACA /* ScreenshotCaptureServiceIntegrationTests.swift */,
 				5483C4054AED4FD58B83A41F /* ScreenshotRegionOverlayIntegrationTests.swift */,
 				6D248DEB94EE41F08904BFAD /* TextItemActionsIntegrationTests.swift */,
