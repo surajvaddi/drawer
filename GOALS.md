@@ -167,7 +167,7 @@ SQLite persistence, migrations, and application support paths.
 
 ### Step 2.4: Tags, Blobs, and Junction Tables Migration
 
-- [ ] **Function:** Migration v2 for `tags`, `item_tags`, `blobs`, `capture_events`.
+- [x] **Function:** Migration v2 for `tags`, `item_tags`, `blobs`, `capture_events`.
 - **Unit tests:**
   - `testForeignKeysEnforced`
   - `testItemTagUniqueConstraint`
