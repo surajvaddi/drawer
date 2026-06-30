@@ -48,7 +48,9 @@ struct ItemRepository: Sendable {
               is_pinned=\(updated.isPinned ? 1 : 0),
               is_favorite=\(updated.isFavorite ? 1 : 0),
               is_archived=\(updated.isArchived ? 1 : 0),
-              sensitivity='\(escape(updated.sensitivity.rawValue))'
+              sensitivity='\(escape(updated.sensitivity.rawValue))',
+              user_note=\(sqlOptional(updated.userNote)),
+              sort_order=\(updated.sortOrder)
             WHERE id='\(escape(updated.id))';
             """
         )
@@ -62,12 +64,53 @@ struct ItemRepository: Sendable {
     func listRecent(limit: Int = 50) throws -> [Item] {
         var stmt: OpaquePointer?
         defer { sqlite3_finalize(stmt) }
-        let sql = "SELECT * FROM items WHERE is_archived = 0 ORDER BY created_at DESC LIMIT ?;"
+        let sql = "SELECT * FROM items WHERE is_archived = 0 ORDER BY is_pinned DESC, sort_order ASC, created_at DESC LIMIT ?;"
         guard sqlite3_prepare_v2(manager.db, sql, -1, &stmt, nil) == SQLITE_OK else {
             throw OrbError.storage("prepare list recent failed")
         }
         sqlite3_bind_int(stmt, 1, Int32(limit))
         return try collect(stmt)
+    }
+
+    func listPinned() throws -> [Item] {
+        var stmt: OpaquePointer?
+        defer { sqlite3_finalize(stmt) }
+        let sql = "SELECT * FROM items WHERE is_pinned = 1 AND is_archived = 0 ORDER BY sort_order ASC;"
+        guard sqlite3_prepare_v2(manager.db, sql, -1, &stmt, nil) == SQLITE_OK else {
+            throw OrbError.storage("prepare list pinned failed")
+        }
+        return try collect(stmt)
+    }
+
+    func listByDrawer(_ drawerID: String) throws -> [Item] {
+        var stmt: OpaquePointer?
+        defer { sqlite3_finalize(stmt) }
+        let sql = "SELECT * FROM items WHERE drawer_id = ? AND is_archived = 0 ORDER BY sort_order ASC, created_at DESC;"
+        guard sqlite3_prepare_v2(manager.db, sql, -1, &stmt, nil) == SQLITE_OK else {
+            throw OrbError.storage("prepare list by drawer failed")
+        }
+        sqlite3_bind_text(stmt, 1, drawerID, -1, SQLITE_TRANSIENT)
+        return try collect(stmt)
+    }
+
+    func updateSortOrder(itemIDsInOrder: [String]) throws {
+        for (index, id) in itemIDsInOrder.enumerated() {
+            try manager.exec(
+                """
+                UPDATE items SET sort_order=\(index), updated_at='\(DBDateCodec.string(from: Date()))'
+                WHERE id='\(escape(id))';
+                """
+            )
+        }
+    }
+
+    func moveToDrawer(itemID: String, drawerID: String?) throws {
+        try manager.exec(
+            """
+            UPDATE items SET drawer_id=\(sqlOptional(drawerID)), updated_at='\(DBDateCodec.string(from: Date()))'
+            WHERE id='\(escape(itemID))';
+            """
+        )
     }
 
     func archive(id: String) throws {
@@ -85,7 +128,7 @@ struct ItemRepository: Sendable {
             INSERT INTO items (
               id, type, title, preview, content_text, content_html, source_url, source_app,
               source_window_title, original_created_at, created_at, updated_at, last_accessed_at,
-              drawer_id, is_pinned, is_favorite, is_archived, sensitivity
+              drawer_id, is_pinned, is_favorite, is_archived, sensitivity, user_note, sort_order
             ) VALUES (
               '\(escape(item.id))',
               '\(escape(item.type.rawValue))',
@@ -104,7 +147,9 @@ struct ItemRepository: Sendable {
               \(item.isPinned ? 1 : 0),
               \(item.isFavorite ? 1 : 0),
               \(item.isArchived ? 1 : 0),
-              '\(escape(item.sensitivity.rawValue))'
+              '\(escape(item.sensitivity.rawValue))',
+              \(sqlOptional(item.userNote)),
+              \(item.sortOrder)
             );
             """
         )
@@ -154,7 +199,9 @@ struct ItemRepository: Sendable {
             isPinned: sqlite3_column_int(stmt, 14) == 1,
             isFavorite: sqlite3_column_int(stmt, 15) == 1,
             isArchived: sqlite3_column_int(stmt, 16) == 1,
-            sensitivity: sensitivity
+            sensitivity: sensitivity,
+            userNote: sqlite3_column_count(stmt) > 18 ? text(18) : nil,
+            sortOrder: sqlite3_column_count(stmt) > 19 ? Int(sqlite3_column_int(stmt, 19)) : 0
         )
     }
 

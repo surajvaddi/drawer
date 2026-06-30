@@ -167,6 +167,11 @@
 		30C2424424164F948DCAF9F2 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C86DBD32C94D8DBE39A67A /* ItemDetailView.swift */; };
 		859B70E6AEA445BB83AC2892 /* ItemDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778641D535E4019AC0D226C /* ItemDetailViewTests.swift */; };
 		A18719E7959246078F9F73A7 /* ItemDetailViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4690B624643E7ABA89B0A /* ItemDetailViewIntegrationTests.swift */; };
+		326F13ACDD19476784253BA0 /* MigrationV5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC085AD0B71A45EFAC44CD19 /* MigrationV5.swift */; };
+		2BE3BF09AAFF426D9D5245C7 /* ItemMetadataEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855675DE9AD24B51ADA04C0D /* ItemMetadataEditor.swift */; };
+		6E30D787FA1D4CCC820AAF42 /* MigrationV5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00EC876DCFC46A9AAC3DB87 /* MigrationV5Tests.swift */; };
+		5AE3FAA496F047949FF6F0C5 /* ItemMetadataEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBE337B481D449AA290125C /* ItemMetadataEditorTests.swift */; };
+		3D15953A4EF84805BBE8952A /* ItemMetadataEditorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA973B7D4E8486EBB368D45 /* ItemMetadataEditorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -341,6 +346,11 @@
 		D8C86DBD32C94D8DBE39A67A /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		2778641D535E4019AC0D226C /* ItemDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewTests.swift; sourceTree = "<group>"; };
 		2EE4690B624643E7ABA89B0A /* ItemDetailViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewIntegrationTests.swift; sourceTree = "<group>"; };
+		BC085AD0B71A45EFAC44CD19 /* MigrationV5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV5.swift; sourceTree = "<group>"; };
+		855675DE9AD24B51ADA04C0D /* ItemMetadataEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMetadataEditor.swift; sourceTree = "<group>"; };
+		B00EC876DCFC46A9AAC3DB87 /* MigrationV5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV5Tests.swift; sourceTree = "<group>"; };
+		BCBE337B481D449AA290125C /* ItemMetadataEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMetadataEditorTests.swift; sourceTree = "<group>"; };
+		CBA973B7D4E8486EBB368D45 /* ItemMetadataEditorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMetadataEditorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +395,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				BC085AD0B71A45EFAC44CD19 /* MigrationV5.swift */,
 				EAE6C65F3605404AA3B3D5A2 /* DefaultDataSeeder.swift */,
 				61A968788BB1443CB6AA5FFE /* StorageCoordinator.swift */,
 				8E6B84F23C414925AC33A9AF /* ThumbnailGenerator.swift */,
@@ -429,6 +440,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				855675DE9AD24B51ADA04C0D /* ItemMetadataEditor.swift */,
 				D8C86DBD32C94D8DBE39A67A /* ItemDetailView.swift */,
 				FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */,
 				554EF922A49D4662A6D25392 /* ItemCardView.swift */,
@@ -477,6 +489,8 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				BCBE337B481D449AA290125C /* ItemMetadataEditorTests.swift */,
+				B00EC876DCFC46A9AAC3DB87 /* MigrationV5Tests.swift */,
 				2778641D535E4019AC0D226C /* ItemDetailViewTests.swift */,
 				75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */,
 				6B909DB8F78A4B59840AA62D /* ItemCardViewTests.swift */,
@@ -537,6 +551,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CBA973B7D4E8486EBB368D45 /* ItemMetadataEditorIntegrationTests.swift */,
 				2EE4690B624643E7ABA89B0A /* ItemDetailViewIntegrationTests.swift */,
 				8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */,
 				0460F45263024DA8B9DC3B5B /* ItemCardViewIntegrationTests.swift */,

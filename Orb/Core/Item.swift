@@ -19,6 +19,8 @@ struct Item: Identifiable, Codable, Equatable, Sendable {
     var isFavorite: Bool
     var isArchived: Bool
     var sensitivity: SensitivityLevel
+    var userNote: String?
+    var sortOrder: Int
 
     static let previewLimit = 240
 
@@ -40,7 +42,9 @@ struct Item: Identifiable, Codable, Equatable, Sendable {
         isPinned: Bool = false,
         isFavorite: Bool = false,
         isArchived: Bool = false,
-        sensitivity: SensitivityLevel = .normal
+        sensitivity: SensitivityLevel = .normal,
+        userNote: String? = nil,
+        sortOrder: Int = 0
     ) {
         self.id = id
         self.type = type
@@ -60,6 +64,8 @@ struct Item: Identifiable, Codable, Equatable, Sendable {
         self.isFavorite = isFavorite
         self.isArchived = isArchived
         self.sensitivity = sensitivity
+        self.userNote = userNote
+        self.sortOrder = sortOrder
     }
 
     var isEmpty: Bool {
