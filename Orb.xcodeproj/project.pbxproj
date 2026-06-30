@@ -420,6 +420,9 @@
 		CB41E115153C44CC8D0AFE25 /* AISettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABF6BCF38984C6F99065A3B /* AISettingsView.swift */; };
 		D9893BBFF1B348A5B8CF26DE /* AISettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73579C2536184198A481003C /* AISettingsViewTests.swift */; };
 		2548C75040C34C619989AFDA /* AISettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D0047BD9AB4A75A8ADEE31 /* AISettingsViewIntegrationTests.swift */; };
+		1B84F7C26DFA43469151D2AC /* AIAnnotationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234444F6A75E44F9A5AFA0BF /* AIAnnotationViews.swift */; };
+		A21163FFE461467AAE360ED7 /* AIAnnotationViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D1BFE2EE6484CB0193A74 /* AIAnnotationViewsTests.swift */; };
+		4FFAD6BACC0F4785A2B7E978 /* AIAnnotationViewsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE6A143DB24C55B0BEB81B /* AIAnnotationViewsIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -847,6 +850,9 @@
 		AABF6BCF38984C6F99065A3B /* AISettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettingsView.swift; sourceTree = "<group>"; };
 		73579C2536184198A481003C /* AISettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettingsViewTests.swift; sourceTree = "<group>"; };
 		E0D0047BD9AB4A75A8ADEE31 /* AISettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
+		234444F6A75E44F9A5AFA0BF /* AIAnnotationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnnotationViews.swift; sourceTree = "<group>"; };
+		BE0D1BFE2EE6484CB0193A74 /* AIAnnotationViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnnotationViewsTests.swift; sourceTree = "<group>"; };
+		85CE6A143DB24C55B0BEB81B /* AIAnnotationViewsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAnnotationViewsIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1034,6 +1040,7 @@
 		A700000B0000000000000001 /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				234444F6A75E44F9A5AFA0BF /* AIAnnotationViews.swift */,
 				AABF6BCF38984C6F99065A3B /* AISettingsView.swift */,
 				47885C94195D486BA6AC3916 /* AIWorker.swift */,
 				F082AE6517394D6DB04E3444 /* AIPrivacyGate.swift */,
@@ -1066,6 +1073,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				BE0D1BFE2EE6484CB0193A74 /* AIAnnotationViewsTests.swift */,
 				73579C2536184198A481003C /* AISettingsViewTests.swift */,
 				A1D10B80A0304BA5A2BF1CD5 /* AIWorkerTests.swift */,
 				A7FBCA5021FF40ECA541BCD7 /* AIPrivacyGateTests.swift */,
@@ -1210,6 +1218,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				85CE6A143DB24C55B0BEB81B /* AIAnnotationViewsIntegrationTests.swift */,
 				E0D0047BD9AB4A75A8ADEE31 /* AISettingsViewIntegrationTests.swift */,
 				03BCAEC9D90048A2B275B4A9 /* AIWorkerIntegrationTests.swift */,
 				500374FDAFCC480989905D18 /* AIPrivacyGateIntegrationTests.swift */,
@@ -1411,6 +1420,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				1B84F7C26DFA43469151D2AC /* AIAnnotationViews.swift in Sources */,
 				CB41E115153C44CC8D0AFE25 /* AISettingsView.swift in Sources */,
 				78422A0895AD4F9696B6FE18 /* AIAnnotationRepository.swift in Sources */,
 				00175DF97CC441AB874019A9 /* AIWorker.swift in Sources */,
@@ -1431,6 +1441,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				A21163FFE461467AAE360ED7 /* AIAnnotationViewsTests.swift in Sources */,
 				D9893BBFF1B348A5B8CF26DE /* AISettingsViewTests.swift in Sources */,
 				20D245BFB9B244CC9215BBCB /* AIWorkerTests.swift in Sources */,
 				B036F9165A0B47649662DC4B /* AIPrivacyGateTests.swift in Sources */,
@@ -1448,6 +1459,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				4FFAD6BACC0F4785A2B7E978 /* AIAnnotationViewsIntegrationTests.swift in Sources */,
 				2548C75040C34C619989AFDA /* AISettingsViewIntegrationTests.swift in Sources */,
 				13F3405A310A45CB8201EA43 /* AIWorkerIntegrationTests.swift in Sources */,
 				235F066A1C974FCC801ABE9F /* AIPrivacyGateIntegrationTests.swift in Sources */,
