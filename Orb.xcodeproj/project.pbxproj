@@ -264,6 +264,9 @@
 		31C5605511864DB78031DE9E /* BulkItemActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3BA26735E548A5A683BE6D /* BulkItemActions.swift */; };
 		FF849F68B21C4698AB2630FE /* BulkItemActionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C958A12FD8F4169BF47E93F /* BulkItemActionsTests.swift */; };
 		2296A7AFBFA042D5A092CC1D /* BulkItemActionsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F78FA5052429A9B6DB6E0 /* BulkItemActionsIntegrationTests.swift */; };
+		15AC1090154E419EBE7F56BD /* ItemSortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */; };
+		0D1490148A324A38A10C3997 /* ItemSortControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */; };
+		8C027311A4C54AA08712197C /* ItemSortControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -535,6 +538,9 @@
 		EA3BA26735E548A5A683BE6D /* BulkItemActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkItemActions.swift; sourceTree = "<group>"; };
 		3C958A12FD8F4169BF47E93F /* BulkItemActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkItemActionsTests.swift; sourceTree = "<group>"; };
 		BC0F78FA5052429A9B6DB6E0 /* BulkItemActionsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkItemActionsIntegrationTests.swift; sourceTree = "<group>"; };
+		D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSortController.swift; sourceTree = "<group>"; };
+		CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSortControllerTests.swift; sourceTree = "<group>"; };
+		DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSortControllerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -643,6 +649,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */,
 				3A998E9DFDF74D66BBE6EA5C /* ItemFilterController.swift */,
 				5DDAC8CB9E1943FCA4FBD0D1 /* TagFilterController.swift */,
 				1523AFB5F1B249D58D97D889 /* TagEditorView.swift */,
@@ -704,6 +711,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC92F5AC0F82401D95D53B9D /* ItemSortControllerTests.swift */,
 				3C958A12FD8F4169BF47E93F /* BulkItemActionsTests.swift */,
 				17FBF27C332C4B16950B2F6E /* ItemFilterControllerTests.swift */,
 				9D7D246152CF429BA8182257 /* TagFilterControllerTests.swift */,
@@ -797,6 +805,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				DAEE10CE149140818974D75D /* ItemSortControllerIntegrationTests.swift */,
 				BC0F78FA5052429A9B6DB6E0 /* BulkItemActionsIntegrationTests.swift */,
 				8E1361F83D2740BB8F9C2B14 /* ItemFilterControllerIntegrationTests.swift */,
 				2BAA343D0DA14AE4B8090452 /* TagFilterControllerIntegrationTests.swift */,
