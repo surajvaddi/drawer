@@ -79,7 +79,7 @@ Define pure Swift types mirroring the product data model.
 
 ### Step 1.2: Implement Item Model
 
-- [ ] **Function:** `Item` struct with validation helpers (`previewText`, `isEmpty`).
+- [x] **Function:** `Item` struct with validation helpers (`previewText`, `isEmpty`).
 - **Unit tests:**
   - `testItemInitializationWithDefaults`
   - `testItemPreviewTruncation`

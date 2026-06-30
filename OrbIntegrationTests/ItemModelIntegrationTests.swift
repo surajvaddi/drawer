@@ -1,4 +1,5 @@
 import XCTest
+@testable import Orb
 
 final class ItemModelIntegrationTests: XCTestCase {
     func testItemEncodesToJSONFixture() throws {
