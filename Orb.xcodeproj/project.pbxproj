@@ -348,6 +348,9 @@
 		7A05B9C8142C4C889A699380 /* SensitiveContentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A470F30014F47AE9CB25804 /* SensitiveContentDetector.swift */; };
 		557D5058CE994B4CA18DE998 /* SensitiveContentDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */; };
 		738521C0D7C4440290553A41 /* SensitiveContentDetectorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */; };
+		120ACCBB720F4C1DAA549F39 /* SensitiveSaveAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1A8CAB04A43E9890C3FCB /* SensitiveSaveAlert.swift */; };
+		01789DEF96174BB8AB9390D4 /* SensitiveSaveAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */; };
+		5EC6D00BECF34F36AE523E71 /* SensitiveSaveAlertIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -703,6 +706,9 @@
 		7A470F30014F47AE9CB25804 /* SensitiveContentDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentDetector.swift; sourceTree = "<group>"; };
 		77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentDetectorTests.swift; sourceTree = "<group>"; };
 		7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentDetectorIntegrationTests.swift; sourceTree = "<group>"; };
+		05E1A8CAB04A43E9890C3FCB /* SensitiveSaveAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveSaveAlert.swift; sourceTree = "<group>"; };
+		5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveSaveAlertTests.swift; sourceTree = "<group>"; };
+		E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveSaveAlertIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -900,6 +906,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */,
 				77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */,
 				3740BEE820D147A4BA04B2F5 /* DrawerRowDropHandlerTests.swift */,
 				69DD600FEFB941EFA1EAFFBC /* ItemDragSourceTests.swift */,
@@ -1021,6 +1028,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */,
 				7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */,
 				DDA580DFA2AC4C3FBC68656D /* DrawerRowDropHandlerIntegrationTests.swift */,
 				A49AD1F5B2A747BDAE85594D /* ItemDragSourceIntegrationTests.swift */,
