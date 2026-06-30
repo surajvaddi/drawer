@@ -294,6 +294,9 @@
 		9FDC89C105B64B248C79C7B3 /* QuickPastePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */; };
 		D13FC9329D8B47C48D0A1415 /* QuickPastePanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */; };
 		036CB6A49F1C4C68B423EE56 /* QuickPastePanelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */; };
+		185D5AF34DC64738978C9327 /* QuickPasteResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE54CDE1FFC44707AD6FCE85 /* QuickPasteResultsView.swift */; };
+		70B2088C90004E9DB7B831E0 /* QuickPasteResultsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620664F10BE498EA0A27CB9 /* QuickPasteResultsViewTests.swift */; };
+		C790565D0E3441E29C9ABCDF /* QuickPasteResultsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F82C928DB46F2B405B807 /* QuickPasteResultsViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -595,6 +598,9 @@
 		63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPastePanel.swift; sourceTree = "<group>"; };
 		4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPastePanelTests.swift; sourceTree = "<group>"; };
 		ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPastePanelIntegrationTests.swift; sourceTree = "<group>"; };
+		EE54CDE1FFC44707AD6FCE85 /* QuickPasteResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteResultsView.swift; sourceTree = "<group>"; };
+		D620664F10BE498EA0A27CB9 /* QuickPasteResultsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteResultsViewTests.swift; sourceTree = "<group>"; };
+		938F82C928DB46F2B405B807 /* QuickPasteResultsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteResultsViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -706,6 +712,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EE54CDE1FFC44707AD6FCE85 /* QuickPasteResultsView.swift */,
 				63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */,
 				3072F0DE18584369B98F7A5E /* DrawerSearchController.swift */,
 				D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */,
@@ -775,6 +782,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				D620664F10BE498EA0A27CB9 /* QuickPasteResultsViewTests.swift */,
 				4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */,
 				6EBF2BB8BBA64D73B2C1E0DC /* FuzzySearchServiceTests.swift */,
 				9AEBD54D2FD94A5B842939FE /* DrawerSearchControllerTests.swift */,
@@ -878,6 +886,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				938F82C928DB46F2B405B807 /* QuickPasteResultsViewIntegrationTests.swift */,
 				ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */,
 				6CD4B8AFB1D94AA08E84C090 /* FuzzySearchServiceIntegrationTests.swift */,
 				577C6EF0F1354A86AE2A5FE2 /* DrawerSearchControllerIntegrationTests.swift */,
