@@ -147,7 +147,7 @@ SQLite persistence, migrations, and application support paths.
 
 ### Step 2.2: SQLite Connection and Migration Runner
 
-- [ ] **Function:** `DatabaseManager` opens SQLite, runs versioned migrations transactionally.
+- [x] **Function:** `DatabaseManager` opens SQLite, runs versioned migrations transactionally.
 - **Unit tests:**
   - `testMigrationVersionStartsAtZero`
   - `testMigrationsAreIdempotent`

@@ -40,6 +40,10 @@
 		196481F7E89E415E9BF8B2AA /* StoragePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395D13ED03D448788606598 /* StoragePaths.swift */; };
 		8D82489FD9C043DB80CE72B6 /* StoragePathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638B4346D0A4D56A3E670A5 /* StoragePathsTests.swift */; };
 		1AC4EE9BD6ED4B81B3B71F28 /* StoragePathsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9914980B7E84695819DB484 /* StoragePathsIntegrationTests.swift */; };
+		B00000010000000000000001 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B20000010000000000000001 /* libsqlite3.tbd */; };
+		75654504222E4312AE7E06FF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C244CE2EFA3147A592266E2F /* DatabaseManager.swift */; };
+		4AEC95A184284F8E82A0251C /* DatabaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206A447AA5E41D3BF8666D1 /* DatabaseManagerTests.swift */; };
+		E68CCF1337BC461EAEE83D57 /* DatabaseManagerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E51ADFFBDF48B4BD83C591 /* DatabaseManagerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +91,16 @@
 		C395D13ED03D448788606598 /* StoragePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePaths.swift; sourceTree = "<group>"; };
 		9638B4346D0A4D56A3E670A5 /* StoragePathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePathsTests.swift; sourceTree = "<group>"; };
 		A9914980B7E84695819DB484 /* StoragePathsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePathsIntegrationTests.swift; sourceTree = "<group>"; };
+		B20000010000000000000001 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C244CE2EFA3147A592266E2F /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		E206A447AA5E41D3BF8666D1 /* DatabaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerTests.swift; sourceTree = "<group>"; };
+		B2E51ADFFBDF48B4BD83C591 /* DatabaseManagerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A60000010000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A60000010000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (
+				B00000010000000000000001 /* libsqlite3.tbd in Frameworks */,
+			); runOnlyForDeploymentPostprocessing = 0; };
 		A60000020000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 		A60000030000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				C244CE2EFA3147A592266E2F /* DatabaseManager.swift */,
 				C395D13ED03D448788606598 /* StoragePaths.swift */,
 
 			);
@@ -178,6 +189,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				E206A447AA5E41D3BF8666D1 /* DatabaseManagerTests.swift */,
 				9638B4346D0A4D56A3E670A5 /* StoragePathsTests.swift */,
 				F6708BA67C498 /* AppBootstrapTests.swift */,
 				F35CCE31F675F /* BlobModelTests.swift */,
@@ -196,6 +208,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				B2E51ADFFBDF48B4BD83C591 /* DatabaseManagerIntegrationTests.swift */,
 				A9914980B7E84695819DB484 /* StoragePathsIntegrationTests.swift */,
 				FEE87E5576ECB /* AppLaunchIntegrationTests.swift */,
 				FC985FE7D2443 /* BlobModelIntegrationTests.swift */,
