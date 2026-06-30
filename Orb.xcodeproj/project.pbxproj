@@ -279,6 +279,9 @@
 		62E52AF6D8354BE8B1CA7BA2 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DEC9678E8C4F2085872381 /* SearchRepository.swift */; };
 		D383C59F08B043D2BC816AF8 /* SearchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9EF716E9814D6DB1714DBC /* SearchRepositoryTests.swift */; };
 		300464007850424489799CA1 /* SearchRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12421D86623A43D0909E90FB /* SearchRepositoryIntegrationTests.swift */; };
+		373FA24D73AE4EAA8F86659E /* SearchFilterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */; };
+		8BDD244C4352435AB2588234 /* SearchFilterParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */; };
+		D83532FB4CEA4C4BA5A86ABD /* SearchFilterParserIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -565,6 +568,9 @@
 		14DEC9678E8C4F2085872381 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		6F9EF716E9814D6DB1714DBC /* SearchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryTests.swift; sourceTree = "<group>"; };
 		12421D86623A43D0909E90FB /* SearchRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
+		3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterParser.swift; sourceTree = "<group>"; };
+		C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterParserTests.swift; sourceTree = "<group>"; };
+		23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterParserIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -713,6 +719,7 @@
 		A700000A0000000000000001 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */,
 				14DEC9678E8C4F2085872381 /* SearchRepository.swift */,
 				8103A2D2AAE8481E828DAB29 /* FTSQueryBuilder.swift */,
 
@@ -740,6 +747,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */,
 				6F9EF716E9814D6DB1714DBC /* SearchRepositoryTests.swift */,
 				952038C6C92B457EA64E50D6 /* FTSQueryBuilderTests.swift */,
 				49A98CA92E6D410EB5588D29 /* FactCardRepositoryTests.swift */,
@@ -838,6 +846,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */,
 				12421D86623A43D0909E90FB /* SearchRepositoryIntegrationTests.swift */,
 				979FB7A3E22E4F13B987A424 /* FTSQueryBuilderIntegrationTests.swift */,
 				CCF42E02D2424BA29559AC87 /* FactCardRepositoryIntegrationTests.swift */,
