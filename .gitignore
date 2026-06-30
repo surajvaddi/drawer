@@ -2,6 +2,7 @@ __pycache__/
 
 # Xcode
 build/
+dist/
 DerivedData/
 *.xcuserstate
 *.xcworkspace/xcuserdata/
