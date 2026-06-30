@@ -359,6 +359,9 @@
 		59F52FA2E0D34FD9B8E561DA /* ExcludedAppsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B83CDFF0844089D01233F /* ExcludedAppsManager.swift */; };
 		2F14476D7ADC44F49EC61871 /* ExcludedAppsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */; };
 		FA213D1F5FFE4573A228B5D9 /* ExcludedAppsManagerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */; };
+		D25624EB4DBA472DAD6E2C6A /* ClipboardPreviewCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC506E6755745A39DD2D283 /* ClipboardPreviewCleaner.swift */; };
+		774DD5D2BE234A8CA543CB2C /* ClipboardPreviewCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */; };
+		05796E8E6BFF4A5C98596C76 /* ClipboardPreviewCleanerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -725,6 +728,9 @@
 		F32B83CDFF0844089D01233F /* ExcludedAppsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludedAppsManager.swift; sourceTree = "<group>"; };
 		077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludedAppsManagerTests.swift; sourceTree = "<group>"; };
 		32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludedAppsManagerIntegrationTests.swift; sourceTree = "<group>"; };
+		DAC506E6755745A39DD2D283 /* ClipboardPreviewCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPreviewCleaner.swift; sourceTree = "<group>"; };
+		D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPreviewCleanerTests.swift; sourceTree = "<group>"; };
+		D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardPreviewCleanerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -923,6 +929,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */,
 				077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */,
 				2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */,
 				58841F8F7775411693DAC60D /* MigrationV7Tests.swift */,
@@ -1048,6 +1055,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */,
 				32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */,
 				B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */,
 				E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */,
