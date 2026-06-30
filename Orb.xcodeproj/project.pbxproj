@@ -321,6 +321,9 @@
 		73EC526CF236450FBEC21ACF /* CommandPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E55003EF348EFA85CCE7F /* CommandPalette.swift */; };
 		95470651261B4061A3E50D4B /* CommandPaletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B67F8F24B9644809AF67026 /* CommandPaletteTests.swift */; };
 		115A556E01C8425F8FC3B9D0 /* CommandPaletteIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E083A3303BD745EA9DC6299E /* CommandPaletteIntegrationTests.swift */; };
+		518EF6F1881B46D1890F5524 /* DrawerToggleShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC61DCE01C040EFA4240A3F /* DrawerToggleShortcut.swift */; };
+		70961446695844A992E6E0DC /* DrawerToggleShortcutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21A9DE3E0F5427CA1F087EE /* DrawerToggleShortcutTests.swift */; };
+		836356E8A15A4D05A452D275 /* DrawerToggleShortcutIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD24BC8AAF34579A38CA93E /* DrawerToggleShortcutIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -649,6 +652,9 @@
 		1B4E55003EF348EFA85CCE7F /* CommandPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPalette.swift; sourceTree = "<group>"; };
 		7B67F8F24B9644809AF67026 /* CommandPaletteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPaletteTests.swift; sourceTree = "<group>"; };
 		E083A3303BD745EA9DC6299E /* CommandPaletteIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPaletteIntegrationTests.swift; sourceTree = "<group>"; };
+		EEC61DCE01C040EFA4240A3F /* DrawerToggleShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerToggleShortcut.swift; sourceTree = "<group>"; };
+		C21A9DE3E0F5427CA1F087EE /* DrawerToggleShortcutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerToggleShortcutTests.swift; sourceTree = "<group>"; };
+		ECD24BC8AAF34579A38CA93E /* DrawerToggleShortcutIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerToggleShortcutIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -826,6 +832,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EEC61DCE01C040EFA4240A3F /* DrawerToggleShortcut.swift */,
 				2209C496DBCE42ABB3429310 /* ShortcutSettings.swift */,
 				51C428D35C7C450BBD926483 /* HotkeyService.swift */,
 				05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */,
@@ -838,6 +845,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				C21A9DE3E0F5427CA1F087EE /* DrawerToggleShortcutTests.swift */,
 				7B67F8F24B9644809AF67026 /* CommandPaletteTests.swift */,
 				6B1F8230C3D649C58BEF0D83 /* DrawerKeyboardNavigatorTests.swift */,
 				659848387424424F8A81823D /* ShortcutSettingsTests.swift */,
@@ -950,6 +958,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				ECD24BC8AAF34579A38CA93E /* DrawerToggleShortcutIntegrationTests.swift */,
 				E083A3303BD745EA9DC6299E /* CommandPaletteIntegrationTests.swift */,
 				34EB10D9378548F683AB916D /* DrawerKeyboardNavigatorIntegrationTests.swift */,
 				5E560BE000DD440E95848B05 /* ShortcutSettingsIntegrationTests.swift */,
