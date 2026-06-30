@@ -100,7 +100,7 @@ Define pure Swift types mirroring the product data model.
 
 ### Step 1.4: Implement Tag and ItemTag Models
 
-- [ ] **Function:** `Tag` and `ItemTag` structs with normalized tag name helper.
+- [x] **Function:** `Tag` and `ItemTag` structs with normalized tag name helper.
 - **Unit tests:**
   - `testTagNameNormalization`
   - `testItemTagLinkage`
