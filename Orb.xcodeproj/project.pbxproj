@@ -93,6 +93,9 @@
 		E1B0039DBEC148F3B16392A3 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691831AA41F4795B6B401A0 /* SettingsStore.swift */; };
 		1B044657648D4BAF81CF022E /* OrbDragControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */; };
 		433CC6AD7A0D41FB81C1EDCD /* OrbDragControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */; };
+		37F4CA7A85A9462797F61572 /* EdgeSnapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DF19DE175546B096C0CE2A /* EdgeSnapController.swift */; };
+		3AEAE9FDDFF44159A955DFE7 /* EdgeSnapControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025FE19248754015869DEC52 /* EdgeSnapControllerTests.swift */; };
+		C952D0EC039D4550843B7CF0 /* EdgeSnapControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17740F00BDE143BC954846BF /* EdgeSnapControllerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +196,9 @@
 		C691831AA41F4795B6B401A0 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDragControllerTests.swift; sourceTree = "<group>"; };
 		311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbDragControllerIntegrationTests.swift; sourceTree = "<group>"; };
+		65DF19DE175546B096C0CE2A /* EdgeSnapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSnapController.swift; sourceTree = "<group>"; };
+		025FE19248754015869DEC52 /* EdgeSnapControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSnapControllerTests.swift; sourceTree = "<group>"; };
+		17740F00BDE143BC954846BF /* EdgeSnapControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSnapControllerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +275,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				65DF19DE175546B096C0CE2A /* EdgeSnapController.swift */,
 				30929ED2286945E6A10D5199 /* OrbView.swift */,
 				5E6C86B8D132423C85A4D355 /* FloatingOrbPanel.swift */,
 
@@ -304,6 +311,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				025FE19248754015869DEC52 /* EdgeSnapControllerTests.swift */,
 				781838BE8987415DB949AD1E /* OrbDragControllerTests.swift */,
 				A34261C4856D4622982FA38E /* OrbViewTests.swift */,
 				8FF28A43E0AE4CF391BA7631 /* FloatingOrbPanelTests.swift */,
@@ -339,6 +347,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				17740F00BDE143BC954846BF /* EdgeSnapControllerIntegrationTests.swift */,
 				311107C8496F4B78A405C5A0 /* OrbDragControllerIntegrationTests.swift */,
 				DF81D83F94CF41FA9E03C2C3 /* OrbViewIntegrationTests.swift */,
 				492ACBB066BF4AA6A4288651 /* FloatingOrbPanelIntegrationTests.swift */,
