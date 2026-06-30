@@ -90,7 +90,7 @@ Define pure Swift types mirroring the product data model.
 
 ### Step 1.3: Implement Drawer Model
 
-- [ ] **Function:** `Drawer` struct with parent/child helpers and sort order.
+- [x] **Function:** `Drawer` struct with parent/child helpers and sort order.
 - **Unit tests:**
   - `testDrawerRootAndNestedPaths`
   - `testDrawerSortOrderComparison`

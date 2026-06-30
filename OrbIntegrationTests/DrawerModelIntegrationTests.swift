@@ -1,4 +1,5 @@
 import XCTest
+@testable import Orb
 
 final class DrawerModelIntegrationTests: XCTestCase {
     func testDrawerTreeDecodesFromFixture() throws {
