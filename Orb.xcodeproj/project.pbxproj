@@ -468,6 +468,9 @@
 		985E7BFBFF05400F8EDED9DB /* ZIPExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E4A22531F43D9BF198CA1 /* ZIPExportService.swift */; };
 		63030F0FE88F4682A2FD873F /* ZIPExportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76BB07700C4E239F45611C /* ZIPExportServiceTests.swift */; };
 		DB4335C6E62D494D9585B930 /* ZIPExportServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFB01D78C44514B2E632E9 /* ZIPExportServiceIntegrationTests.swift */; };
+		6DDC939C13994E89B23A2FB6 /* JSONImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD5A747BCE947368DC2733D /* JSONImportService.swift */; };
+		5FA616767010491F96AFEA07 /* JSONImportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B781FCB29CF407CA59D3B67 /* JSONImportServiceTests.swift */; };
+		32D2C334733E428986D10F11 /* JSONImportServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FC1D790F6A4901BF9E9F2C /* JSONImportServiceIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -943,6 +946,9 @@
 		6D8E4A22531F43D9BF198CA1 /* ZIPExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIPExportService.swift; sourceTree = "<group>"; };
 		AD76BB07700C4E239F45611C /* ZIPExportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIPExportServiceTests.swift; sourceTree = "<group>"; };
 		7CEFB01D78C44514B2E632E9 /* ZIPExportServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIPExportServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		BDD5A747BCE947368DC2733D /* JSONImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImportService.swift; sourceTree = "<group>"; };
+		0B781FCB29CF407CA59D3B67 /* JSONImportServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImportServiceTests.swift; sourceTree = "<group>"; };
+		54FC1D790F6A4901BF9E9F2C /* JSONImportServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONImportServiceIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -988,6 +994,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				BDD5A747BCE947368DC2733D /* JSONImportService.swift */,
 				6D8E4A22531F43D9BF198CA1 /* ZIPExportService.swift */,
 				A32B01F2382F4B4184E70C6C /* MarkdownExportService.swift */,
 				0452198CC276455AA30B7F98 /* JSONExportService.swift */,
@@ -1178,6 +1185,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B781FCB29CF407CA59D3B67 /* JSONImportServiceTests.swift */,
 				AD76BB07700C4E239F45611C /* ZIPExportServiceTests.swift */,
 				EDE460FB0DEF4160B00ED9D2 /* MarkdownExportServiceTests.swift */,
 				D0AA03F44CCB49609A0020E7 /* JSONExportServiceTests.swift */,
@@ -1338,6 +1346,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				54FC1D790F6A4901BF9E9F2C /* JSONImportServiceIntegrationTests.swift */,
 				7CEFB01D78C44514B2E632E9 /* ZIPExportServiceIntegrationTests.swift */,
 				5007D2083C5741DCA54FA7E7 /* MarkdownExportServiceIntegrationTests.swift */,
 				316D8038B45B4ABABC49074B /* JSONExportServiceIntegrationTests.swift */,
@@ -1555,6 +1564,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				6DDC939C13994E89B23A2FB6 /* JSONImportService.swift in Sources */,
 				985E7BFBFF05400F8EDED9DB /* ZIPExportService.swift in Sources */,
 				5122A715AE4648B3B6CCF476 /* MarkdownExportService.swift in Sources */,
 				A6D2EC366F324ED5BCA455CC /* JSONExportService.swift in Sources */,
@@ -1591,6 +1601,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				5FA616767010491F96AFEA07 /* JSONImportServiceTests.swift in Sources */,
 				63030F0FE88F4682A2FD873F /* ZIPExportServiceTests.swift in Sources */,
 				F8F3D45CED6C4B9394146BFF /* MarkdownExportServiceTests.swift in Sources */,
 				573A9A5759124B3FAD5820CD /* JSONExportServiceTests.swift in Sources */,
@@ -1624,6 +1635,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				32D2C334733E428986D10F11 /* JSONImportServiceIntegrationTests.swift in Sources */,
 				DB4335C6E62D494D9585B930 /* ZIPExportServiceIntegrationTests.swift in Sources */,
 				832556300AAB427E9672DE56 /* MarkdownExportServiceIntegrationTests.swift in Sources */,
 				05F574649A644180B3884EE7 /* JSONExportServiceIntegrationTests.swift in Sources */,
