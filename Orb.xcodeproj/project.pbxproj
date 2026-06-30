@@ -450,6 +450,9 @@
 		D07140BCA8C64C2F979EB98D /* VectorSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B22A20E1E4937B2A57D7C /* VectorSearchRepository.swift */; };
 		1F421C387DEE419691190337 /* VectorSearchRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E7B992683B434EB49EB2E2 /* VectorSearchRepositoryTests.swift */; };
 		FFC4CCAA62F248B6895219CE /* VectorSearchRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB5F2AB2AF486ABC6C84CD /* VectorSearchRepositoryIntegrationTests.swift */; };
+		948A3A4A1C8E4E9FAA378644 /* HybridSearchMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E6F2852FF43A294738931 /* HybridSearchMerger.swift */; };
+		75512505A4E44BDE852BC96D /* HybridSearchMergerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0D3D18CC7342DBBC300AA5 /* HybridSearchMergerTests.swift */; };
+		78AE4228219C4306A2850872 /* HybridSearchMergerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35C675275748C19DB7CF4D /* HybridSearchMergerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -907,6 +910,9 @@
 		2C1B22A20E1E4937B2A57D7C /* VectorSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorSearchRepository.swift; sourceTree = "<group>"; };
 		B7E7B992683B434EB49EB2E2 /* VectorSearchRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorSearchRepositoryTests.swift; sourceTree = "<group>"; };
 		4BCB5F2AB2AF486ABC6C84CD /* VectorSearchRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorSearchRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
+		208E6F2852FF43A294738931 /* HybridSearchMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridSearchMerger.swift; sourceTree = "<group>"; };
+		4B0D3D18CC7342DBBC300AA5 /* HybridSearchMergerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridSearchMergerTests.swift; sourceTree = "<group>"; };
+		5B35C675275748C19DB7CF4D /* HybridSearchMergerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridSearchMergerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1080,6 +1086,7 @@
 		A700000A0000000000000001 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				208E6F2852FF43A294738931 /* HybridSearchMerger.swift */,
 				2C1B22A20E1E4937B2A57D7C /* VectorSearchRepository.swift */,
 				05DF789A7B314FFDB2721F91 /* EmbeddingIndexer.swift */,
 				76874CC8FBF946169D630151 /* EmbeddingProvider.swift */,
@@ -1136,6 +1143,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B0D3D18CC7342DBBC300AA5 /* HybridSearchMergerTests.swift */,
 				B7E7B992683B434EB49EB2E2 /* VectorSearchRepositoryTests.swift */,
 				8EA274DFDB494D99BF6B3F29 /* EmbeddingIndexerTests.swift */,
 				1F161B2EBB1F4E9A9968C226 /* EmbeddingProviderTests.swift */,
@@ -1290,6 +1298,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				5B35C675275748C19DB7CF4D /* HybridSearchMergerIntegrationTests.swift */,
 				4BCB5F2AB2AF486ABC6C84CD /* VectorSearchRepositoryIntegrationTests.swift */,
 				F0A2EA24B849420E9F335723 /* EmbeddingIndexerIntegrationTests.swift */,
 				63CEFA4DEECF45FA9E591EC8 /* EmbeddingProviderIntegrationTests.swift */,
@@ -1501,6 +1510,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				948A3A4A1C8E4E9FAA378644 /* HybridSearchMerger.swift in Sources */,
 				D07140BCA8C64C2F979EB98D /* VectorSearchRepository.swift in Sources */,
 				FC474BD5FA4E4F7CB967C892 /* EmbeddingIndexer.swift in Sources */,
 				7270186870C94273BEB9F352 /* EmbeddingProvider.swift in Sources */,
@@ -1531,6 +1541,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				75512505A4E44BDE852BC96D /* HybridSearchMergerTests.swift in Sources */,
 				1F421C387DEE419691190337 /* VectorSearchRepositoryTests.swift in Sources */,
 				1C6AA4D6B58140C79A20348D /* EmbeddingIndexerTests.swift in Sources */,
 				B6806B2960094910A9BBE1E0 /* EmbeddingProviderTests.swift in Sources */,
@@ -1558,6 +1569,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				78AE4228219C4306A2850872 /* HybridSearchMergerIntegrationTests.swift in Sources */,
 				FFC4CCAA62F248B6895219CE /* VectorSearchRepositoryIntegrationTests.swift in Sources */,
 				DEC9B386661D417789C2747D /* EmbeddingIndexerIntegrationTests.swift in Sources */,
 				F5977A94A10148469833838A /* EmbeddingProviderIntegrationTests.swift in Sources */,
