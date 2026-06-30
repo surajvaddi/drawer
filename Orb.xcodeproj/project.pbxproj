@@ -20,6 +20,9 @@
 		A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */; };
 		A10000030000000000000003 /* CIScriptIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000003 /* CIScriptIntegrationTests.swift */; };
 		A10000030000000000000004 /* ModuleStructureIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */; };
+		8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99901AA43E4C32842B4D31 /* ItemType.swift */; };
+		934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */; };
+		ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		A50000010000000000000001 /* Orb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000020000000000000001 /* OrbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000030000000000000001 /* OrbIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F99901AA43E4C32842B4D31 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypeTests.swift; sourceTree = "<group>"; };
+		28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypeIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8F99901AA43E4C32842B4D31 /* ItemType.swift */,
 				A20000010000000000000004 /* OrbLogger.swift */,
 				A20000010000000000000005 /* OrbError.swift */,
 			);
@@ -130,6 +137,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */,
 				A20000020000000000000001 /* AppBootstrapTests.swift */,
 				A20000020000000000000002 /* OrbLoggerTests.swift */,
 				A20000020000000000000003 /* ModuleStructureTests.swift */,
@@ -141,6 +149,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */,
 				A20000030000000000000001 /* AppLaunchIntegrationTests.swift */,
 				A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */,
 				A20000030000000000000003 /* CIScriptIntegrationTests.swift */,
@@ -260,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */,
 				A10000010000000000000001 /* OrbApp.swift in Sources */,
 				A10000010000000000000002 /* AppDelegate.swift in Sources */,
 				A10000010000000000000003 /* ContentView.swift in Sources */,
@@ -272,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */,
 				A10000020000000000000001 /* AppBootstrapTests.swift in Sources */,
 				A10000020000000000000002 /* OrbLoggerTests.swift in Sources */,
 				A10000020000000000000003 /* ModuleStructureTests.swift in Sources */,
@@ -283,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */,
 				A10000030000000000000001 /* AppLaunchIntegrationTests.swift in Sources */,
 				A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */,
 				A10000030000000000000003 /* CIScriptIntegrationTests.swift in Sources */,
