@@ -133,6 +133,8 @@
 		8503F477060340F697183F26 /* TextNormalizerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */; };
 		AD3B4B5B39564706BCFCDB6F /* CodeSnippetDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311EAAF7423B45DB9EF40314 /* CodeSnippetDetectorTests.swift */; };
 		0AFC0CCF49AD4B4D96F6D649 /* CodeSnippetDetectorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D7F9A8E8B4A31879B2746 /* CodeSnippetDetectorIntegrationTests.swift */; };
+		99CEB48B7C3A4296A641A1AE /* ItemFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD54BD67A895418BA85B441B /* ItemFactoryTests.swift */; };
+		3A323D28AA98404E8878E04D /* ItemFactoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1023CF7D007B4E7A96CE69F9 /* ItemFactoryIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,6 +275,8 @@
 		04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNormalizerIntegrationTests.swift; sourceTree = "<group>"; };
 		311EAAF7423B45DB9EF40314 /* CodeSnippetDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetDetectorTests.swift; sourceTree = "<group>"; };
 		ED0D7F9A8E8B4A31879B2746 /* CodeSnippetDetectorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetDetectorIntegrationTests.swift; sourceTree = "<group>"; };
+		BD54BD67A895418BA85B441B /* ItemFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFactoryTests.swift; sourceTree = "<group>"; };
+		1023CF7D007B4E7A96CE69F9 /* ItemFactoryIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFactoryIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +403,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				BD54BD67A895418BA85B441B /* ItemFactoryTests.swift */,
 				311EAAF7423B45DB9EF40314 /* CodeSnippetDetectorTests.swift */,
 				8FC34623CC604E8D82A907FD /* TextNormalizerTests.swift */,
 				B91E3DD5A0CE425580DFFBAA /* URLNormalizerTests.swift */,
@@ -447,6 +452,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				1023CF7D007B4E7A96CE69F9 /* ItemFactoryIntegrationTests.swift */,
 				ED0D7F9A8E8B4A31879B2746 /* CodeSnippetDetectorIntegrationTests.swift */,
 				04CFA68345AC4A03A2A1832D /* TextNormalizerIntegrationTests.swift */,
 				CC722FD3E2994B9CA3150189 /* URLNormalizerIntegrationTests.swift */,
