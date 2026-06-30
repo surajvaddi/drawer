@@ -4,10 +4,12 @@ import XCTest
 final class OrbAnimationPolishIntegrationTests: XCTestCase {
     func testOrbVisualPolishSnapshots() {
         for state in [OrbVisualState.idle, .clipboardChanged, .dragHover, .saving, .expanded] {
-            _ = OrbAnimationPolish.scale(for: state, pulseScale: 1.05)
-            _ = OrbAnimationPolish.shadowRadius(for: state)
-            _ = OrbAnimationPolish.iconOpacity(for: state)
+            XCTAssertGreaterThan(OrbAnimationPolish.scale(for: state, pulseScale: 1.05), 0)
+            XCTAssertGreaterThan(OrbAnimationPolish.shadowRadius(for: state), 0)
+            XCTAssertGreaterThan(OrbAnimationPolish.iconOpacity(for: state), 0)
         }
-        XCTAssertTrue(true)
+        XCTAssertEqual(OrbAnimationPolish.scale(for: .clipboardChanged, pulseScale: 1.05), 1.05)
+        XCTAssertEqual(OrbAnimationPolish.shadowRadius(for: .dragHover), 12)
+        XCTAssertEqual(OrbAnimationPolish.iconOpacity(for: .saving), 1.0)
     }
 }

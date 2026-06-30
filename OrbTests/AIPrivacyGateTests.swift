@@ -22,8 +22,9 @@ final class AIPrivacyGateTests: XCTestCase {
         settings.aiAskBeforeCloud = true
         let gate = AIPrivacyGate(settings: settings)
         let decision = gate.canRunWithCloud(operation: "summary")
-        if case .requiresConfirmation = decision {
-            XCTAssertTrue(true)
+        if case .requiresConfirmation(let reason) = decision {
+            XCTAssertTrue(reason.contains("summary"))
+            XCTAssertTrue(reason.lowercased().contains("cloud"))
         } else {
             XCTFail("Expected requiresConfirmation")
         }

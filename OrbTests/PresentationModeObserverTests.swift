@@ -1,10 +1,11 @@
+import AppKit
 import XCTest
 @testable import Orb
 
 final class PresentationModeObserverTests: XCTestCase {
     func testHideWhenFullscreenAppActive() {
-        _ = PresentationModeObserver.isInFullscreenPresentation
-        XCTAssertTrue(true)
+        let isFullscreen = PresentationModeObserver.isInFullscreenPresentation
+        XCTAssertEqual(isFullscreen, NSApp.presentationOptions.contains(.fullScreen))
     }
 
     func testRestoreWhenExitingFullscreen() {

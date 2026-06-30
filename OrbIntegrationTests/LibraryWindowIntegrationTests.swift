@@ -7,13 +7,19 @@ final class LibraryWindowIntegrationTests: XCTestCase {
         let manager = DatabaseManager(paths: StoragePaths(root: root))
         try manager.open()
         try manager.migrate(using: OrbMigrations.all)
+        _ = try DefaultDataSeeder(
+            drawers: DrawerRepository(manager: manager),
+            defaults: UserDefaults(suiteName: "orb.lib.int.\(UUID().uuidString)")!
+        ).seedIfNeeded()
         let items = ItemRepository(manager: manager)
         let drawers = DrawerRepository(manager: manager)
-        _ = try items.create(Item(type: .text, title: "LibItem", contentText: "x"))
+        let saved = try items.create(
+            Item(type: .text, title: "LibItem", contentText: "x", drawerId: DefaultDataSeeder.inboxDrawerID)
+        )
         let allItems = try items.listAll()
         let allDrawers = try drawers.fetchAll()
-        XCTAssertFalse(allItems.isEmpty)
-        XCTAssertFalse(allDrawers.isEmpty)
+        XCTAssertTrue(allItems.contains { $0.id == saved.id })
+        XCTAssertTrue(allDrawers.contains { $0.id == DefaultDataSeeder.inboxDrawerID })
         manager.close()
         try? FileManager.default.removeItem(at: root)
     }

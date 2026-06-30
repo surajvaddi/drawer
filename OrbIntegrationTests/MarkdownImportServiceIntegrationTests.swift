@@ -7,6 +7,10 @@ final class MarkdownImportServiceIntegrationTests: XCTestCase {
         let manager = DatabaseManager(paths: StoragePaths(root: root))
         try manager.open()
         try manager.migrate(using: OrbMigrations.all)
+        _ = try DefaultDataSeeder(
+            drawers: DrawerRepository(manager: manager),
+            defaults: UserDefaults(suiteName: "orb.md-import.int.\(UUID().uuidString)")!
+        ).seedIfNeeded()
         let items = ItemRepository(manager: manager)
         let mdURL = root.appendingPathComponent("import.md")
         let md = "# Orb Export\n\n## Bookmark Note\n\n- Source: https://example.com\n\nSaved link content"

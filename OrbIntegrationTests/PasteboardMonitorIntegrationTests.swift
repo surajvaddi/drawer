@@ -18,8 +18,7 @@ final class PasteboardMonitorIntegrationTests: XCTestCase {
         let monitor = PasteboardMonitor(pasteboard: mock, activePollInterval: 0.1)
         monitor.start()
         mock.setString("sample", forType: .string)
-        _ = monitor.poll()
+        XCTAssertNotNil(monitor.poll())
         monitor.stop()
-        XCTAssertTrue(true)
     }
 }
