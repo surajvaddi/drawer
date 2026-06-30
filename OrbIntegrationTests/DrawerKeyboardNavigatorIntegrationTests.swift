@@ -15,7 +15,7 @@ final class DrawerKeyboardNavigatorIntegrationTests: XCTestCase {
         let selected = navigator.selectedItem(in: items)
         XCTAssertEqual(selected?.id, saved.id)
         let pasteboard = MockPasteboard()
-        try TextItemActions(pasteboard: pasteboard, repository: itemsRepo).copy(item: saved)
+        TextItemActions(pasteboard: pasteboard, repository: itemsRepo).copyPlainText(saved)
         XCTAssertEqual(pasteboard.string(forType: .string), "Pick me")
         manager.close()
         try? FileManager.default.removeItem(at: root)

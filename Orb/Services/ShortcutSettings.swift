@@ -43,9 +43,9 @@ struct ShortcutSettings: Sendable {
         defaults.set(data, forKey: prefix + shortcut.rawValue)
     }
 
-    func conflicts(with binding: ShortcutBinding, excluding: OrbShortcut? = nil) throws -> OrbShortcut? {
+    func conflicts(with candidate: ShortcutBinding, excluding: OrbShortcut? = nil) throws -> OrbShortcut? {
         for shortcut in OrbShortcut.allCases where shortcut != excluding {
-            if binding(for: shortcut) == binding { return shortcut }
+            if binding(for: shortcut) == candidate { return shortcut }
         }
         return nil
     }

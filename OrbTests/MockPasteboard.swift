@@ -1,4 +1,5 @@
 import AppKit
+@testable import Orb
 
 final class MockPasteboard: PasteboardProviding {
     var changeCount: Int = 0
@@ -19,24 +20,32 @@ final class MockPasteboard: PasteboardProviding {
         dataValues[type]
     }
 
-    func setString(_ string: String, forType type: NSPasteboard.PasteboardType) {
+    @discardableResult
+    func setString(_ string: String, forType type: NSPasteboard.PasteboardType) -> Bool {
         strings[type] = string
         types = Array(Set((types ?? []) + [type]))
         bumpChangeCount()
+        return true
     }
 
-    func setData(_ data: Data, forType type: NSPasteboard.PasteboardType) {
+    @discardableResult
+    func setData(_ data: Data?, forType type: NSPasteboard.PasteboardType) -> Bool {
+        guard let data else { return false }
         dataValues[type] = data
         types = Array(Set((types ?? []) + [type]))
         bumpChangeCount()
+        return true
     }
 
-    func clearContents() {
+    @discardableResult
+    func clearContents() -> Int {
+        let count = strings.count + dataValues.count
         strings.removeAll()
         dataValues.removeAll()
         fileURLs.removeAll()
         types = []
         bumpChangeCount()
+        return count
     }
 
     func setFixture(text: String? = nil, url: String? = nil, png: Data? = nil, fileURL: String? = nil) {

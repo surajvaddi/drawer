@@ -20,13 +20,13 @@ final class DrawerRuleEvaluatorTests: XCTestCase {
     func testURLContainsRuleMatches() {
         let rule = DrawerRule(drawerId: "d1", name: "Jobs", condition: ["url_contains": "greenhouse"], priority: 1)
         let item = Item(type: .url, title: "Role", sourceURL: "https://boards.greenhouse.io/acme")
-        XCTAssertTrue(evaluator.matches(rule: rule, item: item))
+        XCTAssertTrue(evaluator.ruleMatches(rule: rule, item: item))
     }
 
     func testSourceAppRuleMatches() {
         let rule = DrawerRule(drawerId: "d1", name: "Safari", condition: ["source_app": "safari"], priority: 1)
         let item = Item(type: .text, title: "x", sourceApp: "Safari")
-        XCTAssertTrue(evaluator.matches(rule: rule, item: item))
+        XCTAssertTrue(evaluator.ruleMatches(rule: rule, item: item))
     }
 
     func testHighestPriorityWins() throws {

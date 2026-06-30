@@ -17,16 +17,16 @@ struct DrawerRuleEvaluator: Sendable {
 
     func suggest(for item: Item) throws -> DrawerSuggestion? {
         let enabled = try rules.fetchAll(enabledOnly: true)
-        let matches = enabled.compactMap { rule -> (DrawerRule, Int)? in
-            guard matches(rule: rule, item: item) else { return nil }
+        let scored = enabled.compactMap { rule -> (DrawerRule, Int)? in
+            guard ruleMatches(rule: rule, item: item) else { return nil }
             return (rule, rule.priority)
         }
-        guard let best = matches.max(by: { $0.1 < $1.1 })?.0 else { return nil }
+        guard let best = scored.max(by: { $0.1 < $1.1 })?.0 else { return nil }
         guard let drawer = try drawers.fetch(id: best.drawerId) else { return nil }
         return DrawerSuggestion(drawerID: drawer.id, drawerName: drawer.name, ruleName: best.name)
     }
 
-    func matches(rule: DrawerRule, item: Item) -> Bool {
+    func ruleMatches(rule: DrawerRule, item: Item) -> Bool {
         let condition = rule.condition
         if let urlContains = condition["url_contains"]?.lowercased() {
             let haystack = [item.sourceURL, item.contentText, item.preview].compactMap { $0?.lowercased() }.joined(separator: " ")

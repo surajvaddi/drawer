@@ -167,3 +167,5 @@ struct DrawerRepository: Sendable {
         return "'\(escape(value))'"
     }
 }
+
+private let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)

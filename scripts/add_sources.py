@@ -24,6 +24,7 @@ GROUP_MAP = {
     "Orb/Search": "A700000A0000000000000001",
     "Orb/AI": "A700000B0000000000000001",
     "Orb/Services": "A700000C0000000000000001",
+    "Orb/Privacy": "A700000D0000000000000001",
     "OrbTests": "A70000030000000000000001",
     "OrbIntegrationTests": "A70000040000000000000001",
 }
@@ -75,7 +76,7 @@ def main() -> int:
 
         phase_id = TARGET_MAP[target]
         text = re.sub(
-            rf"({phase_id} /\* Sources \*/ = \{{\n\t\t\tisa = PBXSourcesBuildPhase;[\s\S]*?files = \()",
+            rf"({phase_id} = \{{ isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = \()",
             rf"\1\n\t\t\t\t{build_id} /* {name} in Sources */,",
             text,
             count=1,

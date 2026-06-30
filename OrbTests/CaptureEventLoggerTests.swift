@@ -26,7 +26,7 @@ final class CaptureEventLoggerTests: XCTestCase {
         try manager.migrate(using: OrbMigrations.all)
         let pipeline = ClipboardSavePipeline(coordinator: StorageCoordinator(paths: paths, manager: manager))
         let item = try pipeline.saveDragDrop(
-            CapturePayload(type: .text, title: "Dropped", preview: "dropped", contentText: "dropped", method: .dragDrop)
+            payload: CapturePayload(type: .text, title: "Dropped", preview: "dropped", contentText: "dropped", method: .dragDrop)
         )
         let events = try CaptureEventRepository(manager: manager).fetchAll()
         XCTAssertTrue(events.contains { $0.itemId == item.id && $0.method == .dragDrop })

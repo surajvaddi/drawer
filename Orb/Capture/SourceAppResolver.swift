@@ -1,4 +1,5 @@
 import AppKit
+import CoreGraphics
 import Foundation
 
 struct SourceAppInfo: Equatable, Sendable {
@@ -14,11 +15,14 @@ struct SourceAppResolver: Sendable {
         }
         let bundleID = app.bundleIdentifier
         let name = app.localizedName
-        let windowTitle = CGWindowListCopyWindowInfo([.optionOnScreenOnly, .excludeDesktopElements], kCGNullWindowID)?
-            .compactMap { $0 as? [String: Any] }
-            .first(where: { ($0[kCGWindowOwnerPID as String] as? Int32) == app.processIdentifier })?[kCGWindowName as String] as? String
+        let windowTitle = frontWindowTitle(for: app.processIdentifier)
         return SourceAppInfo(bundleID: bundleID, name: name, windowTitle: windowTitle)
     }
-}
 
-import CoreGraphics
+    private func frontWindowTitle(for pid: pid_t) -> String? {
+        guard let windows = CGWindowListCopyWindowInfo([.optionOnScreenOnly, .excludeDesktopElements], kCGNullWindowID) as? [[String: Any]] else {
+            return nil
+        }
+        return windows.first(where: { ($0[kCGWindowOwnerPID as String] as? Int32) == pid })?[kCGWindowName as String] as? String
+    }
+}

@@ -4,7 +4,7 @@ import XCTest
 final class AutoPasteServiceIntegrationTests: XCTestCase {
     func testAutoPasteSimulatedKeystroke() throws {
         let defaults = UserDefaults(suiteName: "orb.autopaste.int.\(UUID().uuidString)")!
-        let service = AutoPasteService(defaults: defaults)
+        var service = AutoPasteService(defaults: defaults)
         service.isEnabled = false
         XCTAssertNoThrow(try service.simulatePaste())
     }

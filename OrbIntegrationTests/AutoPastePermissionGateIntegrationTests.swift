@@ -10,7 +10,7 @@ final class AutoPastePermissionGateIntegrationTests: XCTestCase {
         let items = ItemRepository(manager: manager)
         let saved = try items.create(Item(type: .text, title: "Copy", contentText: "Copy"))
         let pasteboard = MockPasteboard()
-        try TextItemActions(pasteboard: pasteboard, repository: items).copy(item: saved)
+        TextItemActions(pasteboard: pasteboard, repository: items).copyPlainText(saved)
         XCTAssertEqual(pasteboard.string(forType: .string), "Copy")
         let gate = AutoPastePermissionGate(permissions: PermissionService())
         if !gate.canAutoPaste() {

@@ -7,7 +7,7 @@ protocol DatabaseMigration: Sendable {
     func apply(on db: OpaquePointer) throws
 }
 
-struct DatabaseManager: @unchecked Sendable {
+final class DatabaseManager: @unchecked Sendable {
     private(set) var db: OpaquePointer?
     let paths: StoragePaths
 
