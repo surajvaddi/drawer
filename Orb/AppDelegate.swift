@@ -4,6 +4,7 @@ import UniformTypeIdentifiers
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
     private var orbPanel: FloatingOrbPanel?
+    private var mainWindow: NSWindow?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         OrbLogger.shared.info("Orb application did finish launching")
@@ -12,6 +13,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         true
+    }
+
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        false
+    }
+
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        showMainWindow()
+        return true
     }
 
     private func showPersistentOrb() {
@@ -56,16 +66,23 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func showMainWindow() {
         NSApp.activate(ignoringOtherApps: true)
-        if let mainWindow = NSApp.windows.first(where: { window in
-            !(window is FloatingOrbPanel) && window.isVisible
-        }) {
-            mainWindow.makeKeyAndOrderFront(nil)
-        } else {
-            NSApp.sendAction(#selector(AppDelegate.showMainWindowAction), to: nil, from: nil)
+        if mainWindow == nil {
+            mainWindow = makeMainWindow()
         }
+        mainWindow?.center()
+        mainWindow?.makeKeyAndOrderFront(nil)
     }
 
-    @objc private func showMainWindowAction() {}
+    private func makeMainWindow() -> NSWindow {
+        let hostingController = NSHostingController(rootView: ContentView())
+        let window = NSWindow(contentViewController: hostingController)
+        window.title = "Orb"
+        window.setContentSize(NSSize(width: 720, height: 500))
+        window.minSize = NSSize(width: 660, height: 460)
+        window.styleMask = [.titled, .closable, .miniaturizable, .resizable]
+        window.isReleasedWhenClosed = false
+        return window
+    }
 
     private func saveDrop(_ payload: CapturePayload) {
         do {
