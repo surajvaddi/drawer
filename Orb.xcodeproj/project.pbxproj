@@ -309,6 +309,9 @@
 		2768F24C77724053B693656A /* QuickPasteEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */; };
 		79A0F17CA0AD427E85A925E7 /* QuickPasteEmptyStateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */; };
 		DFFC9C3C2FE64592AA0D61EC /* QuickPasteEmptyStateViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */; };
+		B03C329D2C1D4FF1AF942075 /* HotkeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C428D35C7C450BBD926483 /* HotkeyService.swift */; };
+		9F7A76195EC7415AB62CD909 /* HotkeyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DF16F529024F6892A9EC66 /* HotkeyServiceTests.swift */; };
+		B9DB8CEA99B343ACB05560C7 /* HotkeyServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B01687D4F48D38DBCCD93 /* HotkeyServiceIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -625,6 +628,9 @@
 		01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteEmptyStateView.swift; sourceTree = "<group>"; };
 		8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteEmptyStateViewTests.swift; sourceTree = "<group>"; };
 		7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteEmptyStateViewIntegrationTests.swift; sourceTree = "<group>"; };
+		51C428D35C7C450BBD926483 /* HotkeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyService.swift; sourceTree = "<group>"; };
+		26DF16F529024F6892A9EC66 /* HotkeyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyServiceTests.swift; sourceTree = "<group>"; };
+		550B01687D4F48D38DBCCD93 /* HotkeyServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyServiceIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -800,6 +806,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				51C428D35C7C450BBD926483 /* HotkeyService.swift */,
 				05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */,
 				C691831AA41F4795B6B401A0 /* SettingsStore.swift */,
 
@@ -810,6 +817,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				26DF16F529024F6892A9EC66 /* HotkeyServiceTests.swift */,
 				8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */,
 				20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */,
 				B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */,
@@ -918,6 +926,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				550B01687D4F48D38DBCCD93 /* HotkeyServiceIntegrationTests.swift */,
 				7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */,
 				20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */,
 				263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */,
