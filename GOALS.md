@@ -1100,7 +1100,7 @@ System-wide shortcuts and drawer keyboard navigation.
 
 ### Step 17.1: Global Hotkey Registrar
 
-- [ ] **Function:** `HotkeyService` — register/unregister global shortcuts (Carbon or CGEvent tap).
+- [x] **Function:** `HotkeyService` — register/unregister global shortcuts (Carbon or CGEvent tap).
 - **Unit tests:**
   - `testRegisterDefaultShortcuts`
   - `testUnregisterOnDeinit`
@@ -1110,7 +1110,7 @@ System-wide shortcuts and drawer keyboard navigation.
 
 ### Step 17.2: Configurable Shortcut Storage
 
-- [ ] **Function:** `ShortcutSettings` — persist customizable key combos.
+- [x] **Function:** `ShortcutSettings` — persist customizable key combos.
 - **Unit tests:**
   - `testOverrideDefaultShortcut`
   - `testDetectShortcutConflicts`
@@ -1120,7 +1120,7 @@ System-wide shortcuts and drawer keyboard navigation.
 
 ### Step 17.3: Drawer Keyboard Navigation
 
-- [ ] **Function:** `DrawerKeyboardNavigator` — arrows, Enter, Space, Delete in drawer.
+- [x] **Function:** `DrawerKeyboardNavigator` — arrows, Enter, Space, Delete in drawer.
 - **Unit tests:**
   - `testArrowMovesSelection`
   - `testSpaceOpensPreview`
@@ -1131,7 +1131,7 @@ System-wide shortcuts and drawer keyboard navigation.
 
 ### Step 17.4: Command Palette
 
-- [ ] **Function:** `CommandPalette` — searchable commands for core actions.
+- [x] **Function:** `CommandPalette` — searchable commands for core actions.
 - **Unit tests:**
   - `testFilterCommandsByQuery`
   - `testExecuteSelectedCommand`
@@ -1141,7 +1141,7 @@ System-wide shortcuts and drawer keyboard navigation.
 
 ### Step 17.5: Toggle Drawer Shortcut
 
-- [ ] **Function:** Wire Cmd+Shift+O to open/close drawer from any app.
+- [x] **Function:** Wire Cmd+Shift+O to open/close drawer from any app.
 - **Unit tests:**
   - `testToggleOpensClosedDrawer`
   - `testToggleClosesOpenDrawer`
@@ -1151,7 +1151,7 @@ System-wide shortcuts and drawer keyboard navigation.
 
 ### Step 17.6: Screenshot Shortcut
 
-- [ ] **Function:** Wire Cmd+Shift+2 to start screenshot capture pipeline.
+- [x] **Function:** Wire Cmd+Shift+2 to start screenshot capture pipeline.
 - **Unit tests:**
   - `testScreenshotShortcutStartsOverlay`
 - **Integration tests:**
@@ -1166,7 +1166,7 @@ Orb as drop target and drag-out source.
 
 ### Step 18.1: Orb Drop Target Registration
 
-- [ ] **Function:** `OrbDropTarget` — register for text, URL, file, image drops.
+- [x] **Function:** `OrbDropTarget` — register for text, URL, file, image drops.
 - **Unit tests:**
   - `testAcceptsRegisteredUTTypes`
   - `testRejectUnsupportedTypes`
@@ -1176,7 +1176,7 @@ Orb as drop target and drag-out source.
 
 ### Step 18.2: Drop Hover Visual State
 
-- [ ] **Function:** Wire drag-hover to `OrbStateMachine` dragHover state and label.
+- [x] **Function:** Wire drag-hover to `OrbStateMachine` dragHover state and label.
 - **Unit tests:**
   - `testDragEnterSetsDragHover`
   - `testDragExitReturnsIdle`
@@ -1186,7 +1186,7 @@ Orb as drop target and drag-out source.
 
 ### Step 18.3: File Drop Import Pipeline
 
-- [ ] **Function:** `FileDropPipeline` — dropped files → `FileImporter` / reference flow.
+- [x] **Function:** `FileDropPipeline` — dropped files → `FileImporter` / reference flow.
 - **Unit tests:**
   - `testDropSinglePDFImports`
   - `testDropMultipleFilesCreatesMultipleItems`
@@ -1196,7 +1196,7 @@ Orb as drop target and drag-out source.
 
 ### Step 18.4: Image and Text Drop Pipeline
 
-- [ ] **Function:** `ImageDropPipeline` and `TextDropPipeline` — direct save from drops.
+- [x] **Function:** `ImageDropPipeline` and `TextDropPipeline` — direct save from drops.
 - **Unit tests:**
   - `testDropPNGCreatesImageItem`
   - `testDropURLStringCreatesLinkItem`
@@ -1206,7 +1206,7 @@ Orb as drop target and drag-out source.
 
 ### Step 18.5: Drag Item Out of Drawer
 
-- [ ] **Function:** `ItemDragSource` — drag item content into external apps.
+- [x] **Function:** `ItemDragSource` — drag item content into external apps.
 - **Unit tests:**
   - `testDragProvidesTextPayload`
   - `testDragProvidesFileURLForDocuments`
@@ -1216,7 +1216,7 @@ Orb as drop target and drag-out source.
 
 ### Step 18.6: Drag Item Between Drawers
 
-- [ ] **Function:** Enhance drop handling on drawer rows for move semantics.
+- [x] **Function:** Enhance drop handling on drawer rows for move semantics.
 - **Unit tests:**
   - `testDropOnDrawerRowMovesItem`
 - **Integration tests:**
@@ -1231,7 +1231,7 @@ Detection, warnings, private drawers, exclusions.
 
 ### Step 19.1: Sensitive Content Detector
 
-- [ ] **Function:** `SensitiveContentDetector` — regex/heuristics for keys, cards, SSN, secrets.
+- [x] **Function:** `SensitiveContentDetector` — regex/heuristics for keys, cards, SSN, secrets.
 - **Unit tests:**
   - `testDetectAWSKeyPattern`
   - `testDetectCreditCardNumber`
@@ -1243,7 +1243,7 @@ Detection, warnings, private drawers, exclusions.
 
 ### Step 19.2: Sensitive Save Warning Dialog
 
-- [ ] **Function:** `SensitiveSaveAlert` — save once / private drawer / don't save.
+- [x] **Function:** `SensitiveSaveAlert` — save once / private drawer / don't save.
 - **Unit tests:**
   - `testDontSaveAbortsPipeline`
   - `testSaveToPrivateRoutesToPrivateDrawer`
@@ -1253,7 +1253,7 @@ Detection, warnings, private drawers, exclusions.
 
 ### Step 19.3: Private Drawer Flag and Encryption Stub
 
-- [ ] **Function:** `PrivateDrawerService` — mark drawer private, encrypt-at-rest stub interface.
+- [x] **Function:** `PrivateDrawerService` — mark drawer private, encrypt-at-rest stub interface.
 - **Unit tests:**
   - `testPrivateDrawerExcludedFromDefaultSearch`
   - `testEncryptionInterfacePluggable`
@@ -1263,7 +1263,7 @@ Detection, warnings, private drawers, exclusions.
 
 ### Step 19.4: Excluded Apps Manager
 
-- [ ] **Function:** `ExcludedAppsManager` — persist and check excluded bundle IDs.
+- [x] **Function:** `ExcludedAppsManager` — persist and check excluded bundle IDs.
 - **Unit tests:**
   - `testAddRemoveExcludedApp`
   - `testExcludedAppBlocksClipboardPulse`
@@ -1273,7 +1273,7 @@ Detection, warnings, private drawers, exclusions.
 
 ### Step 19.5: Clear Unsaved Clipboard Previews
 
-- [ ] **Function:** `ClipboardPreviewCleaner` — auto-clear ephemeral preview data.
+- [x] **Function:** `ClipboardPreviewCleaner` — auto-clear ephemeral preview data.
 - **Unit tests:**
   - `testPreviewClearsAfterTimeout`
   - `testPreviewClearsOnPause`
@@ -1283,7 +1283,7 @@ Detection, warnings, private drawers, exclusions.
 
 ### Step 19.6: Private Mode Toggle
 
-- [ ] **Function:** `PrivateModeController` — global pause of capture, search, and AI.
+- [x] **Function:** `PrivateModeController` — global pause of capture, search, and AI.
 - **Unit tests:**
   - `testPrivateModeBlocksSave`
   - `testPrivateModeBadgeOnOrb`
@@ -1299,7 +1299,7 @@ Permission UX and graceful degradation.
 
 ### Step 20.1: Permission Status Reader
 
-- [ ] **Function:** `PermissionService` — read clipboard, accessibility, screen recording status.
+- [x] **Function:** `PermissionService` — read clipboard, accessibility, screen recording status.
 - **Unit tests:**
   - `testPermissionStatesMappedCorrectly`
 - **Integration tests:**
@@ -1308,7 +1308,7 @@ Permission UX and graceful degradation.
 
 ### Step 20.2: Permission Explanation Views
 
-- [ ] **Function:** `PermissionOnboardingView` — explain why each permission is needed.
+- [x] **Function:** `PermissionOnboardingView` — explain why each permission is needed.
 - **Unit tests:**
   - `testEachPermissionHasExplanationText`
 - **Integration tests:**
@@ -1317,7 +1317,7 @@ Permission UX and graceful degradation.
 
 ### Step 20.3: Screen Recording Permission Gate
 
-- [ ] **Function:** Gate `ScreenshotCaptureService` behind screen recording permission.
+- [x] **Function:** Gate `ScreenshotCaptureService` behind screen recording permission.
 - **Unit tests:**
   - `testCaptureBlockedWithoutPermission`
   - `testFallbackMessageShown`
@@ -1327,7 +1327,7 @@ Permission UX and graceful degradation.
 
 ### Step 20.4: Accessibility Permission Gate
 
-- [ ] **Function:** Gate `AutoPasteService` behind accessibility permission.
+- [x] **Function:** Gate `AutoPasteService` behind accessibility permission.
 - **Unit tests:**
   - `testAutoPasteBlockedWithoutAXPermission`
 - **Integration tests:**
@@ -1336,7 +1336,7 @@ Permission UX and graceful degradation.
 
 ### Step 20.5: Permission Degradation Policy
 
-- [ ] **Function:** `PermissionDegradationPolicy` — central feature availability matrix.
+- [x] **Function:** `PermissionDegradationPolicy` — central feature availability matrix.
 - **Unit tests:**
   - `testPolicyMatchesSpecSection21_3`
 - **Integration tests:**
@@ -1345,7 +1345,7 @@ Permission UX and graceful degradation.
 
 ### Step 20.6: File Access Permission Helper
 
-- [ ] **Function:** `FileAccessPermissionHelper` — NSOpenPanel and security-scoped bookmarks.
+- [x] **Function:** `FileAccessPermissionHelper` — NSOpenPanel and security-scoped bookmarks.
 - **Unit tests:**
   - `testBookmarkCreatedOnUserSelection`
 - **Integration tests:**
@@ -1360,7 +1360,7 @@ Persistent user preferences.
 
 ### Step 21.1: SettingsStore Foundation
 
-- [ ] **Function:** `SettingsStore` — UserDefaults + SQLite overlay for app settings.
+- [x] **Function:** `SettingsStore` — UserDefaults + SQLite overlay for app settings.
 - **Unit tests:**
   - `testSettingsDefaultsApplied`
   - `testSettingsPersistAcrossLaunch`
@@ -1370,7 +1370,7 @@ Persistent user preferences.
 
 ### Step 21.2: General Settings (Orb Appearance)
 
-- [ ] **Function:** `GeneralSettingsView` — size, opacity, color, snap, hide in fullscreen.
+- [x] **Function:** `GeneralSettingsView` — size, opacity, color, snap, hide in fullscreen.
 - **Unit tests:**
   - `testOrbSizeUpdatesOrbView`
   - `testOpacityClampedZeroToOne`
@@ -1380,7 +1380,7 @@ Persistent user preferences.
 
 ### Step 21.3: Capture Settings
 
-- [ ] **Function:** `CaptureSettingsView` — pulse, default drawer, auto-save toggles.
+- [x] **Function:** `CaptureSettingsView` — pulse, default drawer, auto-save toggles.
 - **Unit tests:**
   - `testPauseClipboardWatcherSetting`
   - `testDefaultDrawerSelection`
@@ -1390,7 +1390,7 @@ Persistent user preferences.
 
 ### Step 21.4: Search and Paste Settings
 
-- [ ] **Function:** `SearchSettingsView` — quick paste behavior, private items, ranking toggles.
+- [x] **Function:** `SearchSettingsView` — quick paste behavior, private items, ranking toggles.
 - **Unit tests:**
   - `testIncludeOCRSettingAffectsSearch`
   - `testEnterCopiesVsPastesSetting`
@@ -1400,7 +1400,7 @@ Persistent user preferences.
 
 ### Step 21.5: Privacy Settings
 
-- [ ] **Function:** `PrivacySettingsView` — excluded apps, sensitive detection, delete all data.
+- [x] **Function:** `PrivacySettingsView` — excluded apps, sensitive detection, delete all data.
 - **Unit tests:**
   - `testDeleteAllDataWipesDBAndBlobs`
 - **Integration tests:**
@@ -1409,7 +1409,7 @@ Persistent user preferences.
 
 ### Step 21.6: Storage Settings
 
-- [ ] **Function:** `StorageSettingsView` — import vs reference default, cache size, backup path.
+- [x] **Function:** `StorageSettingsView` — import vs reference default, cache size, backup path.
 - **Unit tests:**
   - `testImportVsReferenceDefault`
   - `testCacheSizeLimitEvictsThumbnails`
