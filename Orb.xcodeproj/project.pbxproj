@@ -399,6 +399,10 @@
 		FEC4EBFF7A034A48BDBE27C8 /* PrivacySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B311F5B951480A9D526CEC /* PrivacySettingsView.swift */; };
 		51C37B8B4FBA4611BE8AD945 /* PrivacySettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F27A78D0F6745388D9A5EEC /* PrivacySettingsViewTests.swift */; };
 		167959A5909F4B42999855BD /* PrivacySettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9808B52C68694C52B60B7280 /* PrivacySettingsViewIntegrationTests.swift */; };
+		1239280990DB4AF593C0B822 /* ThumbnailCacheEvictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C0BDCF8C004B7FB4B36EEF /* ThumbnailCacheEvictor.swift */; };
+		9994BF08A0834F97BB08C5C8 /* StorageSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1724B7533A45B781AA8608 /* StorageSettingsView.swift */; };
+		42FA7A36FC6341019F56E73B /* StorageSettingsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812EB538C746416DAD80872E /* StorageSettingsViewTests.swift */; };
+		6736771C757741EAA8FF2E26 /* StorageSettingsViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B432EFF37924C7C95100941 /* StorageSettingsViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -805,6 +809,10 @@
 		80B311F5B951480A9D526CEC /* PrivacySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsView.swift; sourceTree = "<group>"; };
 		4F27A78D0F6745388D9A5EEC /* PrivacySettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewTests.swift; sourceTree = "<group>"; };
 		9808B52C68694C52B60B7280 /* PrivacySettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
+		D0C0BDCF8C004B7FB4B36EEF /* ThumbnailCacheEvictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCacheEvictor.swift; sourceTree = "<group>"; };
+		5E1724B7533A45B781AA8608 /* StorageSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettingsView.swift; sourceTree = "<group>"; };
+		812EB538C746416DAD80872E /* StorageSettingsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettingsViewTests.swift; sourceTree = "<group>"; };
+		4B432EFF37924C7C95100941 /* StorageSettingsViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettingsViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -850,6 +858,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				D0C0BDCF8C004B7FB4B36EEF /* ThumbnailCacheEvictor.swift */,
 				C912DBE548DB4278B2E6587A /* DataWiper.swift */,
 				B4F04D78011C4570A933EE3E /* AppSettingsRepository.swift */,
 				E79520EFB62A484B968B5AC8 /* MigrationV7.swift */,
@@ -922,6 +931,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5E1724B7533A45B781AA8608 /* StorageSettingsView.swift */,
 				80B311F5B951480A9D526CEC /* PrivacySettingsView.swift */,
 				9DAD27837BFC4C7EBCA642F1 /* SearchSettingsView.swift */,
 				8BA9034005884F3E94FB79B8 /* CaptureSettingsView.swift */,
@@ -1015,6 +1025,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				812EB538C746416DAD80872E /* StorageSettingsViewTests.swift */,
 				4F27A78D0F6745388D9A5EEC /* PrivacySettingsViewTests.swift */,
 				AFF311680DFD462E827EA291 /* SearchSettingsViewTests.swift */,
 				56C18BFC28CF4B09BFB09642 /* CaptureSettingsViewTests.swift */,
@@ -1153,6 +1164,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B432EFF37924C7C95100941 /* StorageSettingsViewIntegrationTests.swift */,
 				9808B52C68694C52B60B7280 /* PrivacySettingsViewIntegrationTests.swift */,
 				711FC2C26E7E4FE28CE60C50 /* SearchSettingsViewIntegrationTests.swift */,
 				1B7BDFAE5ED1462CA70BF753 /* CaptureSettingsViewIntegrationTests.swift */,
