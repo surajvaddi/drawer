@@ -29,6 +29,9 @@
 		AB6779DD702E4F298FB1E510 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E90B58E8D4213BDB090B3 /* Drawer.swift */; };
 		B8AD5B2A8F42495DADA8851C /* DrawerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */; };
 		B1611538531F48FAB52EA96E /* DrawerModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */; };
+		E425581ECC174397B809B185 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */; };
+		B271C25DB9D64181912F9AF0 /* TagModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE7560E3204CCD877A14CB /* TagModelTests.swift */; };
+		6DF6C15A86214782852BA47B /* TagModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		475E90B58E8D4213BDB090B3 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 		DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerModelTests.swift; sourceTree = "<group>"; };
 		2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerModelIntegrationTests.swift; sourceTree = "<group>"; };
+		338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		62AE7560E3204CCD877A14CB /* TagModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModelTests.swift; sourceTree = "<group>"; };
+		E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */,
 				475E90B58E8D4213BDB090B3 /* Drawer.swift */,
 				2EB8489C2B8E4C5BB87C2E4A /* Item.swift */,
 				8F99901AA43E4C32842B4D31 /* ItemType.swift */,
@@ -151,6 +158,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				62AE7560E3204CCD877A14CB /* TagModelTests.swift */,
 				DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */,
 				E403A01BE428446085687007 /* ItemModelTests.swift */,
 				6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */,
@@ -165,6 +173,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */,
 				2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */,
 				03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */,
 				28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */,
@@ -287,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E425581ECC174397B809B185 /* Tag.swift in Sources */,
 				AB6779DD702E4F298FB1E510 /* Drawer.swift in Sources */,
 				01036EEE5CEC40EF80F04E49 /* Item.swift in Sources */,
 				8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */,
@@ -302,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B271C25DB9D64181912F9AF0 /* TagModelTests.swift in Sources */,
 				B8AD5B2A8F42495DADA8851C /* DrawerModelTests.swift in Sources */,
 				DD61F9F2245F4428AD40588B /* ItemModelTests.swift in Sources */,
 				934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */,
@@ -316,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF6C15A86214782852BA47B /* TagModelIntegrationTests.swift in Sources */,
 				B1611538531F48FAB52EA96E /* DrawerModelIntegrationTests.swift in Sources */,
 				D216CECF432C475391050F11 /* ItemModelIntegrationTests.swift in Sources */,
 				ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */,
