@@ -213,7 +213,7 @@ CRUD repositories over the schema.
 
 ### Step 3.2: DrawerRepository CRUD
 
-- [ ] **Function:** `DrawerRepository` — nested drawer fetch, reorder, pin.
+- [x] **Function:** `DrawerRepository` — nested drawer fetch, reorder, pin.
 - **Unit tests:**
   - `testCreateNestedDrawer`
   - `testReorderDrawersUpdatesSortOrder`
@@ -223,7 +223,7 @@ CRUD repositories over the schema.
 
 ### Step 3.3: TagRepository and ItemTag Linking
 
-- [ ] **Function:** `TagRepository` — create tag, link/unlink to items, list by item.
+- [x] **Function:** `TagRepository` — create tag, link/unlink to items, list by item.
 - **Unit tests:**
   - `testLinkTagToItem`
   - `testTagNameDedupedOnCreate`
@@ -233,7 +233,7 @@ CRUD repositories over the schema.
 
 ### Step 3.4: BlobRepository Metadata Persistence
 
-- [ ] **Function:** `BlobRepository` — register blob metadata linked to items.
+- [x] **Function:** `BlobRepository` — register blob metadata linked to items.
 - **Unit tests:**
   - `testRegisterBlobStoresChecksum`
   - `testListBlobsByItemAndKind`
@@ -243,7 +243,7 @@ CRUD repositories over the schema.
 
 ### Step 3.5: CaptureEventRepository
 
-- [ ] **Function:** `CaptureEventRepository` — log capture events, fetch pending/failed.
+- [x] **Function:** `CaptureEventRepository` — log capture events, fetch pending/failed.
 - **Unit tests:**
   - `testLogCaptureEventStoresMethod`
   - `testFetchPendingEventsOrderedByDate`
