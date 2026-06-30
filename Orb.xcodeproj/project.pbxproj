@@ -282,6 +282,9 @@
 		373FA24D73AE4EAA8F86659E /* SearchFilterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */; };
 		8BDD244C4352435AB2588234 /* SearchFilterParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */; };
 		D83532FB4CEA4C4BA5A86ABD /* SearchFilterParserIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */; };
+		6CB7C36E95204FCC888EB3ED /* SearchRanker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69410CD4944A4568A524A96C /* SearchRanker.swift */; };
+		B9564A8F1088497C85FE308B /* SearchRankerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */; };
+		BFA1DC2ED7244DAABD909FA1 /* SearchRankerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -571,6 +574,9 @@
 		3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterParser.swift; sourceTree = "<group>"; };
 		C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterParserTests.swift; sourceTree = "<group>"; };
 		23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterParserIntegrationTests.swift; sourceTree = "<group>"; };
+		69410CD4944A4568A524A96C /* SearchRanker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRanker.swift; sourceTree = "<group>"; };
+		5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRankerTests.swift; sourceTree = "<group>"; };
+		E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRankerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,6 +725,7 @@
 		A700000A0000000000000001 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				69410CD4944A4568A524A96C /* SearchRanker.swift */,
 				3FF913E1B52846D2A6EB1D4F /* SearchFilterParser.swift */,
 				14DEC9678E8C4F2085872381 /* SearchRepository.swift */,
 				8103A2D2AAE8481E828DAB29 /* FTSQueryBuilder.swift */,
@@ -747,6 +754,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */,
 				C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */,
 				6F9EF716E9814D6DB1714DBC /* SearchRepositoryTests.swift */,
 				952038C6C92B457EA64E50D6 /* FTSQueryBuilderTests.swift */,
@@ -846,6 +854,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */,
 				23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */,
 				12421D86623A43D0909E90FB /* SearchRepositoryIntegrationTests.swift */,
 				979FB7A3E22E4F13B987A424 /* FTSQueryBuilderIntegrationTests.swift */,
