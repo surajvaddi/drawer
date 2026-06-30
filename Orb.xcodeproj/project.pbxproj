@@ -1,138 +1,39 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = {
-	};
+	classes = {};
 	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10000010000000000000001 /* OrbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* OrbApp.swift */; };
-		A10000010000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000002 /* AppDelegate.swift */; };
-		A10000010000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000003 /* ContentView.swift */; };
-		A10000020000000000000001 /* AppBootstrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000001 /* AppBootstrapTests.swift */; };
-		A10000030000000000000001 /* AppLaunchIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000001 /* AppLaunchIntegrationTests.swift */; };
-		A10000010000000000000004 /* OrbLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004 /* OrbLogger.swift */; };
-		A10000010000000000000005 /* OrbError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005 /* OrbError.swift */; };
-		A10000020000000000000002 /* OrbLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000002 /* OrbLoggerTests.swift */; };
-		A10000020000000000000003 /* ModuleStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000003 /* ModuleStructureTests.swift */; };
-		A10000020000000000000004 /* TestTargetLinkageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000004 /* TestTargetLinkageTests.swift */; };
-		A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */; };
-		A10000030000000000000003 /* CIScriptIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000003 /* CIScriptIntegrationTests.swift */; };
-		A10000030000000000000004 /* ModuleStructureIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */; };
-		8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F99901AA43E4C32842B4D31 /* ItemType.swift */; };
-		934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */; };
-		ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */; };
-		01036EEE5CEC40EF80F04E49 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8489C2B8E4C5BB87C2E4A /* Item.swift */; };
-		DD61F9F2245F4428AD40588B /* ItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E403A01BE428446085687007 /* ItemModelTests.swift */; };
-		D216CECF432C475391050F11 /* ItemModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */; };
-		AB6779DD702E4F298FB1E510 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475E90B58E8D4213BDB090B3 /* Drawer.swift */; };
-		B8AD5B2A8F42495DADA8851C /* DrawerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */; };
-		B1611538531F48FAB52EA96E /* DrawerModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */; };
-		E425581ECC174397B809B185 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */; };
-		B271C25DB9D64181912F9AF0 /* TagModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE7560E3204CCD877A14CB /* TagModelTests.swift */; };
-		6DF6C15A86214782852BA47B /* TagModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */; };
-		5FFE1EBAF784422191FCA877 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71D9C9331D412D90348CB4 /* Blob.swift */; };
-		A4FA8B0869E542B1AE8291D0 /* BlobModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C728272678FB49BA9AD16F8F /* BlobModelTests.swift */; };
-		0CF685B222B64E84ADC48C20 /* BlobModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6789F23AF38B4698BE66FF7E /* BlobModelIntegrationTests.swift */; };
-		03ABA792E0AB4A20BC955901 /* DrawerRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D520CD38784E438093113676 /* DrawerRule.swift */; };
-		ECC2F1AACBEE430DBF429C4E /* DrawerRuleModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C126A3EC85404A8B592C0B /* DrawerRuleModelTests.swift */; };
-		8C637755B0594B099569A719 /* DrawerRuleModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33CFD3C79BC491E90B9DE55 /* DrawerRuleModelIntegrationTests.swift */; };
+		B999E3CF8486B /* OrbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC71E7D5F9B /* OrbApp.swift */; };
+		BA0F01189B8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433B62DE3357 /* AppDelegate.swift */; };
+		B0E071672E1EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05267C75C7B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A30000010000000000000001 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A00000010000000000000001 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A40000010000000000000001;
-			remoteInfo = Orb;
-		};
-		A30000020000000000000001 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A00000010000000000000001 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A40000010000000000000001;
-			remoteInfo = Orb;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A20000010000000000000001 /* OrbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbApp.swift; sourceTree = "<group>"; };
-		A20000010000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A20000010000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A20000010000000000000004 /* OrbLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLogger.swift; sourceTree = "<group>"; };
-		A20000010000000000000005 /* OrbError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbError.swift; sourceTree = "<group>"; };
-		A20000010000000000000006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A20000020000000000000001 /* AppBootstrapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrapTests.swift; sourceTree = "<group>"; };
-		A20000020000000000000002 /* OrbLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLoggerTests.swift; sourceTree = "<group>"; };
-		A20000020000000000000003 /* ModuleStructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStructureTests.swift; sourceTree = "<group>"; };
-		A20000020000000000000004 /* TestTargetLinkageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTargetLinkageTests.swift; sourceTree = "<group>"; };
-		A20000030000000000000001 /* AppLaunchIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchIntegrationTests.swift; sourceTree = "<group>"; };
-		A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbLoggerIntegrationTests.swift; sourceTree = "<group>"; };
-		A20000030000000000000003 /* CIScriptIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIScriptIntegrationTests.swift; sourceTree = "<group>"; };
-		A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleStructureIntegrationTests.swift; sourceTree = "<group>"; };
+		FABC71E7D5F9B /* OrbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbApp.swift; sourceTree = "<group>"; };
+		F433B62DE3357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB05267C75C7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE3EFB4BDE16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3EFB4BDE16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50000010000000000000001 /* Orb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000020000000000000001 /* OrbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000030000000000000001 /* OrbIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F99901AA43E4C32842B4D31 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
-		6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypeTests.swift; sourceTree = "<group>"; };
-		28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTypeIntegrationTests.swift; sourceTree = "<group>"; };
-		2EB8489C2B8E4C5BB87C2E4A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		E403A01BE428446085687007 /* ItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelTests.swift; sourceTree = "<group>"; };
-		03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelIntegrationTests.swift; sourceTree = "<group>"; };
-		475E90B58E8D4213BDB090B3 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
-		DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerModelTests.swift; sourceTree = "<group>"; };
-		2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerModelIntegrationTests.swift; sourceTree = "<group>"; };
-		338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
-		62AE7560E3204CCD877A14CB /* TagModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModelTests.swift; sourceTree = "<group>"; };
-		E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModelIntegrationTests.swift; sourceTree = "<group>"; };
-		3F71D9C9331D412D90348CB4 /* Blob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blob.swift; sourceTree = "<group>"; };
-		C728272678FB49BA9AD16F8F /* BlobModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobModelTests.swift; sourceTree = "<group>"; };
-		6789F23AF38B4698BE66FF7E /* BlobModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobModelIntegrationTests.swift; sourceTree = "<group>"; };
-		D520CD38784E438093113676 /* DrawerRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRule.swift; sourceTree = "<group>"; };
-		92C126A3EC85404A8B592C0B /* DrawerRuleModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleModelTests.swift; sourceTree = "<group>"; };
-		E33CFD3C79BC491E90B9DE55 /* DrawerRuleModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleModelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A60000010000000000000001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A60000020000000000000001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A60000030000000000000001 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+		A60000010000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A60000020000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A60000030000000000000001 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A70000010000000000000001 = {
-			isa = PBXGroup;
-			children = (
-				A70000020000000000000001 /* Orb */,
-				A70000030000000000000001 /* OrbTests */,
-				A70000040000000000000001 /* OrbIntegrationTests */,
-				A70000050000000000000001 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		A70000020000000000000001 /* Orb */ = {
-			isa = PBXGroup;
-			children = (
+		A70000010000000000000001 = { isa = PBXGroup; children = (A70000020000000000000001 /* Orb */, A70000030000000000000001 /* OrbTests */, A70000040000000000000001 /* OrbIntegrationTests */, A70000050000000000000001 /* Products */); sourceTree = "<group>"; };
+		A70000020000000000000001 = { isa = PBXGroup; children = (
 				A70000060000000000000001 /* Core */,
 				A70000070000000000000001 /* Storage */,
 				A70000080000000000000001 /* Capture */,
@@ -140,48 +41,72 @@
 				A700000A0000000000000001 /* Search */,
 				A700000B0000000000000001 /* AI */,
 				A700000C0000000000000001 /* Services */,
-				A20000010000000000000001 /* OrbApp.swift */,
-				A20000010000000000000002 /* AppDelegate.swift */,
-				A20000010000000000000003 /* ContentView.swift */,
-				A20000010000000000000006 /* Info.plist */,
-			);
-			path = Orb;
-			sourceTree = "<group>";
-		};
+				F433B62DE3357 /* AppDelegate.swift */,
+				FB05267C75C7B /* ContentView.swift */,
+				FE3EFB4BDE16A /* Info.plist */,
+				FE3EFB4BDE16A /* Info.plist */,
+				FABC71E7D5F9B /* OrbApp.swift */,
+			); path = Orb; sourceTree = "<group>"; };
 		A70000060000000000000001 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D520CD38784E438093113676 /* DrawerRule.swift */,
-				3F71D9C9331D412D90348CB4 /* Blob.swift */,
-				338C6DEC9DBF46F3BF50DDF8 /* Tag.swift */,
-				475E90B58E8D4213BDB090B3 /* Drawer.swift */,
-				2EB8489C2B8E4C5BB87C2E4A /* Item.swift */,
-				8F99901AA43E4C32842B4D31 /* ItemType.swift */,
-				A20000010000000000000004 /* OrbLogger.swift */,
-				A20000010000000000000005 /* OrbError.swift */,
+
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		A70000070000000000000001 /* Storage */ = {isa = PBXGroup; children = (); path = Storage; sourceTree = "<group>"; };
-		A70000080000000000000001 /* Capture */ = {isa = PBXGroup; children = (); path = Capture; sourceTree = "<group>"; };
-		A70000090000000000000001 /* UI */ = {isa = PBXGroup; children = (); path = UI; sourceTree = "<group>"; };
-		A700000A0000000000000001 /* Search */ = {isa = PBXGroup; children = (); path = Search; sourceTree = "<group>"; };
-		A700000B0000000000000001 /* AI */ = {isa = PBXGroup; children = (); path = AI; sourceTree = "<group>"; };
-		A700000C0000000000000001 /* Services */ = {isa = PBXGroup; children = (); path = Services; sourceTree = "<group>"; };
+		A70000070000000000000001 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A70000080000000000000001 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		A70000090000000000000001 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A700000A0000000000000001 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A700000B0000000000000001 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		A700000C0000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
-				92C126A3EC85404A8B592C0B /* DrawerRuleModelTests.swift */,
-				C728272678FB49BA9AD16F8F /* BlobModelTests.swift */,
-				62AE7560E3204CCD877A14CB /* TagModelTests.swift */,
-				DAE1E68EFB5E438EBB290F9C /* DrawerModelTests.swift */,
-				E403A01BE428446085687007 /* ItemModelTests.swift */,
-				6311E18222674AEB9E7F3ADD /* ItemTypeTests.swift */,
-				A20000020000000000000001 /* AppBootstrapTests.swift */,
-				A20000020000000000000002 /* OrbLoggerTests.swift */,
-				A20000020000000000000003 /* ModuleStructureTests.swift */,
-				A20000020000000000000004 /* TestTargetLinkageTests.swift */,
+
 			);
 			path = OrbTests;
 			sourceTree = "<group>";
@@ -189,391 +114,78 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				E33CFD3C79BC491E90B9DE55 /* DrawerRuleModelIntegrationTests.swift */,
-				6789F23AF38B4698BE66FF7E /* BlobModelIntegrationTests.swift */,
-				E14746CB97BD4EC78693A54C /* TagModelIntegrationTests.swift */,
-				2E645F1D1047423DBDF54FBD /* DrawerModelIntegrationTests.swift */,
-				03E09CA30C5447C2BB272FE9 /* ItemModelIntegrationTests.swift */,
-				28837971023C4CA89C4EB771 /* ItemTypeIntegrationTests.swift */,
-				A20000030000000000000001 /* AppLaunchIntegrationTests.swift */,
-				A20000030000000000000002 /* OrbLoggerIntegrationTests.swift */,
-				A20000030000000000000003 /* CIScriptIntegrationTests.swift */,
-				A20000030000000000000004 /* ModuleStructureIntegrationTests.swift */,
+
 			);
 			path = OrbIntegrationTests;
 			sourceTree = "<group>";
 		};
-		A70000050000000000000001 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+		A70000050000000000000001 = { isa = PBXGroup; children = (
 				A50000010000000000000001 /* Orb.app */,
-				A50000020000000000000001 /* OrbTests.xctest */,
-				A50000030000000000000001 /* OrbIntegrationTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
+			); name = Products; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		A40000010000000000000001 /* Orb */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A80000010000000000000001 /* Build configuration list for PBXNativeTarget "Orb" */;
-			buildPhases = (
-				A90000010000000000000001 /* Sources */,
-				A60000010000000000000001 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
+			buildConfigurationList = A80000010000000000000001;
+			buildPhases = (A90000010000000000000001 /* Sources */, A60000010000000000000001 /* Frameworks */);
+			buildRules = ();
+			dependencies = ();
 			name = Orb;
 			productName = Orb;
-			productReference = A50000010000000000000001 /* Orb.app */;
+			productReference = A50000010000000000000001;
 			productType = "com.apple.product-type.application";
-		};
-		A40000020000000000000001 /* OrbTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A80000020000000000000001 /* Build configuration list for PBXNativeTarget "OrbTests" */;
-			buildPhases = (
-				A90000020000000000000001 /* Sources */,
-				A60000020000000000000001 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A30000030000000000000001 /* PBXTargetDependency */,
-			);
-			name = OrbTests;
-			productName = OrbTests;
-			productReference = A50000020000000000000001 /* OrbTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A40000030000000000000001 /* OrbIntegrationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A80000030000000000000001 /* Build configuration list for PBXNativeTarget "OrbIntegrationTests" */;
-			buildPhases = (
-				A90000030000000000000001 /* Sources */,
-				A60000030000000000000001 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A30000040000000000000001 /* PBXTargetDependency */,
-			);
-			name = OrbIntegrationTests;
-			productName = OrbIntegrationTests;
-			productReference = A50000030000000000000001 /* OrbIntegrationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A00000010000000000000001 /* Project object */ = {
+		A00000010000000000000001 = {
 			isa = PBXProject;
-			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
-				TargetAttributes = {
-					A40000010000000000000001 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					A40000020000000000000001 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = A40000010000000000000001;
-					};
-					A40000030000000000000001 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = A40000010000000000000001;
-					};
-				};
-			};
-			buildConfigurationList = A80000040000000000000001 /* Build configuration list for PBXProject "Orb" */;
+			buildConfigurationList = A80000040000000000000001;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
+			knownRegions = (en, Base);
 			mainGroup = A70000010000000000000001;
-			productRefGroup = A70000050000000000000001 /* Products */;
+			productRefGroup = A70000050000000000000001;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A40000010000000000000001 /* Orb */,
-				A40000020000000000000001 /* OrbTests */,
-				A40000030000000000000001 /* OrbIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A90000010000000000000001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03ABA792E0AB4A20BC955901 /* DrawerRule.swift in Sources */,
-				5FFE1EBAF784422191FCA877 /* Blob.swift in Sources */,
-				E425581ECC174397B809B185 /* Tag.swift in Sources */,
-				AB6779DD702E4F298FB1E510 /* Drawer.swift in Sources */,
-				01036EEE5CEC40EF80F04E49 /* Item.swift in Sources */,
-				8F97ACFC77B04D689B60FE36 /* ItemType.swift in Sources */,
-				A10000010000000000000001 /* OrbApp.swift in Sources */,
-				A10000010000000000000002 /* AppDelegate.swift in Sources */,
-				A10000010000000000000003 /* ContentView.swift in Sources */,
-				A10000010000000000000004 /* OrbLogger.swift in Sources */,
-				A10000010000000000000005 /* OrbError.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A90000020000000000000001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECC2F1AACBEE430DBF429C4E /* DrawerRuleModelTests.swift in Sources */,
-				A4FA8B0869E542B1AE8291D0 /* BlobModelTests.swift in Sources */,
-				B271C25DB9D64181912F9AF0 /* TagModelTests.swift in Sources */,
-				B8AD5B2A8F42495DADA8851C /* DrawerModelTests.swift in Sources */,
-				DD61F9F2245F4428AD40588B /* ItemModelTests.swift in Sources */,
-				934AC43A36CF4DD9AE291D76 /* ItemTypeTests.swift in Sources */,
-				A10000020000000000000001 /* AppBootstrapTests.swift in Sources */,
-				A10000020000000000000002 /* OrbLoggerTests.swift in Sources */,
-				A10000020000000000000003 /* ModuleStructureTests.swift in Sources */,
-				A10000020000000000000004 /* TestTargetLinkageTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A90000030000000000000001 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C637755B0594B099569A719 /* DrawerRuleModelIntegrationTests.swift in Sources */,
-				0CF685B222B64E84ADC48C20 /* BlobModelIntegrationTests.swift in Sources */,
-				6DF6C15A86214782852BA47B /* TagModelIntegrationTests.swift in Sources */,
-				B1611538531F48FAB52EA96E /* DrawerModelIntegrationTests.swift in Sources */,
-				D216CECF432C475391050F11 /* ItemModelIntegrationTests.swift in Sources */,
-				ED2AFFF11CB0420494BC3ED2 /* ItemTypeIntegrationTests.swift in Sources */,
-				A10000030000000000000001 /* AppLaunchIntegrationTests.swift in Sources */,
-				A10000030000000000000002 /* OrbLoggerIntegrationTests.swift in Sources */,
-				A10000030000000000000003 /* CIScriptIntegrationTests.swift in Sources */,
-				A10000030000000000000004 /* ModuleStructureIntegrationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				B999E3CF8486B /* OrbApp.swift in Sources */,
+				BA0F01189B8C7 /* AppDelegate.swift in Sources */,
+				B0E071672E1EB /* ContentView.swift in Sources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+
+			); runOnlyForDeploymentPostprocessing = 0; };
+		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+
+			); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A30000030000000000000001 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A40000010000000000000001 /* Orb */;
-			targetProxy = A30000010000000000000001 /* PBXContainerItemProxy */;
-		};
-		A30000040000000000000001 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A40000010000000000000001 /* Orb */;
-			targetProxy = A30000020000000000000001 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AB0000010000000000000001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		AB0000010000000000000002 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AB0000020000000000000001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Orb/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.Orb;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		AB0000020000000000000002 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Orb/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.Orb;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AB0000030000000000000001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
-			};
-			name = Debug;
-		};
-		AB0000030000000000000002 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
-			};
-			name = Release;
-		};
-		AB0000040000000000000001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbIntegrationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
-			};
-			name = Debug;
-		};
-		AB0000040000000000000002 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.OrbIntegrationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orb.app/Contents/MacOS/Orb";
-			};
-			name = Release;
-		};
+		AB0000010000000000000001 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; ENABLE_TESTABILITY = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Debug; };
+		AB0000010000000000000002 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 14.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; }; name = Release; };
+		AB0000020000000000000001 = { isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Orb/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.Orb; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; }; name = Debug; };
+		AB0000020000000000000002 = { isa = XCBuildConfiguration; buildSettings = { GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Orb/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = dev.drawer.Orb; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; }; name = Release; };
+
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A80000010000000000000001 /* Build configuration list for PBXNativeTarget "Orb" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB0000020000000000000001 /* Debug */,
-				AB0000020000000000000002 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A80000020000000000000001 /* Build configuration list for PBXNativeTarget "OrbTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB0000030000000000000001 /* Debug */,
-				AB0000030000000000000002 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A80000030000000000000001 /* Build configuration list for PBXNativeTarget "OrbIntegrationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB0000040000000000000001 /* Debug */,
-				AB0000040000000000000002 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A80000040000000000000001 /* Build configuration list for PBXProject "Orb" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB0000010000000000000001 /* Debug */,
-				AB0000010000000000000002 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+		A80000010000000000000001 = { isa = XCConfigurationList; buildConfigurations = (AB0000020000000000000001, AB0000020000000000000002); defaultConfigurationName = Release; };
+
+		A80000040000000000000001 = { isa = XCConfigurationList; buildConfigurations = (AB0000010000000000000001, AB0000010000000000000002); defaultConfigurationName = Release; };
 /* End XCConfigurationList section */
 	};
-	rootObject = A00000010000000000000001 /* Project object */;
+	rootObject = A00000010000000000000001;
 }

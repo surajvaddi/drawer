@@ -24,7 +24,7 @@ Establish the macOS app shell, module layout, and CI test runner.
 
 ### Step 0.1: Create Xcode macOS App Target
 
-- [ ] **Function:** Scaffold `Orb` macOS app with SwiftUI lifecycle, `AppDelegate`, and empty `ContentView`.
+- [x] **Function:** Scaffold `Orb` macOS app with SwiftUI lifecycle, `AppDelegate`, and empty `ContentView`.
 - **Unit tests:**
   - `testAppDelegateInitializesWithoutCrash`
   - `testBundleIdentifierIsSet`
