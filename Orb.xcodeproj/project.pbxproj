@@ -368,6 +368,9 @@
 		83F8664FA0C14C2E85017B5E /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A68B0C407A744C097803056 /* PermissionService.swift */; };
 		44CDA19AE87E49B39700C36E /* PermissionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F39F2CF4F4938A7D2A3B3 /* PermissionServiceTests.swift */; };
 		90E3B23FA9D349BCA6F54446 /* PermissionServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7297B98E4B99B28C19B6 /* PermissionServiceIntegrationTests.swift */; };
+		66DFE43F12084CC496495CB9 /* PermissionOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2BAD4D4AC6411999418C76 /* PermissionOnboardingView.swift */; };
+		F20EBD77088B4E289BD6BCBD /* PermissionOnboardingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E82F2B13974438AAC19DC1 /* PermissionOnboardingViewTests.swift */; };
+		1D314AA83D0A4BB7A8D76F16 /* PermissionOnboardingViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C990B73458043A6845CAC4C /* PermissionOnboardingViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -743,6 +746,9 @@
 		6A68B0C407A744C097803056 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
 		F28F39F2CF4F4938A7D2A3B3 /* PermissionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionServiceTests.swift; sourceTree = "<group>"; };
 		10CD7297B98E4B99B28C19B6 /* PermissionServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		AE2BAD4D4AC6411999418C76 /* PermissionOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionOnboardingView.swift; sourceTree = "<group>"; };
+		31E82F2B13974438AAC19DC1 /* PermissionOnboardingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionOnboardingViewTests.swift; sourceTree = "<group>"; };
+		6C990B73458043A6845CAC4C /* PermissionOnboardingViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionOnboardingViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -858,6 +864,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AE2BAD4D4AC6411999418C76 /* PermissionOnboardingView.swift */,
 				3D16E87645D8401AB191DB42 /* DrawerRowDropHandler.swift */,
 				2B57E470697E48D880F4A1BA /* ItemDragSource.swift */,
 				F9ACF9C55CB04018A0388C73 /* OrbDropHoverController.swift */,
@@ -942,6 +949,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				31E82F2B13974438AAC19DC1 /* PermissionOnboardingViewTests.swift */,
 				F28F39F2CF4F4938A7D2A3B3 /* PermissionServiceTests.swift */,
 				8C69D40EDA7B4189A5F2891B /* PrivateModeControllerTests.swift */,
 				D40D831584DB43118E6C0342 /* ClipboardPreviewCleanerTests.swift */,
@@ -1070,6 +1078,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				6C990B73458043A6845CAC4C /* PermissionOnboardingViewIntegrationTests.swift */,
 				10CD7297B98E4B99B28C19B6 /* PermissionServiceIntegrationTests.swift */,
 				C2A1A1B001F34D59871D2B8E /* PrivateModeControllerIntegrationTests.swift */,
 				D774550288DB4B448394690F /* ClipboardPreviewCleanerIntegrationTests.swift */,
