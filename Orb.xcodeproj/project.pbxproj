@@ -239,6 +239,9 @@
 		15B42AF8FEC14E5A8ADC5F0E /* NestedDrawerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5580BF397C47E5B4169333 /* NestedDrawerService.swift */; };
 		670DC0FEE7E94A18968869F8 /* NestedDrawerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E680A135D4EC79D9D3D6C /* NestedDrawerServiceTests.swift */; };
 		5F6493207A6D488E9A90C16E /* NestedDrawerServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2E48FEBC946379B4E86FA /* NestedDrawerServiceIntegrationTests.swift */; };
+		A9A2ED1C763644F3900A8997 /* DrawerStyleEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7F92216F04FD683538A37 /* DrawerStyleEditor.swift */; };
+		95CCD8DB4587412495781D1B /* DrawerStyleEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E509D39EE44713B82E7001 /* DrawerStyleEditorTests.swift */; };
+		629F712C206342C398257768 /* DrawerStyleEditorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FCF0CDAD9E4B768D5AC78D /* DrawerStyleEditorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -485,6 +488,9 @@
 		FC5580BF397C47E5B4169333 /* NestedDrawerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedDrawerService.swift; sourceTree = "<group>"; };
 		E62E680A135D4EC79D9D3D6C /* NestedDrawerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedDrawerServiceTests.swift; sourceTree = "<group>"; };
 		7AA2E48FEBC946379B4E86FA /* NestedDrawerServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedDrawerServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		05C7F92216F04FD683538A37 /* DrawerStyleEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerStyleEditor.swift; sourceTree = "<group>"; };
+		75E509D39EE44713B82E7001 /* DrawerStyleEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerStyleEditorTests.swift; sourceTree = "<group>"; };
+		E4FCF0CDAD9E4B768D5AC78D /* DrawerStyleEditorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerStyleEditorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +595,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				05C7F92216F04FD683538A37 /* DrawerStyleEditor.swift */,
 				519BE5AED2E047DBBF4427E9 /* CreateDrawerFlow.swift */,
 				F6C5E87E5FA54AF58D6C8C8A /* DocumentItemActions.swift */,
 				41ABC231C47A4FD8B4F362AD /* ScreenshotItemActions.swift */,
@@ -645,6 +652,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				75E509D39EE44713B82E7001 /* DrawerStyleEditorTests.swift */,
 				E62E680A135D4EC79D9D3D6C /* NestedDrawerServiceTests.swift */,
 				7803A6C5638F461CA86F4C0D /* CreateDrawerFlowTests.swift */,
 				510E8BA6FD6D4BD4BD02012F /* DocumentItemActionsTests.swift */,
@@ -730,6 +738,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E4FCF0CDAD9E4B768D5AC78D /* DrawerStyleEditorIntegrationTests.swift */,
 				7AA2E48FEBC946379B4E86FA /* NestedDrawerServiceIntegrationTests.swift */,
 				97F70753296348BAB0CD787C /* CreateDrawerFlowIntegrationTests.swift */,
 				C308423E889D442DB983271A /* DocumentItemActionsIntegrationTests.swift */,
