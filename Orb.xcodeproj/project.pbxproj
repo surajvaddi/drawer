@@ -81,6 +81,9 @@
 		1D167004F9B44D8B859F818D /* StorageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A968788BB1443CB6AA5FFE /* StorageCoordinator.swift */; };
 		6C0BC42AD38A4E7BA99EAA1B /* StorageCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32894742E14F8B907F2DEF /* StorageCoordinatorTests.swift */; };
 		1CE353BCD5C246D0B7D638EC /* StorageCoordinatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E352579860F46F78CD8AF4D /* StorageCoordinatorIntegrationTests.swift */; };
+		839B27BB8B9E4C22A46F6E51 /* DefaultDataSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6C65F3605404AA3B3D5A2 /* DefaultDataSeeder.swift */; };
+		6E7938B6943D4A53A033489B /* DefaultDataSeederTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */; };
+		79244927F0E147CDA828460D /* DefaultDataSeederIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +172,9 @@
 		61A968788BB1443CB6AA5FFE /* StorageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCoordinator.swift; sourceTree = "<group>"; };
 		7F32894742E14F8B907F2DEF /* StorageCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCoordinatorTests.swift; sourceTree = "<group>"; };
 		3E352579860F46F78CD8AF4D /* StorageCoordinatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCoordinatorIntegrationTests.swift; sourceTree = "<group>"; };
+		EAE6C65F3605404AA3B3D5A2 /* DefaultDataSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataSeeder.swift; sourceTree = "<group>"; };
+		8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataSeederTests.swift; sourceTree = "<group>"; };
+		F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataSeederIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				EAE6C65F3605404AA3B3D5A2 /* DefaultDataSeeder.swift */,
 				61A968788BB1443CB6AA5FFE /* StorageCoordinator.swift */,
 				8E6B84F23C414925AC33A9AF /* ThumbnailGenerator.swift */,
 				465777393739449C973A804E /* BlobStore.swift */,
@@ -276,6 +283,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				8653C6F255B1408E84D26A73 /* DefaultDataSeederTests.swift */,
 				7F32894742E14F8B907F2DEF /* StorageCoordinatorTests.swift */,
 				778B30C4BE044537B16B0E62 /* ThumbnailGeneratorTests.swift */,
 				AC98AFFDF08249119679F43A /* BlobStoreTests.swift */,
@@ -307,6 +315,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				F03D899264894B49BE4A717F /* DefaultDataSeederIntegrationTests.swift */,
 				3E352579860F46F78CD8AF4D /* StorageCoordinatorIntegrationTests.swift */,
 				6A69D43EBB1E4CF5A395726D /* ThumbnailGeneratorIntegrationTests.swift */,
 				F861543E40824327A8D80831 /* BlobStoreIntegrationTests.swift */,
