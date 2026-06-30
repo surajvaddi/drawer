@@ -121,7 +121,7 @@ Define pure Swift types mirroring the product data model.
 
 ### Step 1.6: Implement DrawerRule and AIAnnotation Models
 
-- [ ] **Function:** `DrawerRule` and `AIAnnotation` structs with JSON condition payloads.
+- [x] **Function:** `DrawerRule` and `AIAnnotation` structs with JSON condition payloads.
 - **Unit tests:**
   - `testDrawerRulePrioritySort`
   - `testAIAnnotationKindParsing`

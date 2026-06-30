@@ -1,4 +1,5 @@
 import XCTest
+@testable import Orb
 
 final class DrawerRuleModelIntegrationTests: XCTestCase {
     func testAIAnnotationRoundTrip() throws {
