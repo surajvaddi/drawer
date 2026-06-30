@@ -164,6 +164,9 @@
 		EC3B5EE0A3D24C72A7751197 /* ItemCardContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */; };
 		FCB65BFEE72B4D1082BEE1F4 /* ItemCardContextMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */; };
 		B3E0C49B6F364CBF849C3570 /* ItemCardContextMenuIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */; };
+		30C2424424164F948DCAF9F2 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C86DBD32C94D8DBE39A67A /* ItemDetailView.swift */; };
+		859B70E6AEA445BB83AC2892 /* ItemDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2778641D535E4019AC0D226C /* ItemDetailViewTests.swift */; };
+		A18719E7959246078F9F73A7 /* ItemDetailViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4690B624643E7ABA89B0A /* ItemDetailViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +338,9 @@
 		FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardContextMenu.swift; sourceTree = "<group>"; };
 		75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardContextMenuTests.swift; sourceTree = "<group>"; };
 		8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardContextMenuIntegrationTests.swift; sourceTree = "<group>"; };
+		D8C86DBD32C94D8DBE39A67A /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		2778641D535E4019AC0D226C /* ItemDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewTests.swift; sourceTree = "<group>"; };
+		2EE4690B624643E7ABA89B0A /* ItemDetailViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +429,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D8C86DBD32C94D8DBE39A67A /* ItemDetailView.swift */,
 				FF64138AEAAD49E4AAAEFAA3 /* ItemCardContextMenu.swift */,
 				554EF922A49D4662A6D25392 /* ItemCardView.swift */,
 				DBDD9D551A8E453FBB56AE90 /* RelativeDateFormatter.swift */,
@@ -470,6 +477,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				2778641D535E4019AC0D226C /* ItemDetailViewTests.swift */,
 				75CF5B089C72452B8B3E38E6 /* ItemCardContextMenuTests.swift */,
 				6B909DB8F78A4B59840AA62D /* ItemCardViewTests.swift */,
 				31DF2A687E17400BB81E6967 /* DrawerListViewTests.swift */,
@@ -529,6 +537,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				2EE4690B624643E7ABA89B0A /* ItemDetailViewIntegrationTests.swift */,
 				8354A5BE0B9445188CD86C3C /* ItemCardContextMenuIntegrationTests.swift */,
 				0460F45263024DA8B9DC3B5B /* ItemCardViewIntegrationTests.swift */,
 				C48E7456636C4AC2BA737F40 /* DrawerListViewIntegrationTests.swift */,
