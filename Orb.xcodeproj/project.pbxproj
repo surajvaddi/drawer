@@ -285,6 +285,9 @@
 		6CB7C36E95204FCC888EB3ED /* SearchRanker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69410CD4944A4568A524A96C /* SearchRanker.swift */; };
 		B9564A8F1088497C85FE308B /* SearchRankerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */; };
 		BFA1DC2ED7244DAABD909FA1 /* SearchRankerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */; };
+		B1BD5453D7DE46DB8EAC4FF5 /* DrawerSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072F0DE18584369B98F7A5E /* DrawerSearchController.swift */; };
+		8A488A13E96049B6BF752595 /* DrawerSearchControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEBD54D2FD94A5B842939FE /* DrawerSearchControllerTests.swift */; };
+		95A40E600DB24767AABF7D76 /* DrawerSearchControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577C6EF0F1354A86AE2A5FE2 /* DrawerSearchControllerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -577,6 +580,9 @@
 		69410CD4944A4568A524A96C /* SearchRanker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRanker.swift; sourceTree = "<group>"; };
 		5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRankerTests.swift; sourceTree = "<group>"; };
 		E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRankerIntegrationTests.swift; sourceTree = "<group>"; };
+		3072F0DE18584369B98F7A5E /* DrawerSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSearchController.swift; sourceTree = "<group>"; };
+		9AEBD54D2FD94A5B842939FE /* DrawerSearchControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSearchControllerTests.swift; sourceTree = "<group>"; };
+		577C6EF0F1354A86AE2A5FE2 /* DrawerSearchControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSearchControllerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -688,6 +694,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3072F0DE18584369B98F7A5E /* DrawerSearchController.swift */,
 				D4E351E9DEC1439E98E6CDEE /* ItemSortController.swift */,
 				3A998E9DFDF74D66BBE6EA5C /* ItemFilterController.swift */,
 				5DDAC8CB9E1943FCA4FBD0D1 /* TagFilterController.swift */,
@@ -754,6 +761,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				9AEBD54D2FD94A5B842939FE /* DrawerSearchControllerTests.swift */,
 				5BD6992D67D746A4B768BF7E /* SearchRankerTests.swift */,
 				C0DFD230F6B14C7CAA1E7EBE /* SearchFilterParserTests.swift */,
 				6F9EF716E9814D6DB1714DBC /* SearchRepositoryTests.swift */,
@@ -854,6 +862,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				577C6EF0F1354A86AE2A5FE2 /* DrawerSearchControllerIntegrationTests.swift */,
 				E21643170F424530B19B7561 /* SearchRankerIntegrationTests.swift */,
 				23FA5109C6994B039AD27E30 /* SearchFilterParserIntegrationTests.swift */,
 				12421D86623A43D0909E90FB /* SearchRepositoryIntegrationTests.swift */,
