@@ -37,6 +37,9 @@
 		BDC55C1CA73A4 /* TagModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF24AF5DCC54 /* TagModelIntegrationTests.swift */; };
 		B89A26C16C233 /* BlobModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC985FE7D2443 /* BlobModelIntegrationTests.swift */; };
 		B3CF00EBE0E27 /* DrawerRuleModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F701E9406DDB7 /* DrawerRuleModelIntegrationTests.swift */; };
+		196481F7E89E415E9BF8B2AA /* StoragePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395D13ED03D448788606598 /* StoragePaths.swift */; };
+		8D82489FD9C043DB80CE72B6 /* StoragePathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638B4346D0A4D56A3E670A5 /* StoragePathsTests.swift */; };
+		1AC4EE9BD6ED4B81B3B71F28 /* StoragePathsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9914980B7E84695819DB484 /* StoragePathsIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		A50000010000000000000001 /* Orb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000020000000000000001 /* OrbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50000030000000000000001 /* OrbIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C395D13ED03D448788606598 /* StoragePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePaths.swift; sourceTree = "<group>"; };
+		9638B4346D0A4D56A3E670A5 /* StoragePathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePathsTests.swift; sourceTree = "<group>"; };
+		A9914980B7E84695819DB484 /* StoragePathsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePathsIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 		A70000070000000000000001 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				C395D13ED03D448788606598 /* StoragePaths.swift */,
 
 			);
 			path = Storage;
@@ -171,6 +178,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				9638B4346D0A4D56A3E670A5 /* StoragePathsTests.swift */,
 				F6708BA67C498 /* AppBootstrapTests.swift */,
 				F35CCE31F675F /* BlobModelTests.swift */,
 				F0869553AA03F /* DrawerModelTests.swift */,
@@ -188,6 +196,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				A9914980B7E84695819DB484 /* StoragePathsIntegrationTests.swift */,
 				FEE87E5576ECB /* AppLaunchIntegrationTests.swift */,
 				FC985FE7D2443 /* BlobModelIntegrationTests.swift */,
 				F9AC2DEF54E32 /* CIScriptIntegrationTests.swift */,

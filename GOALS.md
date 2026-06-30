@@ -137,7 +137,7 @@ SQLite persistence, migrations, and application support paths.
 
 ### Step 2.1: Application Support Path Resolver
 
-- [ ] **Function:** `StoragePaths` — resolves `~/Library/Application Support/Orb/` and subfolders (`blobs/`, `indexes/`, `backups/`, `logs/`).
+- [x] **Function:** `StoragePaths` — resolves `~/Library/Application Support/Orb/` and subfolders (`blobs/`, `indexes/`, `backups/`, `logs/`).
 - **Unit tests:**
   - `testStoragePathsCreatesSubdirectories`
   - `testBlobPathsForEachKind`
