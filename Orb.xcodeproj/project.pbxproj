@@ -249,6 +249,9 @@
 		1E3F8455C96F4E2D85B45741 /* DrawerRuleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89CCD3177B64CB3AD9B1440 /* DrawerRuleEvaluator.swift */; };
 		B65DDF545F2F4D229D6B8D93 /* DrawerRuleEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A9E28475854CE1A7A0C199 /* DrawerRuleEvaluatorTests.swift */; };
 		CD96F514297D4138AD2A0280 /* DrawerRuleEvaluatorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158FAC55E1C142449C9082F7 /* DrawerRuleEvaluatorIntegrationTests.swift */; };
+		80811C93E3F94288BB72CF9B /* DrawerSuggestionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62144297CEAC4E36BF1D185F /* DrawerSuggestionBanner.swift */; };
+		8A24703D4A01482B8E05E956 /* DrawerSuggestionBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B995EA678C441DA0C908BA /* DrawerSuggestionBannerTests.swift */; };
+		4576058776774FD7A8868BE4 /* DrawerSuggestionBannerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DFD9DE76FA49B3B450CC44 /* DrawerSuggestionBannerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -505,6 +508,9 @@
 		D89CCD3177B64CB3AD9B1440 /* DrawerRuleEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleEvaluator.swift; sourceTree = "<group>"; };
 		61A9E28475854CE1A7A0C199 /* DrawerRuleEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleEvaluatorTests.swift; sourceTree = "<group>"; };
 		158FAC55E1C142449C9082F7 /* DrawerRuleEvaluatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRuleEvaluatorIntegrationTests.swift; sourceTree = "<group>"; };
+		62144297CEAC4E36BF1D185F /* DrawerSuggestionBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSuggestionBanner.swift; sourceTree = "<group>"; };
+		37B995EA678C441DA0C908BA /* DrawerSuggestionBannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSuggestionBannerTests.swift; sourceTree = "<group>"; };
+		D4DFD9DE76FA49B3B450CC44 /* DrawerSuggestionBannerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSuggestionBannerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -612,6 +618,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				62144297CEAC4E36BF1D185F /* DrawerSuggestionBanner.swift */,
 				05C7F92216F04FD683538A37 /* DrawerStyleEditor.swift */,
 				519BE5AED2E047DBBF4427E9 /* CreateDrawerFlow.swift */,
 				F6C5E87E5FA54AF58D6C8C8A /* DocumentItemActions.swift */,
@@ -669,6 +676,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				37B995EA678C441DA0C908BA /* DrawerSuggestionBannerTests.swift */,
 				61A9E28475854CE1A7A0C199 /* DrawerRuleEvaluatorTests.swift */,
 				6211AAC96C45463F895AB866 /* MoveItemToDrawerServiceTests.swift */,
 				75E509D39EE44713B82E7001 /* DrawerStyleEditorTests.swift */,
@@ -757,6 +765,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				D4DFD9DE76FA49B3B450CC44 /* DrawerSuggestionBannerIntegrationTests.swift */,
 				158FAC55E1C142449C9082F7 /* DrawerRuleEvaluatorIntegrationTests.swift */,
 				470254A6C809496F89ACE243 /* MoveItemToDrawerServiceIntegrationTests.swift */,
 				E4FCF0CDAD9E4B768D5AC78D /* DrawerStyleEditorIntegrationTests.swift */,
