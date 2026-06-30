@@ -99,6 +99,9 @@ struct ContentView: View {
         .onAppear {
             model.start()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .orbDidSaveItem)) { _ in
+            model.refresh()
+        }
     }
 }
 
