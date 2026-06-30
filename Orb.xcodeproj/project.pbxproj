@@ -102,6 +102,12 @@
 		05B7758622494BD8A3509936 /* OrbPulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */; };
 		58B28978AF6D450DAB3A2908 /* OrbPulseAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */; };
 		FE6755786584432BB3161A13 /* OrbPulseAnimationIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */; };
+		993DAD1A62744DDB8F6F074E /* PasteboardProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F7C35D25040C098D417E4 /* PasteboardProviding.swift */; };
+		099746DA15B246BAA5E571C9 /* PasteboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6CA71C11C4CD78547A178 /* PasteboardMonitor.swift */; };
+		E7CCF53A4CCE4131BE1C5C31 /* ClipboardWatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218325A009DA4A52A3C67041 /* ClipboardWatchSettings.swift */; };
+		49EC5853602D479286A0D51F /* MockPasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25842A5693C47E18DEE9D3A /* MockPasteboard.swift */; };
+		6335848A7E7A4294866448F3 /* PasteboardMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD1277CE704B56AA64E39C /* PasteboardMonitorTests.swift */; };
+		BD0BD7E9CF5A40209868BFC6 /* PasteboardMonitorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3952E2EA52A24C0380F44749 /* PasteboardMonitorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +217,12 @@
 		DC77CE394D074F8195B336A6 /* OrbPulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbPulseAnimation.swift; sourceTree = "<group>"; };
 		E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbPulseAnimationTests.swift; sourceTree = "<group>"; };
 		63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbPulseAnimationIntegrationTests.swift; sourceTree = "<group>"; };
+		FD1F7C35D25040C098D417E4 /* PasteboardProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardProviding.swift; sourceTree = "<group>"; };
+		3AC6CA71C11C4CD78547A178 /* PasteboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitor.swift; sourceTree = "<group>"; };
+		218325A009DA4A52A3C67041 /* ClipboardWatchSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardWatchSettings.swift; sourceTree = "<group>"; };
+		E25842A5693C47E18DEE9D3A /* MockPasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasteboard.swift; sourceTree = "<group>"; };
+		88DD1277CE704B56AA64E39C /* PasteboardMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitorTests.swift; sourceTree = "<group>"; };
+		3952E2EA52A24C0380F44749 /* PasteboardMonitorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +291,9 @@
 		A70000080000000000000001 /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+				218325A009DA4A52A3C67041 /* ClipboardWatchSettings.swift */,
+				3AC6CA71C11C4CD78547A178 /* PasteboardMonitor.swift */,
+				FD1F7C35D25040C098D417E4 /* PasteboardProviding.swift */,
 
 			);
 			path = Capture;
@@ -325,6 +340,8 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				88DD1277CE704B56AA64E39C /* PasteboardMonitorTests.swift */,
+				E25842A5693C47E18DEE9D3A /* MockPasteboard.swift */,
 				E280672C5DBD45E2BBB49A4D /* OrbPulseAnimationTests.swift */,
 				F922CB24534443F2A91FCA2F /* OrbStateMachineTests.swift */,
 				025FE19248754015869DEC52 /* EdgeSnapControllerTests.swift */,
@@ -363,6 +380,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				3952E2EA52A24C0380F44749 /* PasteboardMonitorIntegrationTests.swift */,
 				63C081548BCA4FF1AA96A686 /* OrbPulseAnimationIntegrationTests.swift */,
 				7679B1FA45C94620BF807FF7 /* OrbStateMachineIntegrationTests.swift */,
 				17740F00BDE143BC954846BF /* EdgeSnapControllerIntegrationTests.swift */,
