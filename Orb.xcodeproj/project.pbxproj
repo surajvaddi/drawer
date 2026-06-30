@@ -345,6 +345,9 @@
 		62E5656497074F3886117D30 /* DrawerRowDropHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D16E87645D8401AB191DB42 /* DrawerRowDropHandler.swift */; };
 		2F56C76F104E494AA2C1C2D4 /* DrawerRowDropHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3740BEE820D147A4BA04B2F5 /* DrawerRowDropHandlerTests.swift */; };
 		2060BE2ACEEF4587AE8D3673 /* DrawerRowDropHandlerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA580DFA2AC4C3FBC68656D /* DrawerRowDropHandlerIntegrationTests.swift */; };
+		7A05B9C8142C4C889A699380 /* SensitiveContentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A470F30014F47AE9CB25804 /* SensitiveContentDetector.swift */; };
+		557D5058CE994B4CA18DE998 /* SensitiveContentDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */; };
+		738521C0D7C4440290553A41 /* SensitiveContentDetectorIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -697,6 +700,9 @@
 		3D16E87645D8401AB191DB42 /* DrawerRowDropHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRowDropHandler.swift; sourceTree = "<group>"; };
 		3740BEE820D147A4BA04B2F5 /* DrawerRowDropHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRowDropHandlerTests.swift; sourceTree = "<group>"; };
 		DDA580DFA2AC4C3FBC68656D /* DrawerRowDropHandlerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerRowDropHandlerIntegrationTests.swift; sourceTree = "<group>"; };
+		7A470F30014F47AE9CB25804 /* SensitiveContentDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentDetector.swift; sourceTree = "<group>"; };
+		77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentDetectorTests.swift; sourceTree = "<group>"; };
+		7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentDetectorIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -894,6 +900,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				77AD9ACFC8244EAD8EA6AEEC /* SensitiveContentDetectorTests.swift */,
 				3740BEE820D147A4BA04B2F5 /* DrawerRowDropHandlerTests.swift */,
 				69DD600FEFB941EFA1EAFFBC /* ItemDragSourceTests.swift */,
 				C6B8F2F8E584438C8EDC83F1 /* ImageDropPipelineTests.swift */,
@@ -1014,6 +1021,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */,
 				DDA580DFA2AC4C3FBC68656D /* DrawerRowDropHandlerIntegrationTests.swift */,
 				A49AD1F5B2A747BDAE85594D /* ItemDragSourceIntegrationTests.swift */,
 				FDC3E8C3808948DCB05FB5BB /* ImageDropPipelineIntegrationTests.swift */,
