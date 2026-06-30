@@ -356,6 +356,9 @@
 		7A7A139DC4EC4DF39EFB2ABB /* MigrationV7Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58841F8F7775411693DAC60D /* MigrationV7Tests.swift */; };
 		9A50521F5A3E4CEFA08A9D63 /* PrivateDrawerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */; };
 		CEBAC845064C4872A25F0FD5 /* PrivateDrawerServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */; };
+		59F52FA2E0D34FD9B8E561DA /* ExcludedAppsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B83CDFF0844089D01233F /* ExcludedAppsManager.swift */; };
+		2F14476D7ADC44F49EC61871 /* ExcludedAppsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */; };
+		FA213D1F5FFE4573A228B5D9 /* ExcludedAppsManagerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -719,6 +722,9 @@
 		58841F8F7775411693DAC60D /* MigrationV7Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationV7Tests.swift; sourceTree = "<group>"; };
 		2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDrawerServiceTests.swift; sourceTree = "<group>"; };
 		B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDrawerServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		F32B83CDFF0844089D01233F /* ExcludedAppsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludedAppsManager.swift; sourceTree = "<group>"; };
+		077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludedAppsManagerTests.swift; sourceTree = "<group>"; };
+		32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludedAppsManagerIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -917,6 +923,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				077BC73FC44A4734A109E723 /* ExcludedAppsManagerTests.swift */,
 				2903CE49144545FA8D4362D7 /* PrivateDrawerServiceTests.swift */,
 				58841F8F7775411693DAC60D /* MigrationV7Tests.swift */,
 				5BD8778B8109406482304891 /* SensitiveSaveAlertTests.swift */,
@@ -1041,6 +1048,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				32A4497D36D34EF296CFE225 /* ExcludedAppsManagerIntegrationTests.swift */,
 				B3F4FDDAC54540C1BDF90D01 /* PrivateDrawerServiceIntegrationTests.swift */,
 				E81D310DF14447169D9899BB /* SensitiveSaveAlertIntegrationTests.swift */,
 				7DB8ABC98868442C88794D07 /* SensitiveContentDetectorIntegrationTests.swift */,
