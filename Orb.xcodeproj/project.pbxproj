@@ -300,6 +300,9 @@
 		D81FD570438C4B6B98758001 /* QuickPasteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EE60A44C914ECEB098B294 /* QuickPasteController.swift */; };
 		60FDDB4268474B5DAA1E15D9 /* QuickPasteControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA97C687264E34AF69CFA0 /* QuickPasteControllerTests.swift */; };
 		E337A52707B84C4BAC9B91CC /* QuickPasteControllerIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FFAA23E8E49609F7A3940 /* QuickPasteControllerIntegrationTests.swift */; };
+		F98CDA32B92240EDB78E8ED4 /* AutoPasteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */; };
+		482E7BECE9EF48B78D7DC0A7 /* AutoPasteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */; };
+		251174A4C2384B79B9F2DBD1 /* AutoPasteServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -607,6 +610,9 @@
 		56EE60A44C914ECEB098B294 /* QuickPasteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteController.swift; sourceTree = "<group>"; };
 		C9CA97C687264E34AF69CFA0 /* QuickPasteControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteControllerTests.swift; sourceTree = "<group>"; };
 		C70FFAA23E8E49609F7A3940 /* QuickPasteControllerIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteControllerIntegrationTests.swift; sourceTree = "<group>"; };
+		05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPasteService.swift; sourceTree = "<group>"; };
+		B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPasteServiceTests.swift; sourceTree = "<group>"; };
+		263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoPasteServiceIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -780,6 +786,7 @@
 		A700000C0000000000000001 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				05BB9ACED1E14FC3B4229DD5 /* AutoPasteService.swift */,
 				C691831AA41F4795B6B401A0 /* SettingsStore.swift */,
 
 			);
@@ -789,6 +796,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */,
 				C9CA97C687264E34AF69CFA0 /* QuickPasteControllerTests.swift */,
 				D620664F10BE498EA0A27CB9 /* QuickPasteResultsViewTests.swift */,
 				4F2739AAE4B34C4A80FD3940 /* QuickPastePanelTests.swift */,
@@ -894,6 +902,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */,
 				C70FFAA23E8E49609F7A3940 /* QuickPasteControllerIntegrationTests.swift */,
 				938F82C928DB46F2B405B807 /* QuickPasteResultsViewIntegrationTests.swift */,
 				ED88C7F34EEE41EFBB0935C9 /* QuickPastePanelIntegrationTests.swift */,
