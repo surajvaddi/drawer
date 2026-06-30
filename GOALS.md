@@ -157,7 +157,7 @@ SQLite persistence, migrations, and application support paths.
 
 ### Step 2.3: Initial Schema Migration (Items and Drawers)
 
-- [ ] **Function:** Migration v1 creating `items` and `drawers` tables with indexes.
+- [x] **Function:** Migration v1 creating `items` and `drawers` tables with indexes.
 - **Unit tests:**
   - `testItemsTableSchemaMatchesModel`
   - `testDrawersTableSupportsParentID`
