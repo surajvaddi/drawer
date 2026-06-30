@@ -571,7 +571,7 @@ Card UI and inline expansion.
 
 ### Step 9.1: Item Card Component
 
-- [ ] **Function:** `ItemCardView` — icon, title, preview, source app, relative time.
+- [x] **Function:** `ItemCardView` — icon, title, preview, source app, relative time.
 - **Unit tests:**
   - `testCardRendersLinkIcon`
   - `testCardRendersScreenshotThumbnail`
@@ -581,7 +581,7 @@ Card UI and inline expansion.
 
 ### Step 9.2: Item Card Context Menu
 
-- [ ] **Function:** `ItemCardContextMenu` — copy, move, tag, delete actions.
+- [x] **Function:** `ItemCardContextMenu` — copy, move, tag, delete actions.
 - **Unit tests:**
   - `testContextMenuActionsInvokeCallbacks`
 - **Integration tests:**
@@ -590,7 +590,7 @@ Card UI and inline expansion.
 
 ### Step 9.3: Item Detail Inline Expansion
 
-- [ ] **Function:** `ItemDetailView` — expand card inline with full preview and actions.
+- [x] **Function:** `ItemDetailView` — expand card inline with full preview and actions.
 - **Unit tests:**
   - `testDetailShowsFullText`
   - `testDetailShowsOCRForScreenshot`
@@ -600,7 +600,7 @@ Card UI and inline expansion.
 
 ### Step 9.4: Item Rename and Notes Editor
 
-- [ ] **Function:** `ItemMetadataEditor` — rename title, add user note.
+- [x] **Function:** `ItemMetadataEditor` — rename title, add user note.
 - **Unit tests:**
   - `testRenameUpdatesItemTitle`
   - `testNotePersistsOnSave`
@@ -610,7 +610,7 @@ Card UI and inline expansion.
 
 ### Step 9.5: Pin and Favorite Toggles
 
-- [ ] **Function:** `ItemPinController` — pin/favorite with repository persistence.
+- [x] **Function:** `ItemPinController` — pin/favorite with repository persistence.
 - **Unit tests:**
   - `testTogglePinUpdatesItem`
   - `testPinnedItemsSortHigher`
@@ -620,7 +620,7 @@ Card UI and inline expansion.
 
 ### Step 9.6: Drag-and-Drop Reorder in Drawer
 
-- [ ] **Function:** `ItemReorderController` — drag to reorder within drawer.
+- [x] **Function:** `ItemReorderController` — drag to reorder within drawer.
 - **Unit tests:**
   - `testReorderUpdatesSortMetadata`
 - **Integration tests:**
@@ -635,7 +635,7 @@ Type-specific processing and previews.
 
 ### Step 10.1: Link Metadata Fetcher
 
-- [ ] **Function:** `LinkMetadataFetcher` — fetch title and favicon from URL.
+- [x] **Function:** `LinkMetadataFetcher` — fetch title and favicon from URL.
 - **Unit tests:**
   - `testParseTitleFromHTML`
   - `testFaviconURLConstruction`
@@ -645,7 +645,7 @@ Type-specific processing and previews.
 
 ### Step 10.2: Link Item Processor Pipeline
 
-- [ ] **Function:** `LinkItemProcessor` — normalize URL, fetch metadata, save link item.
+- [x] **Function:** `LinkItemProcessor` — normalize URL, fetch metadata, save link item.
 - **Unit tests:**
   - `testProcessorSetsTitleFromMetadata`
   - `testProcessorFallbackTitleUsesDomain`
@@ -655,7 +655,7 @@ Type-specific processing and previews.
 
 ### Step 10.3: Text Item Processor Pipeline
 
-- [ ] **Function:** `TextItemProcessor` — normalize text, assign title from first line.
+- [x] **Function:** `TextItemProcessor` — normalize text, assign title from first line.
 - **Unit tests:**
   - `testTitleFromFirstLine`
   - `testLongTextGetsPreviewOnly`
@@ -665,7 +665,7 @@ Type-specific processing and previews.
 
 ### Step 10.4: Rich Clip HTML Processor
 
-- [ ] **Function:** `RichClipProcessor` — store plain text and HTML representations.
+- [x] **Function:** `RichClipProcessor` — store plain text and HTML representations.
 - **Unit tests:**
   - `testStoresHTMLAndPlainText`
   - `testStripHTMLForPreview`
@@ -675,7 +675,7 @@ Type-specific processing and previews.
 
 ### Step 10.5: Link Open and Copy Actions
 
-- [ ] **Function:** `LinkItemActions` — open in browser, copy URL, copy markdown link.
+- [x] **Function:** `LinkItemActions` — open in browser, copy URL, copy markdown link.
 - **Unit tests:**
   - `testCopyMarkdownLinkFormat`
   - `testOpenURLUsesNSWorkspace`
@@ -685,7 +685,7 @@ Type-specific processing and previews.
 
 ### Step 10.6: Text Copy and Edit Actions
 
-- [ ] **Function:** `TextItemActions` — copy plain text, edit content in place.
+- [x] **Function:** `TextItemActions` — copy plain text, edit content in place.
 - **Unit tests:**
   - `testCopyWritesTextToPasteboard`
   - `testEditUpdatesContentText`
@@ -701,7 +701,7 @@ Region capture, image storage, and Vision OCR.
 
 ### Step 11.1: Screenshot Region Overlay
 
-- [ ] **Function:** `ScreenshotRegionOverlay` — dim screen, drag to select region.
+- [x] **Function:** `ScreenshotRegionOverlay` — dim screen, drag to select region.
 - **Unit tests:**
   - `testSelectionRectClampedToScreen`
   - `testEscapeCancelsCapture`
@@ -711,7 +711,7 @@ Region capture, image storage, and Vision OCR.
 
 ### Step 11.2: ScreenCaptureKit Region Capture
 
-- [ ] **Function:** `ScreenshotCaptureService` — capture selected region to PNG data.
+- [x] **Function:** `ScreenshotCaptureService` — capture selected region to PNG data.
 - **Unit tests:**
   - `testCaptureReturnsPNGData`
   - `testCaptureHonorsRetinaScale`
@@ -721,7 +721,7 @@ Region capture, image storage, and Vision OCR.
 
 ### Step 11.3: Screenshot Save Pipeline
 
-- [ ] **Function:** `ScreenshotSavePipeline` — image blob, thumbnail, screenshot item.
+- [x] **Function:** `ScreenshotSavePipeline` — image blob, thumbnail, screenshot item.
 - **Unit tests:**
   - `testSaveCreatesScreenshotItemType`
   - `testThumbnailGeneratedOnSave`
@@ -731,7 +731,7 @@ Region capture, image storage, and Vision OCR.
 
 ### Step 11.4: Vision OCR Service
 
-- [ ] **Function:** `OCRService` — `VNRecognizeTextRequest` on image, return joined text.
+- [x] **Function:** `OCRService` — `VNRecognizeTextRequest` on image, return joined text.
 - **Unit tests:**
   - `testOCRReturnsTextForSampleImage`
   - `testOCREmptyForBlankImage`
@@ -741,7 +741,7 @@ Region capture, image storage, and Vision OCR.
 
 ### Step 11.5: OCR Text Indexing
 
-- [ ] **Function:** `OCRIndexer` — store OCR blob, index text in FTS.
+- [x] **Function:** `OCRIndexer` — store OCR blob, index text in FTS.
 - **Unit tests:**
   - `testOCRTextIndexedForSearch`
   - `testOCRBlobLinkedToItem`
@@ -751,7 +751,7 @@ Region capture, image storage, and Vision OCR.
 
 ### Step 11.6: Screenshot Card Actions
 
-- [ ] **Function:** `ScreenshotItemActions` — copy image, copy OCR text, open in Preview.
+- [x] **Function:** `ScreenshotItemActions` — copy image, copy OCR text, open in Preview.
 - **Unit tests:**
   - `testCopyImageWritesPNGToPasteboard`
   - `testCopyOCRTextWritesString`
@@ -767,7 +767,7 @@ PDF/text ingestion and text extraction.
 
 ### Step 12.1: File Import Validator
 
-- [ ] **Function:** `FileImportValidator` — allowed extensions, size limits, MIME sniff.
+- [x] **Function:** `FileImportValidator` — allowed extensions, size limits, MIME sniff.
 - **Unit tests:**
   - `testRejectOversizedFile`
   - `testAcceptPDFAndMarkdown`
@@ -777,7 +777,7 @@ PDF/text ingestion and text extraction.
 
 ### Step 12.2: File Copy Importer
 
-- [ ] **Function:** `FileImporter` — copy file into `blobs/originals/`, create file item.
+- [x] **Function:** `FileImporter` — copy file into `blobs/originals/`, create file item.
 - **Unit tests:**
   - `testImportCopiesBytesVerbatim`
   - `testChecksumMatchesOriginal`
@@ -787,7 +787,7 @@ PDF/text ingestion and text extraction.
 
 ### Step 12.3: File Reference Importer
 
-- [ ] **Function:** `FileReferenceImporter` — security-scoped bookmark, store reference path.
+- [x] **Function:** `FileReferenceImporter` — security-scoped bookmark, store reference path.
 - **Unit tests:**
   - `testBookmarkResolveAfterImport`
   - `testReferenceDoesNotDuplicateBytes`
@@ -797,7 +797,7 @@ PDF/text ingestion and text extraction.
 
 ### Step 12.4: PDF Text Extractor
 
-- [ ] **Function:** `PDFTextExtractor` — extract text per page from PDF blob.
+- [x] **Function:** `PDFTextExtractor` — extract text per page from PDF blob.
 - **Unit tests:**
   - `testExtractTextFromPDFFixture`
   - `testPageCountDetected`
@@ -807,7 +807,7 @@ PDF/text ingestion and text extraction.
 
 ### Step 12.5: Plain Document Text Extractor
 
-- [ ] **Function:** `DocumentTextExtractor` — TXT, MD, CSV text extraction.
+- [x] **Function:** `DocumentTextExtractor` — TXT, MD, CSV text extraction.
 - **Unit tests:**
   - `testExtractMarkdownFile`
   - `testExtractCSVFile`
@@ -817,7 +817,7 @@ PDF/text ingestion and text extraction.
 
 ### Step 12.6: Document Card Actions
 
-- [ ] **Function:** `DocumentItemActions` — open, reveal in Finder, copy file/path.
+- [x] **Function:** `DocumentItemActions` — open, reveal in Finder, copy file/path.
 - **Unit tests:**
   - `testRevealInFinderUsesNSURL`
   - `testCopyFileWritesToPasteboard`
