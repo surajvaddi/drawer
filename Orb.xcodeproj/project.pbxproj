@@ -306,6 +306,9 @@
 		2556E0A3F55C4FFA904AD8F7 /* RecencyBoostPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21CF985C1B40CFBB712665 /* RecencyBoostPolicy.swift */; };
 		B4AC74C2E5CD4F569F1412BB /* RecencyBoostPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */; };
 		5CD452C47C0944C8817555E4 /* RecencyBoostPolicyIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */; };
+		2768F24C77724053B693656A /* QuickPasteEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */; };
+		79A0F17CA0AD427E85A925E7 /* QuickPasteEmptyStateViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */; };
+		DFFC9C3C2FE64592AA0D61EC /* QuickPasteEmptyStateViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -619,6 +622,9 @@
 		5B21CF985C1B40CFBB712665 /* RecencyBoostPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecencyBoostPolicy.swift; sourceTree = "<group>"; };
 		20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecencyBoostPolicyTests.swift; sourceTree = "<group>"; };
 		20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecencyBoostPolicyIntegrationTests.swift; sourceTree = "<group>"; };
+		01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteEmptyStateView.swift; sourceTree = "<group>"; };
+		8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteEmptyStateViewTests.swift; sourceTree = "<group>"; };
+		7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasteEmptyStateViewIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -730,6 +736,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				01309EB1A0724A47B57D2CC7 /* QuickPasteEmptyStateView.swift */,
 				56EE60A44C914ECEB098B294 /* QuickPasteController.swift */,
 				EE54CDE1FFC44707AD6FCE85 /* QuickPasteResultsView.swift */,
 				63A34F93DDC04A49AEAE2003 /* QuickPastePanel.swift */,
@@ -803,6 +810,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				8F069EBC466E4932BF52E436 /* QuickPasteEmptyStateViewTests.swift */,
 				20079329D5AD4F33BC9A9F06 /* RecencyBoostPolicyTests.swift */,
 				B8C54DBBCAD1443EA068DFA6 /* AutoPasteServiceTests.swift */,
 				C9CA97C687264E34AF69CFA0 /* QuickPasteControllerTests.swift */,
@@ -910,6 +918,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				7C90C19C1A4A4291A6E79D75 /* QuickPasteEmptyStateViewIntegrationTests.swift */,
 				20B614F26E3E45269A7C4F95 /* RecencyBoostPolicyIntegrationTests.swift */,
 				263804D7995041389FC6CE4E /* AutoPasteServiceIntegrationTests.swift */,
 				C70FFAA23E8E49609F7A3940 /* QuickPasteControllerIntegrationTests.swift */,
