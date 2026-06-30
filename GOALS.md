@@ -305,7 +305,7 @@ Borderless always-on-top orb shell.
 
 ### Step 5.1: FloatingPanel Subclass
 
-- [ ] **Function:** `FloatingOrbPanel` — borderless, transparent, floating level, non-activating.
+- [x] **Function:** `FloatingOrbPanel` — borderless, transparent, floating level, non-activating.
 - **Unit tests:**
   - `testPanelIsFloatingAndBorderless`
   - `testPanelDoesNotStealFocusByDefault`
@@ -315,7 +315,7 @@ Borderless always-on-top orb shell.
 
 ### Step 5.2: Orb SwiftUI View (Idle State)
 
-- [ ] **Function:** `OrbView` — circular 48px orb, idle visual state.
+- [x] **Function:** `OrbView` — circular 48px orb, idle visual state.
 - **Unit tests:**
   - `testOrbViewRendersAtConfiguredSize`
   - `testIdleStateShowsIcon`
@@ -325,7 +325,7 @@ Borderless always-on-top orb shell.
 
 ### Step 5.3: Orb Drag Repositioning
 
-- [ ] **Function:** `OrbDragController` — drag orb anywhere, persist position in `SettingsStore`.
+- [x] **Function:** `OrbDragController` — drag orb anywhere, persist position in `SettingsStore`.
 - **Unit tests:**
   - `testDragUpdatesWindowOrigin`
   - `testPositionPersistsAcrossSessions`
@@ -335,7 +335,7 @@ Borderless always-on-top orb shell.
 
 ### Step 5.4: Edge Snap Behavior
 
-- [ ] **Function:** `EdgeSnapController` — optional gentle snap to screen edges.
+- [x] **Function:** `EdgeSnapController` — optional gentle snap to screen edges.
 - **Unit tests:**
   - `testSnapToNearestEdgeWithinThreshold`
   - `testNoSnapWhenDisabled`
@@ -345,7 +345,7 @@ Borderless always-on-top orb shell.
 
 ### Step 5.5: Orb Visual State Machine
 
-- [ ] **Function:** `OrbStateMachine` — idle, clipboardChanged, dragHover, saving, expanded states.
+- [x] **Function:** `OrbStateMachine` — idle, clipboardChanged, dragHover, saving, expanded states.
 - **Unit tests:**
   - `testTransitionsFromIdleToClipboardChanged`
   - `testInvalidTransitionsRejected`
@@ -355,7 +355,7 @@ Borderless always-on-top orb shell.
 
 ### Step 5.6: Orb Pulse Animation on Clipboard Changed
 
-- [ ] **Function:** `OrbPulseAnimation` — single pulse when clipboard changes.
+- [x] **Function:** `OrbPulseAnimation` — single pulse when clipboard changes.
 - **Unit tests:**
   - `testPulseTriggersOncePerEvent`
   - `testPulseDoesNotRepeatWhileIdle`
