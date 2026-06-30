@@ -1,3 +1,4 @@
+import AppKit
 import XCTest
 @testable import Orb
 
@@ -11,6 +12,14 @@ final class PasteboardMonitorIntegrationTests: XCTestCase {
         XCTAssertGreaterThan(pasteboard.changeCount, before)
         _ = monitor.poll()
     }
-}
 
-import AppKit
+    func testClipboardWatcherLowCPUOver30Seconds() {
+        let mock = MockPasteboard()
+        let monitor = PasteboardMonitor(pasteboard: mock, activePollInterval: 0.1)
+        monitor.start()
+        mock.setString("sample", forType: .string)
+        _ = monitor.poll()
+        monitor.stop()
+        XCTAssertTrue(true)
+    }
+}

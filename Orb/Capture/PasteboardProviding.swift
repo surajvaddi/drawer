@@ -5,9 +5,12 @@ protocol PasteboardProviding: AnyObject {
     var types: [NSPasteboard.PasteboardType]? { get }
     func string(forType type: NSPasteboard.PasteboardType) -> String?
     func data(forType type: NSPasteboard.PasteboardType) -> Data?
-    func setString(_ string: String, forType type: NSPasteboard.PasteboardType)
-    func setData(_ data: Data, forType type: NSPasteboard.PasteboardType)
-    func clearContents()
+    @discardableResult
+    func setString(_ string: String, forType type: NSPasteboard.PasteboardType) -> Bool
+    @discardableResult
+    func setData(_ data: Data?, forType type: NSPasteboard.PasteboardType) -> Bool
+    @discardableResult
+    func clearContents() -> Int
 }
 
 extension NSPasteboard: PasteboardProviding {}
