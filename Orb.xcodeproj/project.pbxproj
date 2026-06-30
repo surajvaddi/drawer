@@ -522,6 +522,9 @@
 		40F6407BF5884FB1A230237F /* SaveToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4AC03636A4D199BA3EB41 /* SaveToastView.swift */; };
 		9A28DEE5618C45828D7BAF17 /* SaveToastViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B03AB4AD2E4320A88084DA /* SaveToastViewTests.swift */; };
 		4A00E2F68896408EB3C6D76C /* SaveToastViewIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945EA1ECBFF4E9EB3195154 /* SaveToastViewIntegrationTests.swift */; };
+		E5CEB44184B54D6196DA404B /* OrbAnimationPolish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EBD6933104E29BF9DEBA0 /* OrbAnimationPolish.swift */; };
+		9F5A1C3B3DC442299107DDDB /* OrbAnimationPolishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37988A088B994DFEB22308E6 /* OrbAnimationPolishTests.swift */; };
+		7B42F5DA33AD432D80C969DC /* OrbAnimationPolishIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B136261B56D143038565F598 /* OrbAnimationPolishIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1051,6 +1054,9 @@
 		0DA4AC03636A4D199BA3EB41 /* SaveToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToastView.swift; sourceTree = "<group>"; };
 		A6B03AB4AD2E4320A88084DA /* SaveToastViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToastViewTests.swift; sourceTree = "<group>"; };
 		6945EA1ECBFF4E9EB3195154 /* SaveToastViewIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToastViewIntegrationTests.swift; sourceTree = "<group>"; };
+		170EBD6933104E29BF9DEBA0 /* OrbAnimationPolish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbAnimationPolish.swift; sourceTree = "<group>"; };
+		37988A088B994DFEB22308E6 /* OrbAnimationPolishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbAnimationPolishTests.swift; sourceTree = "<group>"; };
+		B136261B56D143038565F598 /* OrbAnimationPolishIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbAnimationPolishIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1176,6 +1182,7 @@
 		A70000090000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				170EBD6933104E29BF9DEBA0 /* OrbAnimationPolish.swift */,
 				0DA4AC03636A4D199BA3EB41 /* SaveToastView.swift */,
 				92593AD4224944CE8DD3AFA9 /* LazyBlobImageLoader.swift */,
 				5895AE501E694D3D80F2CCEF /* LibrarySearchView.swift */,
@@ -1304,6 +1311,7 @@
 		A70000030000000000000001 /* OrbTests */ = {
 			isa = PBXGroup;
 			children = (
+				37988A088B994DFEB22308E6 /* OrbAnimationPolishTests.swift */,
 				A6B03AB4AD2E4320A88084DA /* SaveToastViewTests.swift */,
 				BCFE35B8970E4264809CA3D9 /* SearchPerformanceTracerTests.swift */,
 				DF5A0092B459472098ED7D1F /* LazyBlobImageLoaderTests.swift */,
@@ -1482,6 +1490,7 @@
 		A70000040000000000000001 /* OrbIntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
+				B136261B56D143038565F598 /* OrbAnimationPolishIntegrationTests.swift */,
 				6945EA1ECBFF4E9EB3195154 /* SaveToastViewIntegrationTests.swift */,
 				C9BED2BE40D843CAAC5E9CAD /* SearchPerformanceTracerIntegrationTests.swift */,
 				DEDA2A7A1C564B768E3ABCFE /* LazyBlobImageLoaderIntegrationTests.swift */,
@@ -1717,6 +1726,7 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		A90000010000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				E5CEB44184B54D6196DA404B /* OrbAnimationPolish.swift in Sources */,
 				40F6407BF5884FB1A230237F /* SaveToastView.swift in Sources */,
 				D75998C4568F44C5A56160EE /* SearchPerformanceTracer.swift in Sources */,
 				00BAD362280D4B278EEC88E8 /* LazyBlobImageLoader.swift in Sources */,
@@ -1771,6 +1781,7 @@
 				B1B4587EF640A /* DrawerRule.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000020000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				9F5A1C3B3DC442299107DDDB /* OrbAnimationPolishTests.swift in Sources */,
 				9A28DEE5618C45828D7BAF17 /* SaveToastViewTests.swift in Sources */,
 				DFC657DC3D6948F385173849 /* SearchPerformanceTracerTests.swift in Sources */,
 				26F56CD789C041E2B95BA845 /* LazyBlobImageLoaderTests.swift in Sources */,
@@ -1822,6 +1833,7 @@
 				B05C6097C587B /* DrawerRuleModelTests.swift in Sources */,
 			); runOnlyForDeploymentPostprocessing = 0; };
 		A90000030000000000000001 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				7B42F5DA33AD432D80C969DC /* OrbAnimationPolishIntegrationTests.swift in Sources */,
 				4A00E2F68896408EB3C6D76C /* SaveToastViewIntegrationTests.swift in Sources */,
 				96CC9CC8512C4B14A7C5F900 /* SearchPerformanceTracerIntegrationTests.swift in Sources */,
 				157CABB7198F4B82A6C445BB /* LazyBlobImageLoaderIntegrationTests.swift in Sources */,
