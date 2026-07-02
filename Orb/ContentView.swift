@@ -73,20 +73,9 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else {
                     List(model.filteredItems) { item in
-                        VStack(alignment: .leading, spacing: 4) {
-                            HStack(spacing: 8) {
-                                Image(systemName: item.type.iconName)
-                                    .foregroundStyle(.secondary)
-                                Text(item.title)
-                                    .font(.headline)
-                                    .lineLimit(1)
-                            }
-                            Text(item.preview)
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                                .lineLimit(2)
-                        }
-                        .padding(.vertical, 4)
+                        RecentItemRow(item: item, onDelete: {
+                            model.deleteItem(item)
+                        })
                     }
                     .listStyle(.inset)
                 }
@@ -102,6 +91,49 @@ struct ContentView: View {
         .onReceive(NotificationCenter.default.publisher(for: .orbDidSaveItem)) { _ in
             model.refresh()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .orbDidDeleteItem)) { _ in
+            model.refresh()
+        }
+    }
+}
+
+struct RecentItemRow: View {
+    let item: Item
+    var isCompact = false
+    var onDelete: () -> Void
+
+    @State private var isHovering = false
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: item.type.iconName)
+                .font(.system(size: isCompact ? 13 : 15, weight: .semibold))
+                .foregroundStyle(.secondary)
+                .frame(width: isCompact ? 18 : 22)
+
+            VStack(alignment: .leading, spacing: isCompact ? 2 : 4) {
+                Text(item.title)
+                    .font(isCompact ? .caption.weight(.semibold) : .headline)
+                    .lineLimit(1)
+                Text(item.preview)
+                    .font(isCompact ? .caption2 : .caption)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(isCompact ? 1 : 2)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+
+            Button(role: .destructive, action: onDelete) {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.system(size: isCompact ? 15 : 17, weight: .semibold))
+            }
+            .buttonStyle(.plain)
+            .foregroundStyle(.secondary)
+            .opacity(isHovering ? 1 : 0)
+            .help("Delete")
+        }
+        .padding(.vertical, isCompact ? 5 : 4)
+        .contentShape(Rectangle())
+        .onHover { isHovering = $0 }
     }
 }
 
@@ -177,6 +209,29 @@ final class OrbLaunchViewModel: ObservableObject {
             errorMessage = nil
         } catch {
             errorMessage = "Could not load items: \(error.localizedDescription)"
+        }
+    }
+
+    func deleteItem(_ item: Item) {
+        do {
+            if manager == nil {
+                start()
+            }
+            guard let manager else { return }
+            let paths = StoragePaths()
+            try ItemDeletionService(
+                items: ItemRepository(manager: manager),
+                blobs: BlobRepository(manager: manager),
+                annotations: AIAnnotationRepository(manager: manager),
+                blobStore: BlobStore(paths: paths)
+            ).delete(itemID: item.id)
+            if lastSavedItem?.id == item.id {
+                lastSavedItem = nil
+            }
+            NotificationCenter.default.post(name: .orbDidDeleteItem, object: nil)
+            refresh()
+        } catch {
+            errorMessage = "Could not delete item: \(error.localizedDescription)"
         }
     }
 

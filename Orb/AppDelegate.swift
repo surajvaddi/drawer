@@ -339,4 +339,5 @@ private struct PersistentOrbButton: View {
 
 extension Notification.Name {
     static let orbDidSaveItem = Notification.Name("orbDidSaveItem")
+    static let orbDidDeleteItem = Notification.Name("orbDidDeleteItem")
 }
