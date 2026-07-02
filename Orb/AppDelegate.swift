@@ -44,11 +44,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                 setPanelExpanded: { [weak panel] isExpanded in
                     guard let panel else { return }
                     let oldFrame = panel.frame
-                    let oldCenter = NSPoint(x: oldFrame.midX, y: oldFrame.midY)
+                    let oldOrbCenter = PersistentOrbButton.orbCenter(in: oldFrame, isExpanded: !isExpanded)
                     let newSize = isExpanded ? PersistentOrbButton.expandedSize : PersistentOrbButton.idleSize
                     let newOrigin = NSPoint(
-                        x: oldCenter.x - newSize.width / 2,
-                        y: oldCenter.y - newSize.height / 2
+                        x: oldOrbCenter.x - PersistentOrbButton.orbCenterOffset(isExpanded: isExpanded).x,
+                        y: oldOrbCenter.y - PersistentOrbButton.orbCenterOffset(isExpanded: isExpanded).y
                     )
                     panel.setFrame(NSRect(origin: newOrigin, size: newSize), display: true)
                 },
@@ -173,6 +173,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 private struct PersistentOrbButton: View {
     static let idleSize = NSSize(width: 72, height: 72)
     static let expandedSize = NSSize(width: 320, height: 280)
+    private static let expandedPadding: CGFloat = 12
 
     var currentPanelOrigin: () -> NSPoint?
     var movePanel: (NSPoint) -> Void
@@ -184,12 +185,13 @@ private struct PersistentOrbButton: View {
 
     @State private var visualState: OrbVisualState = .idle
     @State private var dragStartOrigin: NSPoint?
+    @State private var isDragging = false
     @State private var isHovering = false
     @State private var isDropTargeted = false
     @State private var recentItems: [Item] = []
 
     private var isExpanded: Bool {
-        isHovering || isDropTargeted
+        !isDragging && (isHovering || isDropTargeted)
     }
 
     var body: some View {
@@ -201,7 +203,7 @@ private struct PersistentOrbButton: View {
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }
-        .padding(isExpanded ? 12 : 0)
+        .padding(isExpanded ? Self.expandedPadding : 0)
         .frame(
             width: isExpanded ? Self.expandedSize.width : Self.idleSize.width,
             height: isExpanded ? Self.expandedSize.height : Self.idleSize.height,
@@ -220,7 +222,7 @@ private struct PersistentOrbButton: View {
             if hovering {
                 refreshRecents()
             }
-            setPanelExpanded(hovering || isDropTargeted)
+            setPanelExpanded(!isDragging && (hovering || isDropTargeted))
         }
         .onDrop(
             of: Self.acceptedDropTypes,
@@ -231,7 +233,7 @@ private struct PersistentOrbButton: View {
             if isTargeted {
                 refreshRecents()
             }
-            setPanelExpanded(isHovering || isTargeted)
+            setPanelExpanded(!isDragging && (isHovering || isTargeted))
         }
         .onReceive(NotificationCenter.default.publisher(for: .orbDidSaveItem)) { _ in
             refreshRecents()
@@ -252,7 +254,9 @@ private struct PersistentOrbButton: View {
                 DragGesture(minimumDistance: 4)
                     .onChanged { value in
                         if dragStartOrigin == nil {
+                            isDragging = true
                             dragStartOrigin = currentPanelOrigin()
+                            setPanelExpanded(false)
                         }
                         guard let dragStartOrigin else { return }
                         movePanel(
@@ -264,6 +268,8 @@ private struct PersistentOrbButton: View {
                     }
                     .onEnded { _ in
                         dragStartOrigin = nil
+                        isDragging = false
+                        setPanelExpanded(isHovering || isDropTargeted)
                     }
             )
     }
@@ -439,15 +445,30 @@ private struct PersistentOrbButton: View {
     private func resetStateSoon() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
             visualState = .idle
-            setPanelExpanded(isHovering || isDropTargeted)
+            setPanelExpanded(!isDragging && (isHovering || isDropTargeted))
         }
     }
 
     private func resetStateOnMain() {
         DispatchQueue.main.async {
             visualState = .idle
-            setPanelExpanded(isHovering || isDropTargeted)
+            setPanelExpanded(!isDragging && (isHovering || isDropTargeted))
         }
+    }
+
+    static func orbCenter(in frame: NSRect, isExpanded: Bool) -> NSPoint {
+        let offset = orbCenterOffset(isExpanded: isExpanded)
+        return NSPoint(x: frame.origin.x + offset.x, y: frame.origin.y + offset.y)
+    }
+
+    static func orbCenterOffset(isExpanded: Bool) -> NSPoint {
+        if isExpanded {
+            return NSPoint(
+                x: expandedSize.width / 2,
+                y: expandedSize.height - expandedPadding - idleSize.height / 2
+            )
+        }
+        return NSPoint(x: idleSize.width / 2, y: idleSize.height / 2)
     }
 
     private func string(from item: Any?) -> String? {
