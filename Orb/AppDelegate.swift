@@ -32,11 +32,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             y: visibleFrame.maxY - size.height - 72
         )
         let panel = FloatingOrbPanel(contentRect: NSRect(origin: origin, size: size))
-        panel.isMovableByWindowBackground = true
+        panel.isMovableByWindowBackground = false
         panel.contentView = NSHostingView(
             rootView: PersistentOrbButton(
-                currentPanelOrigin: { [weak panel] in
-                    panel?.frame.origin
+                currentPanelFrame: { [weak panel] in
+                    panel?.frame
                 },
                 movePanel: { [weak panel] origin in
                     panel?.setFrameOrigin(origin)
@@ -175,7 +175,7 @@ private struct PersistentOrbButton: View {
     static let expandedSize = NSSize(width: 320, height: 280)
     private static let expandedPadding: CGFloat = 12
 
-    var currentPanelOrigin: () -> NSPoint?
+    var currentPanelFrame: () -> NSRect?
     var movePanel: (NSPoint) -> Void
     var setPanelExpanded: (Bool) -> Void
     var openOrb: () -> Void
@@ -184,7 +184,7 @@ private struct PersistentOrbButton: View {
     var deleteItem: (Item) -> Bool
 
     @State private var visualState: OrbVisualState = .idle
-    @State private var dragStartOrigin: NSPoint?
+    @State private var dragMouseOffset: NSPoint?
     @State private var isDragging = false
     @State private var isHovering = false
     @State private var isDropTargeted = false
@@ -252,22 +252,27 @@ private struct PersistentOrbButton: View {
             .onTapGesture(perform: openOrb)
             .gesture(
                 DragGesture(minimumDistance: 4)
-                    .onChanged { value in
-                        if dragStartOrigin == nil {
+                    .onChanged { _ in
+                        let mouseLocation = NSEvent.mouseLocation
+                        if dragMouseOffset == nil {
                             isDragging = true
-                            dragStartOrigin = currentPanelOrigin()
                             setPanelExpanded(false)
+                            guard let frame = currentPanelFrame() else { return }
+                            dragMouseOffset = NSPoint(
+                                x: mouseLocation.x - frame.origin.x,
+                                y: mouseLocation.y - frame.origin.y
+                            )
                         }
-                        guard let dragStartOrigin else { return }
+                        guard let dragMouseOffset else { return }
                         movePanel(
                             NSPoint(
-                                x: dragStartOrigin.x + value.translation.width,
-                                y: dragStartOrigin.y - value.translation.height
+                                x: mouseLocation.x - dragMouseOffset.x,
+                                y: mouseLocation.y - dragMouseOffset.y
                             )
                         )
                     }
                     .onEnded { _ in
-                        dragStartOrigin = nil
+                        dragMouseOffset = nil
                         isDragging = false
                         setPanelExpanded(isHovering || isDropTargeted)
                     }
