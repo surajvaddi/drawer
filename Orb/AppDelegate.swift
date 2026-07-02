@@ -184,7 +184,6 @@ private struct PersistentOrbButton: View {
     var deleteItem: (Item) -> Bool
 
     @State private var visualState: OrbVisualState = .idle
-    @State private var dragMouseOffset: NSPoint?
     @State private var isDragging = false
     @State private var isHovering = false
     @State private var isDropTargeted = false
@@ -249,34 +248,22 @@ private struct PersistentOrbButton: View {
         OrbView(diameter: 64, state: isDropTargeted ? .dragHover : visualState)
             .frame(width: Self.idleSize.width, height: Self.idleSize.height)
             .contentShape(Rectangle())
-            .onTapGesture(perform: openOrb)
-            .gesture(
-                DragGesture(minimumDistance: 4)
-                    .onChanged { _ in
-                        let mouseLocation = NSEvent.mouseLocation
-                        if dragMouseOffset == nil {
-                            isDragging = true
-                            setPanelExpanded(false)
-                            guard let frame = currentPanelFrame() else { return }
-                            dragMouseOffset = NSPoint(
-                                x: mouseLocation.x - frame.origin.x,
-                                y: mouseLocation.y - frame.origin.y
-                            )
-                        }
-                        guard let dragMouseOffset else { return }
-                        movePanel(
-                            NSPoint(
-                                x: mouseLocation.x - dragMouseOffset.x,
-                                y: mouseLocation.y - dragMouseOffset.y
-                            )
-                        )
-                    }
-                    .onEnded { _ in
-                        dragMouseOffset = nil
+            .overlay {
+                OrbDragHandle(
+                    currentPanelFrame: currentPanelFrame,
+                    movePanel: movePanel,
+                    onDragStart: {
+                        isDragging = true
+                        setPanelExpanded(false)
+                    },
+                    onDragEnd: {
                         isDragging = false
                         setPanelExpanded(isHovering || isDropTargeted)
-                    }
-            )
+                    },
+                    onClick: openOrb
+                )
+                .frame(width: Self.idleSize.width, height: Self.idleSize.height)
+            }
     }
 
     private var recentItemsPanel: some View {
@@ -492,6 +479,92 @@ private struct PersistentOrbButton: View {
             return URL(string: string) ?? URL(fileURLWithPath: string)
         }
         return nil
+    }
+}
+
+private struct OrbDragHandle: NSViewRepresentable {
+    var currentPanelFrame: () -> NSRect?
+    var movePanel: (NSPoint) -> Void
+    var onDragStart: () -> Void
+    var onDragEnd: () -> Void
+    var onClick: () -> Void
+
+    func makeNSView(context: Context) -> DragHandleView {
+        let view = DragHandleView()
+        updateNSView(view, context: context)
+        return view
+    }
+
+    func updateNSView(_ nsView: DragHandleView, context: Context) {
+        nsView.currentPanelFrame = currentPanelFrame
+        nsView.movePanel = movePanel
+        nsView.onDragStart = onDragStart
+        nsView.onDragEnd = onDragEnd
+        nsView.onClick = onClick
+    }
+
+    final class DragHandleView: NSView {
+        var currentPanelFrame: (() -> NSRect?)?
+        var movePanel: ((NSPoint) -> Void)?
+        var onDragStart: (() -> Void)?
+        var onDragEnd: (() -> Void)?
+        var onClick: (() -> Void)?
+
+        private var startMouseScreenPoint: NSPoint?
+        private var startPanelOrigin: NSPoint?
+        private var didDrag = false
+
+        override var acceptsFirstResponder: Bool { true }
+
+        override func acceptsFirstMouse(for event: NSEvent?) -> Bool {
+            true
+        }
+
+        override func mouseDown(with event: NSEvent) {
+            guard let window, let frame = currentPanelFrame?() else { return }
+            startMouseScreenPoint = window.convertPoint(toScreen: event.locationInWindow)
+            startPanelOrigin = frame.origin
+            didDrag = false
+        }
+
+        override func mouseDragged(with event: NSEvent) {
+            guard
+                let window,
+                let startMouseScreenPoint,
+                let startPanelOrigin
+            else { return }
+
+            let mouseScreenPoint = window.convertPoint(toScreen: event.locationInWindow)
+            let delta = NSPoint(
+                x: mouseScreenPoint.x - startMouseScreenPoint.x,
+                y: mouseScreenPoint.y - startMouseScreenPoint.y
+            )
+
+            if !didDrag {
+                let distance = hypot(delta.x, delta.y)
+                guard distance >= 3 else { return }
+                didDrag = true
+                onDragStart?()
+            }
+
+            movePanel?(
+                NSPoint(
+                    x: startPanelOrigin.x + delta.x,
+                    y: startPanelOrigin.y + delta.y
+                )
+            )
+        }
+
+        override func mouseUp(with event: NSEvent) {
+            if didDrag {
+                onDragEnd?()
+            } else {
+                onClick?()
+            }
+            startMouseScreenPoint = nil
+            startPanelOrigin = nil
+            didDrag = false
+        }
     }
 }
 
