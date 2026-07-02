@@ -41,11 +41,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                 movePanel: { [weak panel] origin in
                     panel?.setFrameOrigin(origin)
                 },
-                setDropHoverFrame: { [weak panel] isHovering in
+                setPanelExpanded: { [weak panel] isExpanded in
                     guard let panel else { return }
                     let oldFrame = panel.frame
                     let oldCenter = NSPoint(x: oldFrame.midX, y: oldFrame.midY)
-                    let newSize = isHovering ? PersistentOrbButton.dropHoverSize : PersistentOrbButton.idleSize
+                    let newSize = isExpanded ? PersistentOrbButton.expandedSize : PersistentOrbButton.idleSize
                     let newOrigin = NSPoint(
                         x: oldCenter.x - newSize.width / 2,
                         y: oldCenter.y - newSize.height / 2
@@ -57,6 +57,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                 },
                 saveDrop: { payload in
                     self.saveDrop(payload)
+                },
+                loadRecentItems: {
+                    self.fetchRecentItems()
+                },
+                deleteItem: { item in
+                    self.deleteItem(item)
                 }
             )
         )
@@ -111,6 +117,42 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    private func fetchRecentItems(limit: Int = 5) -> [Item] {
+        do {
+            let paths = StoragePaths()
+            let manager = DatabaseManager(paths: paths)
+            try manager.open()
+            defer { manager.close() }
+            try manager.migrate(using: OrbMigrations.all)
+            try ensureInbox(manager: manager)
+            return try ItemRepository(manager: manager).listRecent(limit: limit)
+        } catch {
+            OrbLogger.shared.info("Recent item load failed: \(error.localizedDescription)")
+            return []
+        }
+    }
+
+    private func deleteItem(_ item: Item) -> Bool {
+        do {
+            let paths = StoragePaths()
+            let manager = DatabaseManager(paths: paths)
+            try manager.open()
+            defer { manager.close() }
+            try manager.migrate(using: OrbMigrations.all)
+            try ItemDeletionService(
+                items: ItemRepository(manager: manager),
+                blobs: BlobRepository(manager: manager),
+                annotations: AIAnnotationRepository(manager: manager),
+                blobStore: BlobStore(paths: paths)
+            ).delete(itemID: item.id)
+            NotificationCenter.default.post(name: .orbDidDeleteItem, object: nil)
+            return true
+        } catch {
+            OrbLogger.shared.info("Item delete failed: \(error.localizedDescription)")
+            return false
+        }
+    }
+
     private func ensureInbox(manager: DatabaseManager) throws {
         let drawers = DrawerRepository(manager: manager)
         if try drawers.fetch(id: DefaultDataSeeder.inboxDrawerID) == nil {
@@ -130,25 +172,80 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
 private struct PersistentOrbButton: View {
     static let idleSize = NSSize(width: 72, height: 72)
-    static let dropHoverSize = NSSize(width: 168, height: 112)
+    static let expandedSize = NSSize(width: 320, height: 280)
 
     var currentPanelOrigin: () -> NSPoint?
     var movePanel: (NSPoint) -> Void
-    var setDropHoverFrame: (Bool) -> Void
+    var setPanelExpanded: (Bool) -> Void
     var openOrb: () -> Void
     var saveDrop: (CapturePayload) -> Void
+    var loadRecentItems: () -> [Item]
+    var deleteItem: (Item) -> Bool
 
     @State private var visualState: OrbVisualState = .idle
     @State private var dragStartOrigin: NSPoint?
+    @State private var isHovering = false
     @State private var isDropTargeted = false
+    @State private var recentItems: [Item] = []
+
+    private var isExpanded: Bool {
+        isHovering || isDropTargeted
+    }
 
     var body: some View {
+        VStack(spacing: 10) {
+            orbControl
+
+            if isExpanded {
+                recentItemsPanel
+                    .transition(.opacity.combined(with: .move(edge: .top)))
+            }
+        }
+        .padding(isExpanded ? 12 : 0)
+        .frame(
+            width: isExpanded ? Self.expandedSize.width : Self.idleSize.width,
+            height: isExpanded ? Self.expandedSize.height : Self.idleSize.height,
+            alignment: .top
+        )
+        .background {
+            if isExpanded {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(.regularMaterial)
+                    .shadow(color: .black.opacity(0.18), radius: 18, y: 8)
+            }
+        }
+        .contentShape(Rectangle())
+        .onHover { hovering in
+            isHovering = hovering
+            if hovering {
+                refreshRecents()
+            }
+            setPanelExpanded(hovering || isDropTargeted)
+        }
+        .onDrop(
+            of: Self.acceptedDropTypes,
+            isTargeted: $isDropTargeted,
+            perform: handleDrop(providers:)
+        )
+        .onChange(of: isDropTargeted) { _, isTargeted in
+            if isTargeted {
+                refreshRecents()
+            }
+            setPanelExpanded(isHovering || isTargeted)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .orbDidSaveItem)) { _ in
+            refreshRecents()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .orbDidDeleteItem)) { _ in
+            refreshRecents()
+        }
+        .animation(.easeOut(duration: 0.18), value: isExpanded)
+        .help("Open Orb")
+    }
+
+    private var orbControl: some View {
         OrbView(diameter: 64, state: isDropTargeted ? .dragHover : visualState)
-            .padding(4)
-            .frame(
-                width: isDropTargeted ? Self.dropHoverSize.width : Self.idleSize.width,
-                height: isDropTargeted ? Self.dropHoverSize.height : Self.idleSize.height
-            )
+            .frame(width: Self.idleSize.width, height: Self.idleSize.height)
             .contentShape(Rectangle())
             .onTapGesture(perform: openOrb)
             .gesture(
@@ -169,15 +266,37 @@ private struct PersistentOrbButton: View {
                         dragStartOrigin = nil
                     }
             )
-            .onDrop(
-                of: Self.acceptedDropTypes,
-                isTargeted: $isDropTargeted,
-                perform: handleDrop(providers:)
-            )
-            .onChange(of: isDropTargeted) { _, isHovering in
-                setDropHoverFrame(isHovering)
+    }
+
+    private var recentItemsPanel: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Label("Recent", systemImage: "clock")
+                    .font(.caption.weight(.semibold))
+                Spacer()
+                Button(action: openOrb) {
+                    Image(systemName: "rectangle.expand.vertical")
+                }
+                .buttonStyle(.plain)
+                .help("Open Orb")
             }
-        .help("Open Orb")
+            .foregroundStyle(.secondary)
+
+            if recentItems.isEmpty {
+                ContentUnavailableView("No recent items", systemImage: "tray")
+                    .font(.caption)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else {
+                VStack(spacing: 2) {
+                    ForEach(recentItems.prefix(5)) { item in
+                        RecentItemRow(item: item, isCompact: true) {
+                            deleteRecentItem(item)
+                        }
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
 
     private static let acceptedDropTypes = [
@@ -304,17 +423,30 @@ private struct PersistentOrbButton: View {
         )
     }
 
+    private func refreshRecents() {
+        recentItems = loadRecentItems()
+    }
+
+    private func deleteRecentItem(_ item: Item) {
+        visualState = .saving
+        if deleteItem(item) {
+            recentItems.removeAll { $0.id == item.id }
+            refreshRecents()
+        }
+        resetStateSoon()
+    }
+
     private func resetStateSoon() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
             visualState = .idle
-            setDropHoverFrame(false)
+            setPanelExpanded(isHovering || isDropTargeted)
         }
     }
 
     private func resetStateOnMain() {
         DispatchQueue.main.async {
             visualState = .idle
-            setDropHoverFrame(false)
+            setPanelExpanded(isHovering || isDropTargeted)
         }
     }
 
